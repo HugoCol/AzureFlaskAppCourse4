@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    {% if title %}
+    <title>{{ title }} - Flask applicate Course 4 groep 5</title>
+    {%  else %}
+    <title>Add an title to the title variable</title>
+    {% endif %}
+
+</head>
+<body>
+    <div class="menu_bar"><a href="/">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
+
