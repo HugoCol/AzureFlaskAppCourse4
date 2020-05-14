@@ -1,3 +1,20 @@
 head {
     font-size: 50;
 }
+
+body {
+    background-color: red;
+}
+h1 {
+    color: red;
+
+}
+form {
+    color: red;
+}
+
+title{
+    font-size: 1000px;
+    color: red;
+
+}
