@@ -58,7 +58,7 @@ def blast(gegevens):
         print("Blasten voltooid.")
 
         # Voegt BLAST resultaten toe aan XML bestand
-        with open("my_blast.xml", "w") as out_handle:
+        with open("my_blast.xml", "a") as out_handle:
             out_handle.write(result_handle.read())
         print("Gegevens in een XML bestand gezet")
         print("T/m", gegevens[i][0], "is gedaan.")
@@ -79,7 +79,7 @@ def blast(gegevens):
         print("Blasten voltooid.")
 
         # Voegt BLAST resultaten toe aan XML bestand
-        with open("BlastResultaten.xml", "w") as out_handle:
+        with open("BlastResultaten.xml", "a") as out_handle:
             out_handle.write(result_handle.read())
         print("Gegevens in een XML bestand gezet.")
         print("T/m", gegevens[i][3], "is gedaan.")
