@@ -1,3 +1,6 @@
+import mysql.connector
+
+
 def getdata():
 
     return funcdic,
@@ -58,6 +61,10 @@ def pushdata():
     cursor.close()
     conn.close()
     return
+
+if __name__ == '__main__':
+    pushdata()
+
 
 # Lijst met data pet 5 de if for loop doen
 # in de for loop op volgorde van tabbellen gaan vullen
