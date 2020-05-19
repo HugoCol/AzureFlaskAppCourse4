@@ -1,4 +1,4 @@
-txt = open("dataset.txt", "r")
+txt = open("data/dataset.txt", "r")
 fasta = open("FastaDataset.fasta", "w+")
 
 gegevens = []
