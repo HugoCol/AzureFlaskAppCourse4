@@ -1,75 +1,115 @@
-import mysql.connector
+from xml.etree import ElementTree
 
 
 def getdata():
+    # Bestand openen
+    filename = 'my_blast.xml'
+    # Door bestand heen gaan
+    dom = ElementTree.parse(filename)
+    # Alle hits eruit zoeken
+    hits = dom.findall('BlastOutput_iterations/Iteration/Iteration_hits/Hit')
+    print(hits)
+    # Voor elke hit
+    for c in hits:
+        # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
+        Hit_id = c.find('Hit_id').text
+        familie = c.find('Hit_def').text
+        acessiecode = c.find('Hit_accession').text
+        hit = c.find('Hit_num').text
+        score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
+        tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
+        evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
+        percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
+        queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
+        # Print alle data om te zien of het gewerkt heeft
+        print(hit, Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq)
 
-    return funcdic,
-def pushdata():
+    return #datadic
+
+
+def pushdata(datadic):
+    # Connectie met database maken
     print("Connecting to database.....")
+    # Inlog gegevens voor Azure database (nette database)
+    # conn = mysql.connector.connect(
+    #                 host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
+    #                      "azure.com",
+    #                 user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
+    #                 db="iaoqi", password="638942")
+    # Inlog gegevens voor oefen database (Hier het script op testen)
     conn = mysql.connector.connect(
-                    host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
-                         "azure.com",
-                    user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
-                    db="iaoqi", password="638942")
+        host="sql2.freemysqlhosting.net",
+        user="sql234812",
+        db="sql234812", password="iM4*eV6%")
     print("Connected")
+    # Voor elke regel in de dictionary waar de data in staat
     for i in datadic:
-        if i != "":
+        # Kijk of de plek gevult is met data
+        if i[] != "":
+            # Vul de lineage tabel met data
             cursor = conn.cursor()
-            cursor.execute(f"insert into functies (functie_eiwit) "
-                           f"values ();")
+            cursor.execute(f"insert into lineage (name, parent_id) "
+                           f"values (i[]);")
             conn.commit()
-            print("Functietabel fill completed")
-        if i != "":
+            print("lineage fill for ",i[]," completed")
+        # Kijk of de plek gevult is met data
+        if i[] != "":
+            # Kijken of de data die in de database gaat er al in staat
+            cursorchecko = conn.cursor()
+            cursor.execute(f"select naam_organisme from organisme where naam_organisme = i[]")
+            # Als de variabele leeg blijft data in de database zetten
+            if cursorchecko == "":
+                #Het id van linage ophalen om deze in de organisme tabel te zetten
+                linidcursor = conn.cursor()
+                cursor.execute(f"select id from lineage where name = i[]")
+                cursor = conn.cursor()
+                cursor.execute(f"insert into organisme (naam_organisme lineage_id, eiwit_id) "
+                               f"values (i[]}, linidcursor, i[]);")
+                conn.commit()
+                print("Organisme fill for ",i[]," completed")
+            cursorchecko += ""
+        # Kijk of de plek gevult is met data
+        if i[] != "":
+            # Kijken of de data die in de database gaat er al in staat
+            cursorchecks = conn.cursor()
+            cursor.execute(f"select header from sequentie where header = i[]")
+            # Als de variabele leeg blijft data in de database zetten
+            if cursorchecks == "":
+                cursor = conn.cursor()
+                cursor.execute(f"insert into sequentie (header, sequence, "
+                               f"asci_score, 'read') values (i[], i[], i[], i[]);")
+                conn.commit()
+                print("Gegevens fill for ",i[]," completed")
+                cursorchecks += ""
+        # Kijk of de plek gevult is met data
+        if i[] != "":
+            # Het id van sequentie ophalen om deze in de organisme tabel te zetten
+            seqidcursor = conn.cursor()
+            cursor.execute(f"select id from sequentie where header = i[]")
+            # Het id van organisme ophalen om deze in de organisme tabel te zetten
+            orgidcursor = conn.cursor()
+            cursor.execute(f"select id from organisme where naam_organisme = i[]")
+            # De eiwit tabel vullen met data
             cursor = conn.cursor()
-            cursor.execute(f"insert into sequences (seq_read1, seq_read2) "
-                           f"values ();")
+            cursor.execute(f"insert into eiwit (description, accessiecode, "
+                           f"percent_identity, e_value, max_score, total_score,"
+                           f"query_cover sequentie_id, Organisme_id) "
+                           f"values (i[], i[], i[], i[], i[], i[],"
+                           f"i[], seqidcursor, orgidcursor);")
             conn.commit()
-            print("Sequences table fill completed")
-        if i != "":
-            cursor = conn.cursor()
-            cursor.execute(f"insert into soort (soortnaam) "
-                           f"values ();")
-            conn.commit()
-            print("Soort table fill completed")
-        if i != "":
-            cursor = conn.cursor()
-            cursor.execute(f"insert into geslacht (geslacht_naam) "
-                           f"values ();")
-            conn.commit()
-            print("Geslacht table fill completed")
-        if i != "":
-            cursor = conn.cursor()
-            cursor.execute(f"insert into familie (familie_naam) "
-                           f"values ();")
-            conn.commit()
-            print("Familie table fill completed")
-        if i != "":
-            cursor = conn.cursor()
-            cursor.execute(f"insert into gegevens (max_score, total_score, "
-                           f"query_cover, percent_identity, e_value) "
-                           f"values ();")
-            conn.commit()
-            print("Gegevens table fill completed")
-        if i != "":
-            cursor = conn.cursor()
-            cursor.execute(f"insert into eiwit (eiwit_naam, familie_id, "
-                           f"geslacht_id, soort_id, seq_id, functie_id, gegevens_id) "
-                           f"values ();")
-            conn.commit()
-            print("Eiwit table fill completed")
-
+            print("Eiwit  fill for ",i[]," completed")
+    print("Database filled!\nClosing connection....")
+    # Connectie met database sluiten
     cursor.close()
     conn.close()
+    print("Connection closed task compleded.")
     return
 
-if __name__ == '__main__':
-    pushdata()
-
-
+def main():
+    #datadic =
+    getdata()
+    #pushdata(datadic)
+main()
+# Lijst aanmaken met alle values die worden opgehaald vanuit het xml bestand
+# Data uit deze lijst overbrengen naar de database
 # Lijst met data pet 5 de if for loop doen
-# in de for loop op volgorde van tabbellen gaan vullen
-# Bij de tabbellen die dubbele data kunnen bevatten eerst een if statement
-# zetten die kijkt of deze data al in de tabel staat (bijvoorbeeld bij tabel soorten)
-# Bij het vullen van de eiwit tabel moet er gekeken worden voor elke i welke
-# FK er nodig zijn in de tabel voorstel: die ophalen met een select statement
-# uit alle andere tabellen waar dan vb: de soortnaam in i gelijk is aan de soortnaam in de tabel
