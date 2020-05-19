@@ -1,0 +1,1461 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.10.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_42459</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>301</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_42459</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>301</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1820025722|gb|CP049288.1|</Hit_id>
+  <Hit_def>Pseudenhygromyxa sp. WMMC2535 chromosome</Hit_def>
+  <Hit_accession>CP049288</Hit_accession>
+  <Hit_len>9529023</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>156.376</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>6.31774e-34</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>300</Hsp_query-to>
+      <Hsp_hit-from>3706297</Hsp_hit-from>
+      <Hsp_hit-to>3706584</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>213</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>292</Hsp_align-len>
+      <Hsp_qseq>GCGCCCGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCGCGCCGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGAGCGCGTAGCCGTTCTCGCGGCGGAAGACGTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTGACGGGGAAGA-GC--CCCTTGTGGCTGTACATCCCGCGGTTCTCGCCGAAGGGGATGGAGACGAC</Hsp_qseq>
+      <Hsp_hseq>GCGGCCGTCGATCCACAGGCAGTTCTCGTTGTAGCGCG-CGGGATCGATGGAGGCGTTGCGCGTGAGGTTGAAGGAGACGCGCCGGCCGTGGGCGTCGAGGCCTCCGCCGGTCACCCAGTCCCAGCGCATCACCCAGGCGTAGTAGCCCTTGTGATCGTCGATCATCAAAAAGGCGTCCTCGGACCCGAAGTCGAGGCTGTCCTCGCCCAGGCGCAGCGCGCCGCT---GGGGACCATGCAGCCCTTGTGCGAGTACATCCCGCGGTTGTCCGCGAAGGGGATGCTGACCAC</Hsp_hseq>
+      <Hsp_midline>||| ||| ||  ||| | |  ||||||||||||| ||| |||||||||||   |||||||||||||||||||||  |||| ||  |||   ||||||| |  |  ||||||| |||||||||||||||||     || ||||||||||||||||||||||||  | |    || ||| ||||   | |||| || |   |||   ||| | |   |||  |||| |   |||||  | ||  ||||||||   ||||||||||||||| ||  |||||||||||  ||| ||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>49.9773</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>0.0675741</Hsp_evalue>
+      <Hsp_query-from>168</Hsp_query-from>
+      <Hsp_query-to>216</Hsp_query-to>
+      <Hsp_hit-from>4662030</Hsp_hit-from>
+      <Hsp_hit-to>4661983</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>CGTCGACGAGCGCGTAGCCGTTCTCGCGGCGGAAGACGTGCTCGTCGCG</Hsp_qseq>
+      <Hsp_hseq>CGTCGACGAGCTCGTGGCCGCGCTCGCGGCCGAGGACGTGTTCG-CGCG</Hsp_hseq>
+      <Hsp_midline>||||||||||| ||| ||||  |||||||| || |||||| ||| ||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1317726935|gb|CP025435.1|</Hit_id>
+  <Hit_def>Gordonia sp. YC-JH1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP025435</Hit_accession>
+  <Hit_len>4101557</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.6345</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>3.99045e-11</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>288</Hsp_query-to>
+      <Hsp_hit-from>674439</Hsp_hit-from>
+      <Hsp_hit-to>674709</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>186</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>275</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAGGCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCG--CGCCGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGAGCGCGTAGCCGTTCTCGCGGCGG-AAGACGTGC-TCGTCGCGGCCGATGGTGAGCTTGCCGGTGACGGGGAAGAGCCCCTTGTGGCTGTACATCCCGCGGTTCTCGCCGAAGGG</Hsp_qseq>
+      <Hsp_hseq>CGCCGATCCAGATGGCGTTCTCGTTGTAGACACCCGGATTGTGGACCTGATTGTCGGTGAGGTTGAAGCCCTCGACCACGCCGGCG--GGCGTGCGCCGGACACCGGTGACCCAGTCGTACTTCATCGGCCGGGGGTAGTCGCCGTGGTGGTCGTCGAGGATCAGGAAGCCG--CGACCGGCGGCGAGACCCACGTCGGCTCCGCCGATCAGCAGCGAGCCCGACGCGGGCATCATCGCCTTGTGCGAGTACAGGGCCCGGTTCTCGTCGAAGGG</Hsp_hseq>
+      <Hsp_midline>|||||  ||||| |||||||||||||||| |  | |||| |  |  |   |||   ||||||||||||||  ||| |  ||| | |  | |||||||||  | ||||||||||||||  |   |||  |   |  ||||| ||| | ||| ||||||| || |  | |||||  |   ||||||  ||||   | ||| | | ||||||    |||  ||| |   |||| |  | | |||||||   |||||   | ||||||||| |||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1486329120|gb|CP025546.1|</Hit_id>
+  <Hit_def>Mycobacterium paragordonae strain 49061 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP025546</Hit_accession>
+  <Hit_len>6730319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.8958</Hsp_bit-score>
+      <Hsp_score>65</Hsp_score>
+      <Hsp_evalue>0.000130449</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>171</Hsp_query-to>
+      <Hsp_hit-from>3712714</Hsp_hit-from>
+      <Hsp_hit-to>3712867</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCG-TTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCC-GAGGCGTCGTGCGCCGCGCCGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTC</Hsp_qseq>
+      <Hsp_hseq>CGCCGAACCAGACGGCGTTCTCGTTGTAGCGCTGCGGG-TCG-CGCACCTGATTGTCGGTCAGGTTGAAGCCCTCGACCCTGCCCTCAGGGCTGCGGCGCACCG-CGGTCACCCAGTCGTACCGCATGGGCGAGGGGTAGTCCCCGTGGTGGTCGTC</Hsp_hseq>
+      <Hsp_midline>|||||  ||||| |||||||||||||||| ||  |||| |||  || |  | |||   || |||||||||||  ||| | |||||  |||  |   ||||  || |||| ||||||||  | |||||| |  ||  |||||  || | ||| |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1795718928|emb|LR589563.1|</Hit_id>
+  <Hit_def>XXX</Hit_def>
+  <Hit_accession>LR589563</Hit_accession>
+  <Hit_len>14397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>12554</Hsp_hit-from>
+      <Hsp_hit-to>12396</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1795716667|emb|LR589336.1|</Hit_id>
+  <Hit_def>XXX</Hit_def>
+  <Hit_accession>LR589336</Hit_accession>
+  <Hit_len>14397</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>12554</Hsp_hit-from>
+      <Hsp_hit-to>12396</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1176909929|gb|CP019888.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 9MK genome</Hit_def>
+  <Hit_accession>CP019888</Hit_accession>
+  <Hit_len>6463923</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>306009</Hsp_hit-from>
+      <Hsp_hit-to>306167</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1176897886|gb|CP019887.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 11MK genome</Hit_def>
+  <Hit_accession>CP019887</Hit_accession>
+  <Hit_len>6434062</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>3515799</Hsp_hit-from>
+      <Hsp_hit-to>3515641</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1176892338|gb|CP019886.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 10MK genome</Hit_def>
+  <Hit_accession>CP019886</Hit_accession>
+  <Hit_len>6421364</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>307581</Hsp_hit-from>
+      <Hsp_hit-to>307739</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1176886821|gb|CP019885.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 6MK genome</Hit_def>
+  <Hit_accession>CP019885</Hit_accession>
+  <Hit_len>6462452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>6076340</Hsp_hit-from>
+      <Hsp_hit-to>6076182</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1176878582|gb|CP019884.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 4MK genome</Hit_def>
+  <Hit_accession>CP019884</Hit_accession>
+  <Hit_len>6440784</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>2916037</Hsp_hit-from>
+      <Hsp_hit-to>2916195</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1176873053|gb|CP019883.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii strain 1MK genome</Hit_def>
+  <Hit_accession>CP019883</Hit_accession>
+  <Hit_len>6421275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>6113776</Hsp_hit-from>
+      <Hsp_hit-to>6113618</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|556021639|gb|CP006835.1|</Hit_id>
+  <Hit_def>Mycobacterium kansasii ATCC 12478, complete genome</Hit_def>
+  <Hit_accession>CP006835</Hit_accession>
+  <Hit_len>6432277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.0924</Hsp_bit-score>
+      <Hsp_score>63</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>311060</Hsp_hit-from>
+      <Hsp_hit-to>311218</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>116</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAG-GCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGA-GCGTGCCCGAGGCGTCG-TGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGAGCCAGACGGCGTTCTCGTTATAGCGCTGCGGG-TCGCGCACCTGGTTGTCGGTCAGGTTGAAGCCCTCGACGCG-GCCC---CCATCGCTGCGGCGCACTGCGGTCACCCAGTCGTACCGCATAGGCGAGGGGTAGTCCCCGTGGTGGTCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>||||| |||||| |||||||||||| ||| ||  |||| |||     |  ||||   || |||||||||||  ||| ||| ||||    | ||| |||| ||| |  |||| ||||||||  | |||||  |  ||  |||||  || | ||| ||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|1357651701|gb|CP027433.1|</Hit_id>
+  <Hit_def>Gordonia iterans strain Co17 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP027433</Hit_accession>
+  <Hit_len>4006485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.1907</Hsp_bit-score>
+      <Hsp_score>62</Hsp_score>
+      <Hsp_evalue>0.00045531</Hsp_evalue>
+      <Hsp_query-from>25</Hsp_query-from>
+      <Hsp_query-to>215</Hsp_query-to>
+      <Hsp_hit-from>298565</Hsp_hit-from>
+      <Hsp_hit-to>298372</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>CCAGAAGGCGTTCTCGTTGTAGGCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTGC--GCCGC-GCCGGTGACCCAGTCCCAGCGCATGCGGTAG-TCGTAGTAGCCCTTGTGATCGTCGACGAGCGCGTAGCCGTTCTCGCG-GCGGA--AGACGTGCTCGTCGC</Hsp_qseq>
+      <Hsp_hseq>CCAGATCGCGTTCTCGTTGAACTCCGCCGGGTCGAGCACCTGGTTGTCGGTGAGGTTGAAGCCCGCGATCACCCC---GTCGTCGTTCCGGCGGATGCCGGTGACCCAGTCGTAGCGCAT-CGGTCGCGGGTAGTCGCCGTGATGGTCGTCGAGAATCAGGTACCCGCGCTCGGGTGCGAATCCGACCTGCTCGCCGC</Hsp_hseq>
+      <Hsp_midline>|||||  |||||||||||| |  |  | || ||||    |  ||||   ||||||||||||||  ||| |   ||   | |||||| |  || |  |||||||||||||||  ||||||| |||| |   ||||| ||| |  || |||||||  | |  ||| |||  |||| | ||| |   ||| |||||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1709479267|gb|CP041763.1|</Hit_id>
+  <Hit_def>Gordonia sp. HY186 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP041763</Hit_accession>
+  <Hit_len>3233079</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.3874</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>0.00158919</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>176</Hsp_query-to>
+      <Hsp_hit-from>3201703</Hsp_hit-from>
+      <Hsp_hit-to>3201545</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>CGCCGCGCCAGAAGGCGTTCTCGTTGTAGGCGTCGGGATCGATGCTCGCGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCGCGC--CGGTGACCCAGTCCCAGCGCATGCGGTAG-TCGTAGTAGCCCTTGTGATCGTCGACGA</Hsp_qseq>
+      <Hsp_hseq>CGCCGATCCAGATGGCGTTCTCGTTGTGGGTCTCCGGATCGCGAACCTGGTTGTCGGTCAAGTTGAAACCCTCGA-TGCGGCCG-GTCGCCCCGCGTCGCGCTGCGGTGACCCAGTCGTACTTCAT-CGGCCGCGGGTAGTCGCCGTGGTGATCGTCGAGGA</Hsp_hseq>
+      <Hsp_midline>|||||  ||||| |||||||||||||| ||  || ||||||     |  ||||   || | |||||| ||  |||  | | ||| | || |  ||| |||||  |||||||||||||  |   ||| |||  |   ||||| ||| | ||||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1712768844|gb|CP036350.1|</Hit_id>
+  <Hit_def>Planctomycetes bacterium K2D chromosome, complete genome</Hit_def>
+  <Hit_accession>CP036350</Hit_accession>
+  <Hit_len>5769002</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.4857</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.00554682</Hsp_evalue>
+      <Hsp_query-from>139</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>5736783</Hsp_hit-from>
+      <Hsp_hit-to>5736729</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>58</Hsp_align-len>
+      <Hsp_qseq>CATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGAGCGCGTAGCCGTTCTCGCGG</Hsp_qseq>
+      <Hsp_hseq>CATGCCGTAGTCGTAGTAGCCCT--TGATCGTCG-CCAGCGCGTTGACCATCTGGCGG</Hsp_hseq>
+      <Hsp_midline>||||| |||||||||||||||||  ||||||||| | ||||||| | |  ||| ||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1712762859|gb|CP036349.1|</Hit_id>
+  <Hit_def>Planctomycetes bacterium Spa11 chromosome</Hit_def>
+  <Hit_accession>CP036349</Hit_accession>
+  <Hit_len>5871207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>54.4857</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.00554682</Hsp_evalue>
+      <Hsp_query-from>139</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>5838978</Hsp_hit-from>
+      <Hsp_hit-to>5838924</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>48</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>58</Hsp_align-len>
+      <Hsp_qseq>CATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGAGCGCGTAGCCGTTCTCGCGG</Hsp_qseq>
+      <Hsp_hseq>CATGCCGTAGTCGTAGTAGCCCT--TGATCGTCG-CCAGCGCGTTGACCATCTGGCGG</Hsp_hseq>
+      <Hsp_midline>||||| |||||||||||||||||  ||||||||| | ||||||| | |  ||| ||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|1283007521|gb|CP023322.1|</Hit_id>
+  <Hit_def>Cordyceps militaris strain ATCC 34164 chromosome IV, complete sequence</Hit_def>
+  <Hit_accession>CP023322</Hit_accession>
+  <Hit_len>5321145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.6823</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>0.0193603</Hsp_evalue>
+      <Hsp_query-from>130</Hsp_query-from>
+      <Hsp_query-to>175</Hsp_query-to>
+      <Hsp_hit-from>122832</Hsp_hit-from>
+      <Hsp_hit-to>122877</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>GTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACG</Hsp_qseq>
+      <Hsp_hseq>GTCCGAGCCCATGAGGTAGTCGTAGTTGCCCTTTTCATCGTCCACG</Hsp_hseq>
+      <Hsp_midline>|||| ||| |||| |||||||||||| |||||| | |||||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|764072275|gb|CP010979.1|</Hit_id>
+  <Hit_def>Pseudomonas putida S13.1.2, complete genome</Hit_def>
+  <Hit_accession>CP010979</Hit_accession>
+  <Hit_len>6621848</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.6823</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>0.0193603</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>1985652</Hsp_hit-from>
+      <Hsp_hit-to>1985617</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCG</Hsp_qseq>
+      <Hsp_hseq>CGTTGGGCGTGAGGTTGAAGCCGATGAGCTTGCCCG</Hsp_hseq>
+      <Hsp_midline>||||| |||||||||||||||||| |||| ||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|676386916|ref|XM_009038489.1|</Hit_id>
+  <Hit_def>Aureococcus anophagefferens expressed protein mRNA</Hit_def>
+  <Hit_accession>XM_009038489</Hit_accession>
+  <Hit_len>2251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.6823</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>0.0193603</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>2151</Hsp_hit-from>
+      <Hsp_hit-to>2106</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>AGCGCGTAGCCGTTCTCGCGGCGGAAGACGTGCTCGTCGCGGCCGA</Hsp_qseq>
+      <Hsp_hseq>AGCGCGTAGCCGTCGACGCCGAGGAAGACGCGCTCGTCGCGGCAGA</Hsp_hseq>
+      <Hsp_midline>|||||||||||||   ||| | |||||||| |||||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|573993652|ref|XM_006674684.1|</Hit_id>
+  <Hit_def>Cordyceps militaris CM01 glucan 1,4-alpha-maltohexaosidase precursor (CCM_09551), partial mRNA</Hit_def>
+  <Hit_accession>XM_006674684</Hit_accession>
+  <Hit_len>1539</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>52.6823</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>0.0193603</Hsp_evalue>
+      <Hsp_query-from>130</Hsp_query-from>
+      <Hsp_query-to>175</Hsp_query-to>
+      <Hsp_hit-from>636</Hsp_hit-from>
+      <Hsp_hit-to>591</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>GTCCCAGCGCATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACG</Hsp_qseq>
+      <Hsp_hseq>GTCCGAGCCCATGAGGTAGTCGTAGTTGCCCTTTTCATCGTCCACG</Hsp_hseq>
+      <Hsp_midline>|||| ||| |||| |||||||||||| |||||| | |||||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|1285323070|gb|CP024985.1|</Hit_id>
+  <Hit_def>Streptomyces lavendulae subsp. lavendulae strain CCM 3239 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP024985</Hit_accession>
+  <Hit_len>8691711</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>50.8789</Hsp_bit-score>
+      <Hsp_score>55</Hsp_score>
+      <Hsp_evalue>0.0675741</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>249</Hsp_query-to>
+      <Hsp_hit-from>2313337</Hsp_hit-from>
+      <Hsp_hit-to>2313381</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>GTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTGACGGGGAAGAG</Hsp_qseq>
+      <Hsp_hseq>GTGCCCGTCGCAGACGACGGCGAGCTTGCCGGTGCCGGTGAAGAG</Hsp_hseq>
+      <Hsp_midline>|||| |||||| | ||| || ||||||||||||| ||| ||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|1678294016|gb|CP040748.1|</Hit_id>
+  <Hit_def>Nocardioides sp. dk3136 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP040748</Hit_accession>
+  <Hit_len>3536142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>82</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>2844746</Hsp_hit-from>
+      <Hsp_hit-to>2844674</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>GAAGCCGACGAGCGTGCCCGAGGCGTCG--TGCGCCGCGCCGGTGACCCAGTCCCAGCGCATGCGGTAGTCGT</Hsp_qseq>
+      <Hsp_hseq>GACGCCGGCGAGCGTGCCCGCGGCGTCGTCTGCGCCTCCGCGGGCAACCACGCCCAGGGCGTGGCGTGGTCGT</Hsp_hseq>
+      <Hsp_midline>|| |||| |||||||||||| |||||||  |||||| |  |||  | |||  ||||| || ||  || |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|1276685719|gb|CP017944.1|</Hit_id>
+  <Hit_def>Phyllobacterium sp. Tri-48 plasmid unnamed4, complete sequence</Hit_def>
+  <Hit_accession>CP017944</Hit_accession>
+  <Hit_len>286438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>111</Hsp_query-to>
+      <Hsp_hit-from>58072</Hsp_hit-from>
+      <Hsp_hit-to>58100</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>29</Hsp_align-len>
+      <Hsp_qseq>AAGCCGACGAGCGTGCCCGAGGCGTCGTG</Hsp_qseq>
+      <Hsp_hseq>AAGCCGACGAGCTTGCCCGAGGCGTCGTG</Hsp_hseq>
+      <Hsp_midline>|||||||||||| ||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|1150422587|gb|CP019798.1|</Hit_id>
+  <Hit_def>Streptomyces sp. fd1-xmd, complete genome</Hit_def>
+  <Hit_accession>CP019798</Hit_accession>
+  <Hit_len>7929999</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>248</Hsp_query-to>
+      <Hsp_hit-from>6343789</Hsp_hit-from>
+      <Hsp_hit-to>6343746</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTGACGGGGAAGA</Hsp_qseq>
+      <Hsp_hseq>GTGCCCGTCGCAGACGACGGCGAGCTTGCCGGTGCCGGTGAAGA</Hsp_hseq>
+      <Hsp_midline>|||| |||||| | ||| || ||||||||||||| ||| |||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|827418478|gb|CP011509.1|</Hit_id>
+  <Hit_def>Archangium gephyra strain DSM 2261, complete genome</Hit_def>
+  <Hit_accession>CP011509</Hit_accession>
+  <Hit_len>12489432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>213</Hsp_query-from>
+      <Hsp_query-to>254</Hsp_query-to>
+      <Hsp_hit-from>10474927</Hsp_hit-from>
+      <Hsp_hit-to>10474883</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>CGCGGCCGATGGTGAGCTTGCCG---GTGACGGGGAAGAGCCCCT</Hsp_qseq>
+      <Hsp_hseq>CGCGGCAGGTGGTGAGCTTGCCGCCGGTGACGGTGACGAGCCCCT</Hsp_hseq>
+      <Hsp_midline>|||||| | ||||||||||||||   ||||||| || ||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|575456455|gb|CP007128.1|</Hit_id>
+  <Hit_def>Gemmatirosa kalamazoonesis strain KBS708, complete genome</Hit_def>
+  <Hit_accession>CP007128</Hit_accession>
+  <Hit_len>5311527</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>202</Hsp_query-from>
+      <Hsp_query-to>240</Hsp_query-to>
+      <Hsp_hit-from>4280673</Hsp_hit-from>
+      <Hsp_hit-to>4280711</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>GACGTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTGAC</Hsp_qseq>
+      <Hsp_hseq>GACGTACACGTCGCGGCCGATGGTCACGTTGCCGGTGAC</Hsp_hseq>
+      <Hsp_midline>||||| | |||||||||||||||| |  |||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|325049009|dbj|AP012035.1|</Hit_id>
+  <Hit_def>Acidiphilium multivorum AIU301 DNA, complete genome</Hit_def>
+  <Hit_accession>AP012035</Hit_accession>
+  <Hit_len>3749411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>192</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>2417680</Hsp_hit-from>
+      <Hsp_hit-to>2417647</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>CGCGGCGGAAGACGTGCTCGTCGCGGCCGATGGT</Hsp_qseq>
+      <Hsp_hseq>CGCGGCGGAAGACGTGCTCGACCCGGCCGACGGT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| | ||||||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|146400702|gb|CP000697.1|</Hit_id>
+  <Hit_def>Acidiphilium cryptum JF-5, complete genome</Hit_def>
+  <Hit_accession>CP000697</Hit_accession>
+  <Hit_len>3389227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.0756</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>192</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>2137243</Hsp_hit-from>
+      <Hsp_hit-to>2137210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>CGCGGCGGAAGACGTGCTCGTCGCGGCCGATGGT</Hsp_qseq>
+      <Hsp_hseq>CGCGGCGGAAGACGTGCTCGACCCGGCCGACGGT</Hsp_hseq>
+      <Hsp_midline>|||||||||||||||||||| | ||||||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|1752754875|gb|CP044218.1|</Hit_id>
+  <Hit_def>Mesorhizobium sp. NIBRBAC000500504 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP044218</Hit_accession>
+  <Hit_len>5731152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>76</Hsp_query-from>
+      <Hsp_query-to>111</Hsp_query-to>
+      <Hsp_hit-from>2156856</Hsp_hit-from>
+      <Hsp_hit-to>2156891</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>GAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTG</Hsp_qseq>
+      <Hsp_hseq>GACGTCGAAGCCGACGAGTGCGCCCGAGGCGTCGTG</Hsp_hseq>
+      <Hsp_midline>|| || |||||||||||| | |||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|1712508784|gb|CP036271.1|</Hit_id>
+  <Hit_def>Planctomycetes bacterium Pan44 chromosome</Hit_def>
+  <Hit_accession>CP036271</Hit_accession>
+  <Hit_len>6761146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>140</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>2098026</Hsp_hit-from>
+      <Hsp_hit-to>2097988</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>ATGCGGTAGTCGTAGTAGCCCTTGTGATCGTCGACGAGCGCG</Hsp_qseq>
+      <Hsp_hseq>ATGCCGTAGTCGTAGTAGCCCT--TGATCGTCG-CGAGGGCG</Hsp_hseq>
+      <Hsp_midline>|||| |||||||||||||||||  ||||||||| |||| |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|1402949047|gb|CP029825.1|</Hit_id>
+  <Hit_def>Burkholderia sp. JP2-270 chromosome 2, complete sequence</Hit_def>
+  <Hit_accession>CP029825</Hit_accession>
+  <Hit_len>3274969</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>168</Hsp_query-from>
+      <Hsp_query-to>203</Hsp_query-to>
+      <Hsp_hit-from>2257791</Hsp_hit-from>
+      <Hsp_hit-to>2257756</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTCGACGAGCGCGTAGCCGTTCTCGCGGCGGAAGA</Hsp_qseq>
+      <Hsp_hseq>CGTCGCCGAGCTCGAAGCCGTTCTCGAGGCGGAAGA</Hsp_hseq>
+      <Hsp_midline>||||| ||||| || ||||||||||| |||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|1280007885|gb|CP024894.1|</Hit_id>
+  <Hit_def>Amycolatopsis sp. AA4 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP024894</Hit_accession>
+  <Hit_len>8800179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>202</Hsp_query-from>
+      <Hsp_query-to>232</Hsp_query-to>
+      <Hsp_hit-from>4398666</Hsp_hit-from>
+      <Hsp_hit-to>4398696</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>GACGTGCTCGTCGCGGCCGATGGTGAGCTTG</Hsp_qseq>
+      <Hsp_hseq>GACGGGCTCGTCGCGGGCGATGGTGAGCTTG</Hsp_hseq>
+      <Hsp_midline>|||| ||||||||||| ||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|1272247654|gb|CP024159.1|</Hit_id>
+  <Hit_def>Pseudomonas mosselii strain PtA1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP024159</Hit_accession>
+  <Hit_len>5742165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>2218498</Hsp_hit-from>
+      <Hsp_hit-to>2218533</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCG</Hsp_qseq>
+      <Hsp_hseq>CGTTGGGCGTGAGGTTGAAGCCGACCAGCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||| ||||||||||||||||||| ||| || |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|1243303673|gb|CP023299.1|</Hit_id>
+  <Hit_def>Pseudomonas mosselii strain BS011 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP023299</Hit_accession>
+  <Hit_len>5751088</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>473319</Hsp_hit-from>
+      <Hsp_hit-to>473284</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCG</Hsp_qseq>
+      <Hsp_hseq>CGTTGGGCGTGAGGTTGAAGCCGACCAGCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||| ||||||||||||||||||| ||| || |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|1085953879|emb|LT629776.1|</Hit_id>
+  <Hit_def>Paraoerskovia marina strain DSM 22126 genome assembly, chromosome: I</Hit_def>
+  <Hit_accession>LT629776</Hit_accession>
+  <Hit_len>2986943</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>82</Hsp_query-from>
+      <Hsp_query-to>122</Hsp_query-to>
+      <Hsp_hit-from>2485924</Hsp_hit-from>
+      <Hsp_hit-to>2485884</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>GAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCGCGCCGG</Hsp_qseq>
+      <Hsp_hseq>GAAGTCCACGAGGCTGCCCGAGGCGTCGTGCGTCGCACCGG</Hsp_hseq>
+      <Hsp_midline>|||| | |||||  |||||||||||||||||| ||| ||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|998213302|gb|CP014343.1|</Hit_id>
+  <Hit_def>Pseudomonas putida strain 1A00316, complete genome</Hit_def>
+  <Hit_accession>CP014343</Hit_accession>
+  <Hit_len>5715815</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>2218574</Hsp_hit-from>
+      <Hsp_hit-to>2218609</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCG</Hsp_qseq>
+      <Hsp_hseq>CGTTGGGCGTGAGGTTGAAGCCGACCAGCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||| ||||||||||||||||||| ||| || |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|820682039|emb|LN847264.1|</Hit_id>
+  <Hit_def>Pseudomonas sp. CCOS 191 genome assembly Pseudomonas sp. strain CCOS 191, chromosome : I</Hit_def>
+  <Hit_accession>LN847264</Hit_accession>
+  <Hit_len>6012947</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>66</Hsp_query-from>
+      <Hsp_query-to>101</Hsp_query-to>
+      <Hsp_hit-from>2341439</Hsp_hit-from>
+      <Hsp_hit-to>2341474</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>CGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCG</Hsp_qseq>
+      <Hsp_hseq>CGTTGGGCGTGAGGTTGAAGCCGACCAGCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||| ||||||||||||||||||| ||| || |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|589264544|emb|HG916765.1|</Hit_id>
+  <Hit_def>Castellaniella defragrans 65Phen complete genome</Hit_def>
+  <Hit_accession>HG916765</Hit_accession>
+  <Hit_len>3952818</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>168</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>3557982</Hsp_hit-from>
+      <Hsp_hit-to>3558037</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>56</Hsp_align-len>
+      <Hsp_qseq>CGTCGACGAGCGCGTAGCCGTTCTCGCGGCGGAAGACGTGCTCGTCGCGGCCGATG</Hsp_qseq>
+      <Hsp_hseq>CGGCGACGTGCTCGTAAGCGTGCTCGCGGCGGATGCCGCGCCCGCCGCGCCCGATG</Hsp_hseq>
+      <Hsp_midline>|| ||||| || ||||  ||| ||||||||||| | || || || |||| ||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|505829861|ref|XM_004610173.1|</Hit_id>
+  <Hit_def>PREDICTED: Sorex araneus leucine rich repeat neuronal 2 (LRRN2), mRNA</Hit_def>
+  <Hit_accession>XM_004610173</Hit_accession>
+  <Hit_len>2169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>48.1739</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>0.235857</Hsp_evalue>
+      <Hsp_query-from>81</Hsp_query-from>
+      <Hsp_query-to>152</Hsp_query-to>
+      <Hsp_hit-from>1168</Hsp_hit-from>
+      <Hsp_hit-to>1100</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>TGAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCGCGCCGGTGACCCAGTCCCAGCGCATGCGGTAGTCGT</Hsp_qseq>
+      <Hsp_hseq>TGAAGCGGACCCGGGTGCCCGAGGCGTTG---GCCCAGCGGATGACACAGTCACAGCGGATGGGGTTGCCGT</Hsp_hseq>
+      <Hsp_midline>|||||| |||  | ||||||||||||| |   |||  || | |||| ||||| ||||| ||| ||| | |||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|1810670185|gb|CP048738.1|</Hit_id>
+  <Hit_def>Haloferax alexandrinus strain wsp1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP048738</Hit_accession>
+  <Hit_len>3706983</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>72</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>3221552</Hsp_hit-from>
+      <Hsp_hit-to>3221502</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>GCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTGCGCCGCGCCGGTGA</Hsp_qseq>
+      <Hsp_hseq>GCGCGAGGTCGAAGCCGGCCAGCGCGCC---GGCCTCGTGCGCCGCCTCGGTGA</Hsp_hseq>
+      <Hsp_midline>||| ||||| ||||||| | |||| |||   ||| |||||||||||  ||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|1796965588|gb|CP030262.1|</Hit_id>
+  <Hit_def>Ensifer adhaerens strain Corn53 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030262</Hit_accession>
+  <Hit_len>4049947</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>111</Hsp_query-to>
+      <Hsp_hit-from>4029208</Hsp_hit-from>
+      <Hsp_hit-to>4029240</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTG</Hsp_qseq>
+      <Hsp_hseq>GTCGAAGCCGACGAGCGCGCCGGAGGCGTCGTG</Hsp_hseq>
+      <Hsp_midline>|| |||||||||||||| ||| |||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|1796465786|gb|CP029241.1|</Hit_id>
+  <Hit_def>Streptomyces sp. NHF165 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP029241</Hit_accession>
+  <Hit_len>8457300</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>63</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>7171220</Hsp_hit-from>
+      <Hsp_hit-to>7171267</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>TCGCGTTGCGCGTGAGGTTGAAGCCGACGAGCGTGCCCGAGGCGTCGT</Hsp_qseq>
+      <Hsp_hseq>TCTCGTTGCGCGTGTTGTTCACGCCGACGACCTTGCCGGTGGCGTCGT</Hsp_hseq>
+      <Hsp_midline>|| |||||||||||  ||| | |||||||| | |||| | ||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|1391715154|emb|LS398110.1|</Hit_id>
+  <Hit_def>Bradyrhizobium sp. ORS 3257 isolate ORS3257 genome assembly, chromosome: BRAD3257</Hit_def>
+  <Hit_accession>LS398110</Hit_accession>
+  <Hit_len>8156021</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>80</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>2804420</Hsp_hit-from>
+      <Hsp_hit-to>2804468</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>TTGAAGCCGACGAGCGTGCCCGAGGCGTCGT---GCGCCGCGCCGGTGA</Hsp_qseq>
+      <Hsp_hseq>TTGACGCTGACGAGCATGCCCCAGGCGGCGGCCAGCGCCGCGCCGGTGA</Hsp_hseq>
+      <Hsp_midline>|||| || ||||||| ||||| ||||| ||    |||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|1373238751|gb|CP028289.1|</Hit_id>
+  <Hit_def>Acidovorax avenae subsp. avenae strain AA99_2 chromosome</Hit_def>
+  <Hit_accession>CP028289</Hit_accession>
+  <Hit_len>5515908</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>194</Hsp_query-from>
+      <Hsp_query-to>238</Hsp_query-to>
+      <Hsp_hit-from>520766</Hsp_hit-from>
+      <Hsp_hit-to>520812</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>CGGCGGAA--GACGTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTG</Hsp_qseq>
+      <Hsp_hseq>CGGCGGGACCGACGGGCTCGACGAAGCTGATGGTGAGCTTGCCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||| |  |||| ||||| ||  || |||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|1373229855|gb|CP028287.1|</Hit_id>
+  <Hit_def>Acidovorax avenae subsp. avenae strain AA78_5 chromosome</Hit_def>
+  <Hit_accession>CP028287</Hit_accession>
+  <Hit_len>5574669</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>194</Hsp_query-from>
+      <Hsp_query-to>238</Hsp_query-to>
+      <Hsp_hit-from>520829</Hsp_hit-from>
+      <Hsp_hit-to>520875</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>47</Hsp_align-len>
+      <Hsp_qseq>CGGCGGAA--GACGTGCTCGTCGCGGCCGATGGTGAGCTTGCCGGTG</Hsp_qseq>
+      <Hsp_hseq>CGGCGGGACCGACGGGCTCGACGAAGCTGATGGTGAGCTTGCCGGTG</Hsp_hseq>
+      <Hsp_midline>|||||| |  |||| ||||| ||  || |||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|1036657752|gb|CP015880.1|</Hit_id>
+  <Hit_def>Ensifer adhaerens strain Casida A chromosome, complete genome</Hit_def>
+  <Hit_accession>CP015880</Hit_accession>
+  <Hit_len>4071185</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>111</Hsp_query-to>
+      <Hsp_hit-from>3570083</Hsp_hit-from>
+      <Hsp_hit-to>3570051</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTG</Hsp_qseq>
+      <Hsp_hseq>GTCGAAGCCGACGAGCGCGCCGGAGGCGTCGTG</Hsp_hseq>
+      <Hsp_midline>|| |||||||||||||| ||| |||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|933524330|gb|CP012405.1|</Hit_id>
+  <Hit_def>Azospirillum thiophilum strain BV-S chromosome 5, complete sequence</Hit_def>
+  <Hit_accession>CP012405</Hit_accession>
+  <Hit_len>518276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>111</Hsp_query-to>
+      <Hsp_hit-from>289241</Hsp_hit-from>
+      <Hsp_hit-to>289209</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>GTTGAAGCCGACGAGCGTGCCCGAGGCGTCGTG</Hsp_qseq>
+      <Hsp_hseq>GTCGAAGCCGACGAGCGTGCCGGAGGCGTCATG</Hsp_hseq>
+      <Hsp_midline>|| |||||||||||||||||| |||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|822591927|gb|CP011492.1|</Hit_id>
+  <Hit_def>Streptomyces sp. CNQ-509 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP011492</Hit_accession>
+  <Hit_len>8039333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>100</Hsp_query-from>
+      <Hsp_query-to>132</Hsp_query-to>
+      <Hsp_hit-from>5011309</Hsp_hit-from>
+      <Hsp_hit-to>5011341</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>CGAGGCGTCGTGCGCCGCGCCGGTGACCCAGTC</Hsp_qseq>
+      <Hsp_hseq>CGCGGCGTCGTGCGGCGCGCCGGTGTCCCAGTC</Hsp_hseq>
+      <Hsp_midline>|| ||||||||||| |||||||||| |||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|754339082|gb|CP010827.1|</Hit_id>
+  <Hit_def>Corynebacterium singulare strain IBS B52218, complete genome</Hit_def>
+  <Hit_accession>CP010827</Hit_accession>
+  <Hit_len>2830519</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>220</Hsp_query-from>
+      <Hsp_query-to>247</Hsp_query-to>
+      <Hsp_hit-from>259141</Hsp_hit-from>
+      <Hsp_hit-to>259168</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>28</Hsp_align-len>
+      <Hsp_qseq>GATGGTGAGCTTGCCGGTGACGGGGAAG</Hsp_qseq>
+      <Hsp_hseq>GATGGTGAGCTTGACGGTGACGGGGAAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||| ||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|575461033|gb|CP007129.1|</Hit_id>
+  <Hit_def>Gemmatirosa kalamazoonesis strain KBS708 plasmid 1, complete sequence</Hit_def>
+  <Hit_accession>CP007129</Hit_accession>
+  <Hit_len>1106233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.2722</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>0.823221</Hsp_evalue>
+      <Hsp_query-from>91</Hsp_query-from>
+      <Hsp_query-to>128</Hsp_query-to>
+      <Hsp_hit-from>501711</Hsp_hit-from>
+      <Hsp_hit-to>501748</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>38</Hsp_align-len>
+      <Hsp_qseq>GAGCGTGCCCGAGGCGTCGTGCGCCGCGCCGGTGACCC</Hsp_qseq>
+      <Hsp_hseq>GAGCGTGCCCGAGACGCCGAGCACCGCGCCGGTGAGCC</Hsp_hseq>
+      <Hsp_midline>||||||||||||| || || || |||||||||||| ||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>58423778</Statistics_db-num>
+      <Statistics_db-len>285843179078</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
