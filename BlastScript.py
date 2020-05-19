@@ -50,7 +50,7 @@ def blast(gegevens):
 
     # Haalt de sequentie uit de gegevens lijst en blast deze tegen de NCBI
     # database. Hierna worden de resultaten toegevoegd aan een XML bestand.
-    for i in range(len(gegevens)):
+    for i in range(50,len(gegevens)):
         # Blast forward sequentie (positie [i][1] in gegevens lijst)
         fwseq = gegevens[i][1]
         print("Start Blast...")

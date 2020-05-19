@@ -26,5 +26,8 @@ def fastafile():
     else:
         return render_template('hello_world.html', title='Home',proteins='',fastafile='fastafile')
 
+
+
+
 if __name__ == '__main__':
     app.run()
