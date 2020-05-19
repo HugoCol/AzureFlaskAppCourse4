@@ -1,15 +1,33 @@
-def getdata():
+from xml.etree import ElementTree
 
-    return datadic
+
+def getdata():
+    filename = 'my_blast.xml'
+    dom = ElementTree.parse(filename)
+    hits = dom.findall('BlastOutput_iterations/Iteration/Iteration_hits/Hit')
+    print(hits)
+    for c in hits:
+        Hit_id = c.find('Hit_id').text
+        familie = c.find('Hit_def').text
+        acessiecode = c.find('Hit_accession').text
+        hit = c.find('Hit_num').text
+        score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
+        tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
+        evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
+        percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
+        queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
+        print(hit, Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq)
+
+    return #datadic
 
 
 def pushdata(datadic):
     print("Connecting to database.....")
-    conn = mysql.connector.connect(
-                    host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
-                         "azure.com",
-                    user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
-                    db="iaoqi", password="638942")
+    # conn = mysql.connector.connect(
+    #                 host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
+    #                      "azure.com",
+    #                 user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
+    #                 db="iaoqi", password="638942")
     conn = mysql.connector.connect(
         host="sql2.freemysqlhosting.net",
         user="sql234812",
@@ -64,13 +82,10 @@ def pushdata(datadic):
     return
 
 def main():
-    datadic = getdata()
-    pushdata(datadic)
+    #datadic =
+    getdata()
+    #pushdata(datadic)
 main()
+# Lijst aanmaken met alle values die worden opgehaald vanuit het xml bestand
+# Data uit deze lijst overbrengen naar de database
 # Lijst met data pet 5 de if for loop doen
-# in de for loop op volgorde van tabbellen gaan vullen
-# Bij de tabbellen die dubbele data kunnen bevatten eerst een if statement
-# zetten die kijkt of deze data al in de tabel staat (bijvoorbeeld bij tabel soorten)
-# Bij het vullen van de eiwit tabel moet er gekeken worden voor elke i welke
-# FK er nodig zijn in de tabel voorstel: die ophalen met een select statement
-# uit alle andere tabellen waar dan vb: de soortnaam in i gelijk is aan de soortnaam in de tabel
