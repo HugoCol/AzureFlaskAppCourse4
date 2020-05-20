@@ -47,6 +47,8 @@ def blast(gegevens):
 
     # Leeg txt file dat positie van gegevenslijst opslaat in geval van crash.
     scriptpos = open("ScriptPositie.txt", "w+")
+    out_handle = open('my_blast.xml','a')
+    second_handle = open('BlastResultaten.xml',"a")
 
     # Haalt de sequentie uit de gegevens lijst en blast deze tegen de NCBI
     # database. Hierna worden de resultaten toegevoegd aan een XML bestand.
@@ -58,8 +60,9 @@ def blast(gegevens):
         print("Blasten voltooid.")
 
         # Voegt BLAST resultaten toe aan XML bestand
-        with open("my_blast.xml", "a") as out_handle:
-            out_handle.write(result_handle.read())
+        # with open("my_blast.xml", "a") as out_handle:
+
+        out_handle.write(result_handle.read())
         print("Gegevens in een XML bestand gezet")
         print("T/m", gegevens[i][0], "is gedaan.")
 
@@ -79,8 +82,8 @@ def blast(gegevens):
         print("Blasten voltooid.")
 
         # Voegt BLAST resultaten toe aan XML bestand
-        with open("BlastResultaten.xml", "a") as out_handle:
-            out_handle.write(result_handle.read())
+        # with open("BlastResultaten.xml", "a") as out_handle:
+        second_handle.write(result_handle.read())
         print("Gegevens in een XML bestand gezet.")
         print("T/m", gegevens[i][3], "is gedaan.")
 
@@ -90,7 +93,9 @@ def blast(gegevens):
 
         # Pauze van 5 seconden voor volgende blast.
         time.sleep(5)
-
+    scriptpos.close()
+    out_handle.close()
+    second_handle.close()
 
 def main():
     # Naam van het txt bestand
