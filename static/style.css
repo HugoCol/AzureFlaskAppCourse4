@@ -4,3 +4,14 @@ head {
 body {
     background-color: aquamarine;
 }
+
+footer {
+    width: auto;
+    height: 15%;
+    background-color: red;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    text-align: center;
+    /*color: white;*/
+}

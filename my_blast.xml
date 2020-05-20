@@ -1,0 +1,2882 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastx</BlastOutput_program>
+  <BlastOutput_version>BLASTX 2.10.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_18951</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>301</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_18951</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>301</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|WP_141056283.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Tepidiphilus succinatimandens]</Hit_def>
+  <Hit_accession>WP_141056283</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.897</Hsp_bit-score>
+      <Hsp_score>494</Hsp_score>
+      <Hsp_evalue>5.57928e-61</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSQAEAVRKTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIEGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR+  EA R+TVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAII GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|AGF87279.1|</Hit_id>
+  <Hit_def>transposon IS605 OrfA [uncultured organism]</Hit_def>
+  <Hit_accession>AGF87279</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.512</Hsp_bit-score>
+      <Hsp_score>493</Hsp_score>
+      <Hsp_evalue>6.22419e-61</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSQAEAVRKTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIEGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR+  EA R+TVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAII GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|WP_071869478.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>WP_071869478</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.2</Hsp_bit-score>
+      <Hsp_score>487</Hsp_score>
+      <Hsp_evalue>8.33098e-61</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|OMJ96393.1|</Hit_id>
+  <Hit_def>resolvase, partial [Xylella fastidiosa subsp. multiplex]</Hit_def>
+  <Hit_accession>OMJ96393</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.2</Hsp_bit-score>
+      <Hsp_score>487</Hsp_score>
+      <Hsp_evalue>1.13754e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|WP_038283980.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>WP_038283980</Hit_accession>
+  <Hit_len>177</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.586</Hsp_bit-score>
+      <Hsp_score>488</Hsp_score>
+      <Hsp_evalue>1.46513e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|WP_038230952.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Xylella fastidiosa] &gt;gb|QJP47998.1| IS607 family transposase [Xylella fastidiosa subsp. multiplex] &gt;gb|QJP48680.1| IS607 family transposase [Xylella fastidiosa subsp. multiplex] &gt;gb|QJP50101.1| IS607 family transposase [Xylella fastidiosa subsp. multiplex] &gt;gb|QJP50876.1| IS607 family transposase [Xylella fastidiosa subsp. multiplex] &gt;gb|QJP55568.1| IS607 family transposase [Xylella fastidiosa subsp. multiplex]</Hit_def>
+  <Hit_accession>WP_038230952</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.356</Hsp_bit-score>
+      <Hsp_score>490</Hsp_score>
+      <Hsp_evalue>1.65225e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|WP_128382983.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Xylella fastidiosa] &gt;gb|RWS34990.1| IS607 family transposase, partial [Xylella fastidiosa subsp. multiplex]</Hit_def>
+  <Hit_accession>WP_128382983</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.2</Hsp_bit-score>
+      <Hsp_score>487</Hsp_score>
+      <Hsp_evalue>1.71326e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|WP_140160998.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV89736.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV93455.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV93535.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV94107.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV96117.1| IS607 family transposase [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>WP_140160998</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>193.356</Hsp_bit-score>
+      <Hsp_score>490</Hsp_score>
+      <Hsp_evalue>1.92569e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|ACA11656.1|</Hit_id>
+  <Hit_def>conserved hypothetical protein [Xylella fastidiosa M12] &gt;gb|ACA12475.1| conserved hypothetical protein [Xylella fastidiosa M12] &gt;gb|EAO12669.1| regulatory protein, MerR:Resolvase, N-terminal [Xylella fastidiosa Dixon] &gt;gb|EAO14334.1| regulatory protein, MerR:Resolvase, N-terminal [Xylella fastidiosa Dixon]</Hit_def>
+  <Hit_accession>ACA11656</Hit_accession>
+  <Hit_len>215</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.971</Hsp_bit-score>
+      <Hsp_score>489</Hsp_score>
+      <Hsp_evalue>2.88805e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|TQV61791.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Sulfurovum sp.]</Hit_def>
+  <Hit_accession>TQV61791</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.971</Hsp_bit-score>
+      <Hsp_score>489</Hsp_score>
+      <Hsp_evalue>3.11609e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEADAQRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAVIDGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+A+I GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KFA40788.1|</Hit_id>
+  <Hit_def>site-specific integrase/resolvase [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>KFA40788</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>3.28972e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>122</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVITDLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVI DLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|WP_055423345.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Tepidiphilus thermophilus] &gt;emb|CUB07013.1| Predicted site-specific integrase-resolvase [Tepidiphilus thermophilus]</Hit_def>
+  <Hit_accession>WP_055423345</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.586</Hsp_bit-score>
+      <Hsp_score>488</Hsp_score>
+      <Hsp_evalue>3.86696e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSQAEAVRKTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIEGQVGRLVIAHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR+  EA R+TVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAII GQVGRLVI HKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|TNV92946.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>TNV92946</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>5.53577e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVITDLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVI DLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|TNV94113.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>TNV94113</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>6.42137e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVITDLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVI DLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|WP_090207096.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Ectothiorhodospira magna] &gt;emb|SEQ11208.1| Predicted site-specific integrase-resolvase [Ectothiorhodospira magna]</Hit_def>
+  <Hit_accession>WP_090207096</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>6.55595e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEADAQRRTVAYARVCSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLDAIIDGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRTVAYARV SHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLL+AII GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|WP_128283853.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Xylella fastidiosa] &gt;gb|RWS34485.1| IS607 family transposase, partial [Xylella fastidiosa subsp. multiplex]</Hit_def>
+  <Hit_accession>WP_128283853</Hit_accession>
+  <Hit_len>150</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.889</Hsp_bit-score>
+      <Hsp_score>481</Hsp_score>
+      <Hsp_evalue>6.84543e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEA</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVIADLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|TNV93035.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV93539.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV93550.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV94068.1| IS607 family transposase [Xylella fastidiosa] &gt;gb|TNV97787.1| IS607 family transposase [Xylella fastidiosa]</Hit_def>
+  <Hit_accession>TNV93035</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.815</Hsp_bit-score>
+      <Hsp_score>486</Hsp_score>
+      <Hsp_evalue>7.31372e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVITDLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVI DLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|WP_162124697.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Pseudoxanthomonas taiwanensis] &gt;gb|KAF1688639.1| IS607 family transposase [Pseudoxanthomonas taiwanensis]</Hit_def>
+  <Hit_accession>WP_162124697</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.045</Hsp_bit-score>
+      <Hsp_score>484</Hsp_score>
+      <Hsp_evalue>1.7354e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEADAERRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII GQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|ACA11925.1|</Hit_id>
+  <Hit_def>site-specific integrase/resolvase [Xylella fastidiosa M12] &gt;gb|EAO13068.1| Resolvase, N-terminal [Xylella fastidiosa Dixon]</Hit_def>
+  <Hit_accession>ACA11925</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.045</Hsp_bit-score>
+      <Hsp_score>484</Hsp_score>
+      <Hsp_evalue>1.79059e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAQAEANRRTVAYARVSSHDQKDDLERQKQVLELYCAQQGWTFEVITDLGSGMNYHKKGLKRLLDAIIDGQIGRLVITHKDRLLRFGAELVFALCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EANRRTVAYARVSSHDQKDDLERQKQVLELYCA+QGWTFEVI DLGSGMNYHKKGLK+LL+AII GQ+GRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|NNM65697.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Burkholderiales bacterium]</Hit_def>
+  <Hit_accession>NNM65697</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.66</Hsp_bit-score>
+      <Hsp_score>483</Hsp_score>
+      <Hsp_evalue>1.91491e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEDEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAVIDGEIGRLVITHKDRLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FRA+ EANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+A+I G++GRLVITHKDRLLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|WP_144735775.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Extensimonas perlucida]</Hit_def>
+  <Hit_accession>WP_144735775</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.66</Hsp_bit-score>
+      <Hsp_score>483</Hsp_score>
+      <Hsp_evalue>2.20749e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEDEANRRTVAYARVSSHDQKDDLERQKQVLELYCTRQGWTFEVISDLGSGMNYHKKGLKRLLDAVIDGEIGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+ EANRRTVAYARVSSHDQKDDLERQKQVLELYC RQGWTFEVI+DLGSGMNYHKKGLK+LL+A+I G++GRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|WP_160442832.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Helicobacter pylori] &gt;gb|MWR20540.1| IS607 family transposase [Helicobacter pylori] &gt;gb|MWR36328.1| IS607 family transposase [Helicobacter pylori]</Hit_def>
+  <Hit_accession>WP_160442832</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.66</Hsp_bit-score>
+      <Hsp_score>483</Hsp_score>
+      <Hsp_evalue>2.2529e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRSQAEAVRKTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIAELGSGMNYHKKGLKKLLEAIIEGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FR+  EA R+TVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIA+LGSGMNYHKKGLKKLLEAII GQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|WP_142526129.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Methylacidimicrobium cyclopophantes]</Hit_def>
+  <Hit_accession>WP_142526129</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.274</Hsp_bit-score>
+      <Hsp_score>482</Hsp_score>
+      <Hsp_evalue>2.95208e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>153</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAGDEAKRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQVGRLVLTHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EA RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII GQVGRLV+THKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>emb|SHF32663.1|</Hit_id>
+  <Hit_def>Predicted site-specific integrase-resolvase [Thermomonas hydrothermalis]</Hit_def>
+  <Hit_accession>SHF32663</Hit_accession>
+  <Hit_len>165</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>188.734</Hsp_bit-score>
+      <Hsp_score>478</Hsp_score>
+      <Hsp_evalue>3.24838e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>108</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FPLESRLSRKTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIEGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>F  +   +R+TVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAII GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>emb|VVM08545.1|</Hit_id>
+  <Hit_def>hypothetical protein MAMC_02262 [Methylacidimicrobium cyclopophantes]</Hit_def>
+  <Hit_accession>VVM08545</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.274</Hsp_bit-score>
+      <Hsp_score>482</Hsp_score>
+      <Hsp_evalue>3.52597e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>158</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAGDEAKRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGQVGRLVLTHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  EA RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII GQVGRLV+THKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>emb|SEJ30364.1|</Hit_id>
+  <Hit_def>DNA binding domain-containing protein, excisionase family [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>SEJ30364</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.504</Hsp_bit-score>
+      <Hsp_score>480</Hsp_score>
+      <Hsp_evalue>7.22498e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>ref|WP_090902133.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>WP_090902133</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.119</Hsp_bit-score>
+      <Hsp_score>479</Hsp_score>
+      <Hsp_evalue>9.2494e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|WP_131342120.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter chroococcum] &gt;gb|TBW08508.1| IS607 family transposase [Azotobacter chroococcum] &gt;gb|TBW10275.1| IS607 family transposase [Azotobacter chroococcum subsp. isscasi]</Hit_def>
+  <Hit_accession>WP_131342120</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.119</Hsp_bit-score>
+      <Hsp_score>479</Hsp_score>
+      <Hsp_evalue>9.87667e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|WP_039801089.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter chroococcum] &gt;gb|AJE19768.1| Transposon IS605 family OrfA, integrase-resolvase [Azotobacter chroococcum NCIMB 8003]</Hit_def>
+  <Hit_accession>WP_039801089</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.963</Hsp_bit-score>
+      <Hsp_score>476</Hsp_score>
+      <Hsp_evalue>2.55744e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESLIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE++I GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|WP_070078611.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Acidihalobacter prosperus] &gt;gb|AOU98247.1| IS607 family transposase [Acidihalobacter prosperus]</Hit_def>
+  <Hit_accession>WP_070078611</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.578</Hsp_bit-score>
+      <Hsp_score>475</Hsp_score>
+      <Hsp_evalue>3.66279e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEAT</Hsp_qseq>
+      <Hsp_hseq>FRAD-DAPRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLNAILAGNVGRLVISHKDRLLRFGAELVFAICEAT</Hsp_hseq>
+      <Hsp_midline>FRAD +A RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL AI+AG VGRLVI+HKDRLLRFGAELVFAICEAT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|WP_090944178.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter beijerinckii] &gt;emb|SFL44886.1| DNA binding domain-containing protein, excisionase family [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>WP_090944178</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.578</Hsp_bit-score>
+      <Hsp_score>475</Hsp_score>
+      <Hsp_evalue>4.18329e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIAELGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIA+LGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>emb|SEI40917.1|</Hit_id>
+  <Hit_def>DNA binding domain-containing protein, excisionase family [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>SEI40917</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.193</Hsp_bit-score>
+      <Hsp_score>474</Hsp_score>
+      <Hsp_evalue>5.76793e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>155</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLRRLLESIIEGQVGRLVITHKDRLLRFGAELVFALCEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGL++LLE+II GQVGRLVITHKDRLLRFGAELVFA+CEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|WP_156881512.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Methylocaldum sp. BRCS4]</Hit_def>
+  <Hit_accession>WP_156881512</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.422</Hsp_bit-score>
+      <Hsp_score>472</Hsp_score>
+      <Hsp_evalue>6.32487e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>39</Hsp_hit-from>
+      <Hsp_hit-to>138</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEADAQRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGEIGRLVITHKDRLVRFDAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR++ +A RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII G++GRLVITHKDRL+RF AELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|WP_090896476.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>WP_090896476</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.808</Hsp_bit-score>
+      <Hsp_score>473</Hsp_score>
+      <Hsp_evalue>6.47856e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLRRLLESIIEGQVGRLVITHKDRLLRFGAELVFALCEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGL++LLE+II GQVGRLVITHKDRLLRFGAELVFA+CEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gb|MVF24177.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Methylocaldum sp. BRCS4]</Hit_def>
+  <Hit_accession>MVF24177</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.808</Hsp_bit-score>
+      <Hsp_score>473</Hsp_score>
+      <Hsp_evalue>6.91787e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEADAQRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIDGEIGRLVITHKDRLVRFDAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR++ +A RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII G++GRLVITHKDRL+RF AELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>emb|SFB45714.1|</Hit_id>
+  <Hit_def>Predicted site-specific integrase-resolvase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>SFB45714</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.882</Hsp_bit-score>
+      <Hsp_score>468</Hsp_score>
+      <Hsp_evalue>4.18534e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEDASQRRTVAYAHVSSHDQKDDLERQKQVLEFYCARQGWTFEVIADLGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+  + RRTVAYA VSSHDQKDDLERQKQVLE YCARQGWTFEVIADLGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|WP_091013716.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>WP_091013716</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>5.3452e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEDASQRRTVAYAHVSSHDQKDDLERQKQVLEFYCARQGWTFEVIADLGSGMNYQKKGLKRLLESIIEGQVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+  + RRTVAYA VSSHDQKDDLERQKQVLE YCARQGWTFEVIADLGSGMNY KKGLK+LLE+II GQVGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>ref|WP_131342907.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter chroococcum] &gt;gb|TBW09715.1| IS607 family transposase [Azotobacter chroococcum subsp. isscasi]</Hit_def>
+  <Hit_accession>WP_131342907</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>5.96275e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYACVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESLIEGQAGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYA VSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE++I GQ GRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>ref|WP_119336201.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Hydrogenophilus thermoluteolus] &gt;dbj|BBD78361.1| resolvase [Hydrogenophilus thermoluteolus]</Hit_def>
+  <Hit_accession>WP_119336201</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>6.28649e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAG-DAPRRTIAYARVSSHDQKDDLERQKQVLERYCARQGWTFEVIADLGSGMNYHKKGLKRLLDAIIEGQVGRLVITHKDRLLRFGAELVFAVCEAKN</Hsp_hseq>
+      <Hsp_midline>FRA  +A RRT+AYARVSSHDQKDDLERQKQVLE YCARQGWTFEVIADLGSGMNYHKKGLK+LL+AII GQVGRLVITHKDRLLRFGAELVFA+CEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>ref|WP_031408445.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Thiomonas sp. FB-Cd]</Hit_def>
+  <Hit_accession>WP_031408445</Hit_accession>
+  <Hit_len>210</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>6.99995e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAQVDAARKTVAYARVSSHDQKDDLERQKQVLEIYCARQGWTFEVIADLGTGMNYHKKGLKRLLDAIIGGEVGRLVITHKDGLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FRA V+A R+TVAYARVSSHDQKDDLERQKQVLE+YCARQGWTFEVIADLG+GMNYHKKGLK+LL+AII G+VGRLVITHKD LLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|WP_165894023.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter chroococcum] &gt;gb|NHN79624.1| IS607 family transposase [Azotobacter chroococcum]</Hit_def>
+  <Hit_accession>WP_165894023</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.111</Hsp_bit-score>
+      <Hsp_score>466</Hsp_score>
+      <Hsp_evalue>7.58417e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRSEAEACRRTVAYACVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLESLIEGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FR++ EA RRTVAYA VSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LLE++I GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>emb|SFL12310.1|</Hit_id>
+  <Hit_def>Predicted site-specific integrase-resolvase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>SFL12310</Hit_accession>
+  <Hit_len>204</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.341</Hsp_bit-score>
+      <Hsp_score>464</Hsp_score>
+      <Hsp_evalue>1.29091e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>48</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEDASQRRTVAYAHVSSHDQKDDLERQKQVLEFYCARQGWTFEVIADLGSGMNYHKKGLRRLLEAIVDGQIARLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+  + RRTVAYA VSSHDQKDDLERQKQVLE YCARQGWTFEVIADLGSGMNYHKKGL++LLEAI+ GQ+ RLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|WP_090941698.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Azotobacter beijerinckii]</Hit_def>
+  <Hit_accession>WP_090941698</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.726</Hsp_bit-score>
+      <Hsp_score>465</Hsp_score>
+      <Hsp_evalue>1.31013e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEDASQRRTVAYAHVSSHDQKDDLERQKQVLEFYCARQGWTFEVIADLGSGMNYHKKGLRRLLEAIVDGQIARLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+  + RRTVAYA VSSHDQKDDLERQKQVLE YCARQGWTFEVIADLGSGMNYHKKGL++LLEAI+ GQ+ RLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>ref|WP_124224123.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Tibeticola sediminis] &gt;gb|RPE63023.1| putative site-specific integrase-resolvase [Tibeticola sediminis]</Hit_def>
+  <Hit_accession>WP_124224123</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.341</Hsp_bit-score>
+      <Hsp_score>464</Hsp_score>
+      <Hsp_evalue>1.68157e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>152</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>93</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAP-ETPRRTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYQKKGLKRLLDAIIDGQVGRLVITHKDRLLRFGAELVFAICEAKS</Hsp_hseq>
+      <Hsp_midline>FRA  E  RRT+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNY KKGLK+LL+AII GQVGRLVITHKDRLLRFGAELVFAICEA +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>ref|WP_063465969.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Ectothiorhodospira sp. BSL-9] &gt;gb|ANB01466.1| resolvase [Ectothiorhodospira sp. BSL-9]</Hit_def>
+  <Hit_accession>WP_063465969</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.956</Hsp_bit-score>
+      <Hsp_score>463</Hsp_score>
+      <Hsp_evalue>1.98852e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEEDAGRRTVAYARVSSHDQKEDLERQKQVLELYCAQQGWTFELISDLGSGMNYHKKGLKRLLDAIIDGEVGRLVITHKDRLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRTVAYARVSSHDQK+DLERQKQVLELYCA+QGWTFE+I+DLGSGMNYHKKGLK+LL+AII G+VGRLVITHKDRLLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>ref|WP_048880777.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Acidocella aminolytica] &gt;dbj|GAN82317.1| resolvase [Acidocella aminolytica 101 = DSM 11237]</Hit_def>
+  <Hit_accession>WP_048880777</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.57</Hsp_bit-score>
+      <Hsp_score>462</Hsp_score>
+      <Hsp_evalue>3.13564e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>FRAEQDARRKTIAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVVADLGSGMNYNKKGLKRLLSAIIDGSVGRLVISHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>FRA+ +A R+T+AYARVSSHDQKDDLERQKQVLELYCARQGWTFEV+ADLGSGMNY+KKGLK+LL AII G VGRLVI+HKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|WP_008933076.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Ectothiorhodospira sp. PHS-1] &gt;gb|EHQ53509.1| hypothetical protein ECTPHS_12607 [Ectothiorhodospira sp. PHS-1]</Hit_def>
+  <Hit_accession>WP_008933076</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.185</Hsp_bit-score>
+      <Hsp_score>461</Hsp_score>
+      <Hsp_evalue>4.22809e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEEDAGRRTVAYARVSSHDQKEDLERQKQVLELYCAQQGWTFELISDLGSGMNYHKKGLKRLLDAIIDGEVGRLVITHKDRLLRFGAELVFALCEA</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRTVAYARVSSHDQK+DLERQKQVLELYCA+QGWTFE+I+DLGSGMNYHKKGLK+LL+AII G+VGRLVITHKDRLLRFGAELVFA+CEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>ref|WP_063464700.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Ectothiorhodospira sp. BSL-9] &gt;gb|ANB02355.1| resolvase [Ectothiorhodospira sp. BSL-9]</Hit_def>
+  <Hit_accession>WP_063464700</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.185</Hsp_bit-score>
+      <Hsp_score>461</Hsp_score>
+      <Hsp_evalue>5.49658e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEEDAGRRTVAYARVSSHDQKEDLERQKQVLELYCAQQGWTFELISDLGSGMNYHKKGLKRLLDAIIDGEVGRLVITHKDRLLRFGAELVFALCEA</Hsp_hseq>
+      <Hsp_midline>FRA+ +A RRTVAYARVSSHDQK+DLERQKQVLELYCA+QGWTFE+I+DLGSGMNYHKKGLK+LL+AII G+VGRLVITHKDRLLRFGAELVFA+CEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|WP_040406163.1|</Hit_id>
+  <Hit_def>IS607 family transposase [Ectothiorhodospira sp. PHS-1]</Hit_def>
+  <Hit_accession>WP_040406163</Hit_accession>
+  <Hit_len>207</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>181.8</Hsp_bit-score>
+      <Hsp_score>460</Hsp_score>
+      <Hsp_evalue>7.88439e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>295</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>94</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>FRADVEANRRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEA</Hsp_qseq>
+      <Hsp_hseq>FRAEEDTGRRTVAYARVSSHDQKEDLERQKQVLELYCAQQGWTFELISDLGSGMNYHKKGLKRLLDAIIDGEVGRLVITHKDRLLRFGAELVFAICEA</Hsp_hseq>
+      <Hsp_midline>FRA+ +  RRTVAYARVSSHDQK+DLERQKQVLELYCA+QGWTFE+I+DLGSGMNYHKKGLK+LL+AII G+VGRLVITHKDRLLRFGAELVFAICEA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|WP_114136218.1|</Hit_id>
+  <Hit_def>IS607 family transposase, partial [Cupriavidus necator] &gt;gb|RCJ03517.1| IS607 family transposase, partial [Cupriavidus necator]</Hit_def>
+  <Hit_accession>WP_114136218</Hit_accession>
+  <Hit_len>169</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>180.259</Hsp_bit-score>
+      <Hsp_score>456</Hsp_score>
+      <Hsp_evalue>8.07095e-56</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>38</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKKLLEAIIAGQVGRLVITHKDRLLRFGAELVFAICEATN</Hsp_qseq>
+      <Hsp_hseq>RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLKRLLGAIIEGAVGRLVITHKDRLLRFGAELVFAICEAKN</Hsp_hseq>
+      <Hsp_midline>RRTVAYARVSSHDQKDDLERQKQVLELYCARQGWTFEVIADLGSGMNYHKKGLK+LL AII G VGRLVITHKDRLLRFGAELVFAICEA N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>285904213</Statistics_db-num>
+      <Statistics_db-len>102865278292</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastx</BlastOutput_program>
+  <BlastOutput_version>BLASTX 2.10.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_42061</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>301</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_42061</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>301</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|WP_054283014.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Chitinophagaceae bacterium PMP191F]</Hit_def>
+  <Hit_accession>WP_054283014</Hit_accession>
+  <Hit_len>335</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>129.413</Hsp_bit-score>
+      <Hsp_score>324</Hsp_score>
+      <Hsp_evalue>5.95333e-34</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRIPAAWIVKKPEQYSLRECMVMGTAGFTAASALFKMEMLGQTP-DAGPVVVTGASGGVGSMAVAILAKAGYEVIAVSGKSNATEYLQFLGAARIEPR</Hsp_hseq>
+      <Hsp_midline>IR+PA+W+V  PE YSL E MV+GTAGFTA  AL KMEMLG  P +  P+VVTGA+GGVGSMAVAIL+KAGY V AV+GK++   YL+FLGA  + PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|WP_081159075.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Niastella populi] &gt;gb|OQP68528.1| quinone oxidoreductase [Niastella populi]</Hit_def>
+  <Hit_accession>WP_081159075</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>126.331</Hsp_bit-score>
+      <Hsp_score>316</Hsp_score>
+      <Hsp_evalue>8.21719e-33</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVKKPENYSLKDCMIIGTAGFTAACAVYKMELMKLQP-EAGPIVVTGATGGVGSLAISILSKAGYEVIAVSGKSNAQDYVTHLGAVRLEPRD</Hsp_hseq>
+      <Hsp_midline>IRVPASWVV  PENYSL + M+IGTAGFTA  A+ KME++ ++P E  P+VVTGATGGVGS+A++ILSKAGY V AV+GK++   Y+  LGA  + PRD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>ref|WP_127129842.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Pseudoflavitalea rhizosphaerae]</Hit_def>
+  <Hit_accession>WP_127129842</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.405</Hsp_bit-score>
+      <Hsp_score>311</Hsp_score>
+      <Hsp_evalue>4.70956e-32</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAGWVVRKPDGYTLKECMVLGTAGFTAASALFKMELLGQHP-QQGPIVVTGSTGGVGSMAVAILSKAGYEVIAITGKANAEAYLTSLGATHIQSRE</Hsp_hseq>
+      <Hsp_midline>IRVPA WVV  P+ Y+L E MV+GTAGFTA  AL KME+LG  P ++ P+VVTG+TGGVGSMAVAILSKAGY V A+TGK +  AYL  LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>ref|WP_119050401.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Paraflavitalea soli] &gt;gb|AXY74514.1| acryloyl-CoA reductase [Paraflavitalea soli]</Hit_def>
+  <Hit_accession>WP_119050401</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>124.02</Hsp_bit-score>
+      <Hsp_score>310</Hsp_score>
+      <Hsp_evalue>7.13153e-32</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVRKPDGYTLKECMILGTAGVTAALGLHKMELLGINPSQG-PIVVTGSTGGVGSIAVALLAKSGYEVIAVTGKSHADEYLQFLGAQKIENRD</Hsp_hseq>
+      <Hsp_midline>IRVPASWVV  P+ Y+L E M++GTAG TA L L KME+LG+ P +  P+VVTG+TGGVGS+AVA+L+K+GY V AVTGK+  + YL+FLGA+ +  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>ref|WP_169425387.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Pseudoflavitalea sp. G-6-1-2] &gt;gb|NML21548.1| YhdH/YhfP family quinone oxidoreductase [Pseudoflavitalea sp. G-6-1-2]</Hit_def>
+  <Hit_accession>WP_169425387</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>123.635</Hsp_bit-score>
+      <Hsp_score>309</Hsp_score>
+      <Hsp_evalue>9.20565e-32</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAAWVVRKPEGYTLRECMILGTAGFTAASALFKMELMGQNPQQG-PIVVTGSTGGVGSMAVAILNKAGYEVIAITGKANAAEYLTHLGANSIESRE</Hsp_hseq>
+      <Hsp_midline>IRVPA+WVV  PE Y+L E M++GTAGFTA  AL KME++G  P +  P+VVTG+TGGVGSMAVAIL+KAGY V A+TGK +   YL  LGA S+  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>ref|WP_130539971.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Pseudobacter ginsenosidimutans] &gt;gb|QEC44166.1| acryloyl-CoA reductase [Pseudobacter ginsenosidimutans] &gt;gb|RZS75617.1| putative YhdH/YhfP family quinone oxidoreductase [Pseudobacter ginsenosidimutans]</Hit_def>
+  <Hit_accession>WP_130539971</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.479</Hsp_bit-score>
+      <Hsp_score>306</Hsp_score>
+      <Hsp_evalue>2.24889e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAAWVVRKPDGYTLKECMILGTAGFTAASALFKMELLGQHP-QQGPIVVTGSTGGVGSMAVAILGKAGYEVIAITGKANAEAYLTSLGATHIQSRE</Hsp_hseq>
+      <Hsp_midline>IRVPA+WVV  P+ Y+L E M++GTAGFTA  AL KME+LG  P ++ P+VVTG+TGGVGSMAVAIL KAGY V A+TGK +  AYL  LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>ref|WP_160834973.1|</Hit_id>
+  <Hit_def>MULTISPECIES: acryloyl-CoA reductase [Halobacillus] &gt;gb|MYL18512.1| acryloyl-CoA reductase [Halobacillus litoralis] &gt;gb|MYL30480.1| acryloyl-CoA reductase [Halobacillus halophilus]</Hit_def>
+  <Hit_accession>WP_160834973</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.479</Hsp_bit-score>
+      <Hsp_score>306</Hsp_score>
+      <Hsp_evalue>2.56097e-31</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPGDWIIPLPENLSLSEAMVFGTAGFTAALSVHKLEQAGVKP-EDGSILVSGATGGVGSMAVAMLKKRGYHVTASTGKESEHDYLKHLGAQDIIPRE</Hsp_hseq>
+      <Hsp_midline>RVP  W++PLPEN SLSEAMV GTAGFTA L++ K+E  G+KP E+  ++V+GATGGVGSMAVA+L K GY+VTA TGK   + YL+ LGA+ + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|RYY27780.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Chitinophagaceae bacterium]</Hit_def>
+  <Hit_accession>RYY27780</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>5.35861e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRVPAAWIVPRPRNLSLRETMIIGTAGFTAATALFKMQALLQTP-DMGPIVVTGATGGVGSLAVAILAKAGYEVIAVTGKDNAEEYLKHLGASRVEPR</Hsp_hseq>
+      <Hsp_midline>IRVPA+W+VP P N SL E M+IGTAGFTA  AL KM+ L   P +  P+VVTGATGGVGS+AVAIL+KAGY V AVTGK +   YL+ LGA  V PR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|WP_014217888.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Niastella koreensis] &gt;gb|AEV97974.1| quinone oxidoreductase, YhdH/YhfP family [Niastella koreensis GR20-10] &gt;gb|OQP40226.1| quinone oxidoreductase [Niastella koreensis]</Hit_def>
+  <Hit_accession>WP_014217888</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>6.57815e-31</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVKKPENLSLKECMTIGTAGFTAACALYKMELMKMDPSRG-PIVVTGATGGVGSMAVSILSKVGYEVIAVSGKSNALEYLQHLGAARVEDR</Hsp_hseq>
+      <Hsp_midline>IRVPASWVV  PEN SL E M IGTAGFTA  AL KME++ M P    P+VVTGATGGVGSMAV+ILSK GY V AV+GK++   YL+ LGA  V  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|WP_081155934.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Niastella vici] &gt;gb|OQP56970.1| quinone oxidoreductase [Niastella vici]</Hit_def>
+  <Hit_accession>WP_081155934</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.783</Hsp_bit-score>
+      <Hsp_score>299</Hsp_score>
+      <Hsp_evalue>2.53384e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVKKPGNYSLKECMIIGTAGFTAANAVYKMELMKMQP-DAGPIVVTGATGGVGSMAISILSKAGYEVIAVSGKSNALEYVTHLGAARLENRD</Hsp_hseq>
+      <Hsp_midline>IRVPASWVV  P NYSL E M+IGTAGFTA  A+ KME++ M+P +  P+VVTGATGGVGSMA++ILSKAGY V AV+GK++   Y+  LGA  +  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|WP_160889876.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Halobacillus litoralis] &gt;gb|MYL38848.1| acryloyl-CoA reductase [Halobacillus litoralis]</Hit_def>
+  <Hit_accession>WP_160889876</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.783</Hsp_bit-score>
+      <Hsp_score>299</Hsp_score>
+      <Hsp_evalue>2.9482e-30</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>VPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VPGDWIIPLPENLSLSEAMVFGTAGFTAALSVHKLEQAGVKP-EDGSILVSGATGGVGSMAVAMLKKRGYHVTASTGKESEHDYLKHLGAQDIIPRE</Hsp_hseq>
+      <Hsp_midline>VP  W++PLPEN SLSEAMV GTAGFTA L++ K+E  G+KP E+  ++V+GATGGVGSMAVA+L K GY+VTA TGK   + YL+ LGA+ + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|WP_013077044.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Kyrpidia tusciae] &gt;gb|ADG07765.1| quinone oxidoreductase, YhdH/YhfP family [Kyrpidia tusciae DSM 2912]</Hit_def>
+  <Hit_accession>WP_013077044</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>3.15972e-30</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPAGLSLKEAMVLGTAGFTAGLSVHRLELYGLRP-EKGPVLVTGATGGVGSVAVAILAKLGYTVAASTGKAEAQAYLRNIGAHEVLSRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLP   SL EAMV+GTAGFTAGL++ ++E+ G++P E+ P++VTGATGGVGS+AVAIL+K GY V A TGK +  AYL  +GA  V  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>tpg|HGG31077.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Chitinophagaceae bacterium]</Hit_def>
+  <Hit_accession>HGG31077</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>3.34869e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVKKPEAFTLKECMTIGTAGFTAATALHKMELLGQNP-EQGPIVVTGSTGGVGSLAVAILSTAGYEVIAVSGKQNAWEYLQHLGASRMENRE</Hsp_hseq>
+      <Hsp_midline>IRVPASWVV  PE ++L E M IGTAGFTA  AL KME+LG  P E+ P+VVTG+TGGVGS+AVAILS AGY V AV+GK +   YL+ LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>tpg|HHY66382.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Alicyclobacillus sp.]</Hit_def>
+  <Hit_accession>HHY66382</Hit_accession>
+  <Hit_len>209</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.316</Hsp_bit-score>
+      <Hsp_score>290</Hsp_score>
+      <Hsp_evalue>3.67489e-30</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPTGLSVKEAMVLGTAGFTAGLSVYRLERYGLRP-ERGPVLVTGASGGVGSVAVAILTKLGYTVAASTGKAEAEAYLRSIGASEVLSRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLP   S+ EAMV+GTAGFTAGL++ ++E  G++P E  P++VTGA+GGVGS+AVAIL+K GY V A TGK +  AYL  +GA  V  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|MAZ36757.1|</Hit_id>
+  <Hit_def>oxidoreductase [Crocinitomicaceae bacterium]</Hit_def>
+  <Hit_accession>MAZ36757</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>3.77419e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPSAWVVPLPATFDLRSAMILGTAGFTAALALYKMEMAGQKP-EMGELVVTGATGGVGSMAVSVFSKAGYDVIASSGKTASYDYLKMLGATRCEGRD</Hsp_hseq>
+      <Hsp_midline>IRVP++WVVPLP  + L  AM++GTAGFTA LAL KMEM G KP E   +VVTGATGGVGSMAV++ SKAGY+V A +GKT    YL+ LGA     RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|WP_167291793.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Pseudoflavitalea sp. X16] &gt;gb|NII29012.1| YhdH/YhfP family quinone oxidoreductase [Pseudoflavitalea sp. X16]</Hit_def>
+  <Hit_accession>WP_167291793</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.398</Hsp_bit-score>
+      <Hsp_score>298</Hsp_score>
+      <Hsp_evalue>3.99909e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAAWVVRKPEGYTLKECMILGTAGVTAALALHKMELLGLHP-DQGPIVVTGSTGGVGSIAVSLLAKSGYEVIAVTGKNHAHEYLQHLGAHKIETRE</Hsp_hseq>
+      <Hsp_midline>IRVPA+WVV  PE Y+L E M++GTAG TA LAL KME+LG+ P ++ P+VVTG+TGGVGS+AV++L+K+GY V AVTGK   + YL+ LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|WP_136580331.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Niastella caeni] &gt;gb|THU32489.1| acryloyl-CoA reductase [Niastella caeni]</Hit_def>
+  <Hit_accession>WP_136580331</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.627</Hsp_bit-score>
+      <Hsp_score>296</Hsp_score>
+      <Hsp_evalue>6.58428e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRVPANWVVKKPDNYTLKECMIIGTAGFTAACAAYKMELMKLEPGAG-PIVVTGATGGVGSMAISILSKAGYEVIAVSGKSNAQEYVQHLGATQIEAR</Hsp_hseq>
+      <Hsp_midline>IRVPA+WVV  P+NY+L E M+IGTAGFTA  A  KME++ ++P    P+VVTGATGGVGSMA++ILSKAGY V AV+GK++   Y++ LGA  +  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|WP_089678178.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Catalinimonas alkaloidigena] &gt;emb|SDJ86645.1| putative quinone oxidoreductase, YhdH/YhfP family [Catalinimonas alkaloidigena]</Hit_def>
+  <Hit_accession>WP_089678178</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.242</Hsp_bit-score>
+      <Hsp_score>295</Hsp_score>
+      <Hsp_evalue>9.17581e-30</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPADWVVPRPQGLSLYESMILGTAGFTAALALHKMEQNGQHP-DQGPVLVTGATGGVGSSAVALLAKAGYQPIASTGKQDLHAYLEALGATEIISRE</Hsp_hseq>
+      <Hsp_midline>IRVPA WVVP P+  SL E+M++GTAGFTA LAL KME  G  P ++ P++VTGATGGVGS AVA+L+KAGY   A TGK D++AYLE LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|WP_027953590.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Halobacillus kuroshimensis]</Hit_def>
+  <Hit_accession>WP_027953590</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>118.242</Hsp_bit-score>
+      <Hsp_score>295</Hsp_score>
+      <Hsp_evalue>1.1465e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPGDWIIPLPENLSLQEAMIFGTAGFTAALSVHKLEEAGVKP-DDGSILVSGATGGVGSMAVAMLKKRGYHVTASTGKASEHDYLKHLGAEDIIPRE</Hsp_hseq>
+      <Hsp_midline>RVP  W++PLPEN SL EAM+ GTAGFTA L++ K+E  G+KP ++  ++V+GATGGVGSMAVA+L K GY+VTA TGK   + YL+ LGA+ + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>ref|WP_126973355.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Gynurincola endophyticus]</Hit_def>
+  <Hit_accession>WP_126973355</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>1.49454e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRVPAEWIVALPEGLTLQQAMILGTAGFTAASAIYKLELLGQSPAMG-PVVVTGATGGVGSMAVAILSKIGYQVIAITGKSNAGDYLRQLGAHQIEKRD</Hsp_hseq>
+      <Hsp_midline>+RVPA W+V LPE  +L +AM++GTAGFTA  A+ K+E+LG  P    P+VVTGATGGVGSMAVAILSK GY V A+TGK++   YL  LGA  +  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|MBD80920.1|</Hit_id>
+  <Hit_def>oxidoreductase [Crocinitomicaceae bacterium]</Hit_def>
+  <Hit_accession>MBD80920</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>1.52658e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAGWVVPLPSAFNLRQAMIVGTAGFTASLALYKMEMAGQQP-KMGELVVTGATGGVGSMAVAIFSKAGYDVVASTGKSEEYEYLKKLGAVRCEGRE</Hsp_hseq>
+      <Hsp_midline>IRVPA WVVPLP  ++L +AM++GTAGFTA LAL KMEM G +P +   +VVTGATGGVGSMAVAI SKAGY+V A TGK++   YL+ LGA     R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|ODS32914.1|</Hit_id>
+  <Hit_def>alcohol dehydrogenase [Candidatus Scalindua rubra]</Hit_def>
+  <Hit_accession>ODS32914</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.857</Hsp_bit-score>
+      <Hsp_score>294</Hsp_score>
+      <Hsp_evalue>1.54285e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPAAWVVKLPEKLTLKESMIYGTAGFTASLSLYKMESLGLAPTGN-EVLVTGASGGVGSMAVAILSKAGYNVVAATGKPGKEEYFRKLGAKSVIHRD</Hsp_hseq>
+      <Hsp_midline>IRVPA+WVV LPE  +L E+M+ GTAGFTA L+L KME LG+ P     ++VTGA+GGVGSMAVAILSKAGYNV A TGK     Y   LGAKSV  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|PVV26643.1|</Hit_id>
+  <Hit_def>oxidoreductase, partial [gamma proteobacterium symbiont of Ctena orbiculata]</Hit_def>
+  <Hit_accession>PVV26643</Hit_accession>
+  <Hit_len>296</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.087</Hsp_bit-score>
+      <Hsp_score>292</Hsp_score>
+      <Hsp_evalue>1.54759e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>73</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>LRVPAEWAVPLPEGLSASQAMTLGTAGFTAALALHRMEMNGQRP-DMGPVLVTGATGGVGCLAVNIFDGEGFDVHAVTGKSDQHAYLEHLGAQEVLQRE</Hsp_hseq>
+      <Hsp_midline>+RVPA W VPLPE  S S+AM +GTAGFTA LAL +MEM G +P +  P++VTGATGGVG +AV I    G++V AVTGK+D +AYLE LGA+ V  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|WP_026815823.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Arenimonas composti] &gt;gb|KFN50868.1| hypothetical protein P873_00540 [Arenimonas composti TR7-09 = DSM 18010]</Hit_def>
+  <Hit_accession>WP_026815823</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.472</Hsp_bit-score>
+      <Hsp_score>293</Hsp_score>
+      <Hsp_evalue>1.63708e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRLPAEWTIPLPAGLDLREAMVLGTAGFTAGLSLLRMEQNGQTP-EAGPIVVTGASGGVGSLALAILSRAGYEAHAISGKPEHADWLRRLGAREVLPRD</Hsp_hseq>
+      <Hsp_midline>+R+PA W +PLP    L EAMV+GTAGFTAGL+LL+ME  G  P E  P+VVTGA+GGVGS+A+AILS+AGY   A++GK +   +L  LGA+ V PRD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|WP_107585498.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Alkalicoccus saliphilus] &gt;gb|PTL38269.1| oxidoreductase [Alkalicoccus saliphilus]</Hit_def>
+  <Hit_accession>WP_107585498</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.472</Hsp_bit-score>
+      <Hsp_score>293</Hsp_score>
+      <Hsp_evalue>1.65662e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPQGLTTREAMIIGTAGFTAALSIYKLEKHGLTP-EDKPVLVTGATGGVGSMAVDMLSKNGYSVTASTGKESEHDYLKKLGADSIVGRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLP+  +  EAM+IGTAGFTA L++ K+E  G+ P E+ P++VTGATGGVGSMAV +LSK GY+VTA TGK   + YL+ LGA S+  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|WP_008298824.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Bhargavaea cecembensis] &gt;gb|EMR06282.1| Putative quinone oxidoreductase YhfP [Bhargavaea cecembensis DSE10]</Hit_def>
+  <Hit_accession>WP_008298824</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.472</Hsp_bit-score>
+      <Hsp_score>293</Hsp_score>
+      <Hsp_evalue>1.8227e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPEGLSLRESMILGTAGFTAALSVLRLEENGLTP-DKGPVLVAGATGGVGSIAVNILAKRGYEVTASTGKSDEEAYLKSIGASQVIPRN</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLPE  SL E+M++GTAGFTA L++L++E  G+ P ++ P++V GATGGVGS+AV IL+K GY VTA TGK+D  AYL+ +GA  V PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|PUB86632.1|</Hit_id>
+  <Hit_def>oxidoreductase [gamma proteobacterium symbiont of Ctena orbiculata] &gt;gb|PVV09047.1| oxidoreductase [gamma proteobacterium symbiont of Ctena orbiculata] &gt;gb|PVV12761.1| oxidoreductase [gamma proteobacterium symbiont of Ctena orbiculata]</Hit_def>
+  <Hit_accession>PUB86632</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>117.472</Hsp_bit-score>
+      <Hsp_score>293</Hsp_score>
+      <Hsp_evalue>2.0581e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>LRVPAEWAVPLPEGLSASQAMTLGTAGFTAALALHRMEMNGQRP-DMGPVLVTGATGGVGCLAVNIFDGEGFDVHAVTGKSDQHAYLEHLGAQEVLQRE</Hsp_hseq>
+      <Hsp_midline>+RVPA W VPLPE  S S+AM +GTAGFTA LAL +MEM G +P +  P++VTGATGGVG +AV I    G++V AVTGK+D +AYLE LGA+ V  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|PUB77868.1|</Hit_id>
+  <Hit_def>oxidoreductase [gamma proteobacterium symbiont of Ctena orbiculata] &gt;gb|PUB78503.1| oxidoreductase [gamma proteobacterium symbiont of Ctena orbiculata]</Hit_def>
+  <Hit_accession>PUB77868</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.701</Hsp_bit-score>
+      <Hsp_score>291</Hsp_score>
+      <Hsp_evalue>3.07991e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>LRVPAEWAVPLPDGLSASQAMALGTAGFTAALALHRMEMNGQRP-EMGPVLVTGATGGVGCLAVNIFDGEGFDVHAVTGKSDQHAYLEHLGAQEVLHRE</Hsp_hseq>
+      <Hsp_midline>+RVPA W VPLP+  S S+AM +GTAGFTA LAL +MEM G +P E  P++VTGATGGVG +AV I    G++V AVTGK+D +AYLE LGA+ V  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gb|MBB29423.1|</Hit_id>
+  <Hit_def>oxidoreductase [Gemmatimonadetes bacterium]</Hit_def>
+  <Hit_accession>MBB29423</Hit_accession>
+  <Hit_len>336</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.701</Hsp_bit-score>
+      <Hsp_score>291</Hsp_score>
+      <Hsp_evalue>4.62937e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVPLPETLSLNESMVYGTAGFTAALSIYRMEANGLDA-ESGSVLVTGATGGVGSMAVAILENAGYNVVAATGKPDASEYLRSLGATEILARE</Hsp_hseq>
+      <Hsp_midline>IRVPASWVVPLPE  SL+E+MV GTAGFTA L++ +ME  G+   E   ++VTGATGGVGSMAVAIL  AGYNV A TGK D + YL  LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gb|TVP86531.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Alkalicoccus sp.]</Hit_def>
+  <Hit_accession>TVP86531</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>6.17524e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPAEWVVPLPEGLTTREAMIIGTAGFTAALSIHKLEKHGLTPEDE-PVLVTGATGGVGSMAVDMLSNKGYSVTASTGKESEHDYLKKLGAENIVGRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLPE  +  EAM+IGTAGFTA L++ K+E  G+ P +E P++VTGATGGVGSMAV +LS  GY+VTA TGK   + YL+ LGA+++  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|WP_093052251.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Salipaludibacillus aurantiacus] &gt;emb|SES14635.1| putative quinone oxidoreductase, YhdH/YhfP family [Salipaludibacillus aurantiacus]</Hit_def>
+  <Hit_accession>WP_093052251</Hit_accession>
+  <Hit_len>326</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>7.31726e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPAEWVVPLPEGLTTREAMIIGTAGFTAALSVHRLEERGLTPEDE-PVLVTGSTGGVGSMAVAMLSRRGYSVTASTGKETEHDYLKKLGAKDIISRE</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLPE  +  EAM+IGTAGFTA L++ ++E  G+ P +E P++VTG+TGGVGSMAVA+LS+ GY+VTA TGK   + YL+ LGAK +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|WP_170086610.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Kyrpidia spormannii] &gt;emb|CAB3396170.1| putative oxidoreductase [Kyrpidia spormannii]</Hit_def>
+  <Hit_accession>WP_170086610</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>7.53474e-29</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPTGLSVKEAMVLGTAGFTAGLSVYRLERYGLRP-ERGPVLVTGASGGVGSVAVAILTKLGYTVAASTGKAEAEAYLRSIGASEVLSRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLP   S+ EAMV+GTAGFTAGL++ ++E  G++P E  P++VTGA+GGVGS+AVAIL+K GY V A TGK +  AYL  +GA  V  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>ref|WP_018883948.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Paenibacillus massiliensis]</Hit_def>
+  <Hit_accession>WP_018883948</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>8.28927e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRVPKEWVVPLPEGLSLRDAMIFGTAGFTAALSIHKLEQHGMRP-EAGPVLVTGATGGVGSTAIAMLTHRGYEVSASTGKTSSHSYLQSLGAKHLLTRE</Hsp_hseq>
+      <Hsp_midline>+RVP  WVVPLPE  SL +AM+ GTAGFTA L++ K+E  GM+P E  P++VTGATGGVGS A+A+L+  GY V+A TGKT  ++YL+ LGAK +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|WP_081199956.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Niastella yeongjuensis] &gt;gb|OQP49699.1| quinone oxidoreductase [Niastella yeongjuensis] &gt;emb|SEP41071.1| putative quinone oxidoreductase, YhdH/YhfP family [Niastella yeongjuensis]</Hit_def>
+  <Hit_accession>WP_081199956</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.931</Hsp_bit-score>
+      <Hsp_score>289</Hsp_score>
+      <Hsp_evalue>8.64788e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>201</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRVPAGWVVKRPSNLSLKECMTIGTAGFTAACALYKMELMKMNPAMG-PIVVTGSTGGVGSIAVSILSKAGYEVIAVSGKTNALEYLQHLGAARVEDR</Hsp_hseq>
+      <Hsp_midline>IRVPA WVV  P N SL E M IGTAGFTA  AL KME++ M P    P+VVTG+TGGVGS+AV+ILSKAGY V AV+GKT+   YL+ LGA  V  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gb|NJN52769.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Gammaproteobacteria bacterium]</Hit_def>
+  <Hit_accession>NJN52769</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>9.11784e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>74</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRIPAGWALPLPRGLSLRDAMILGTAGFTAALCVHKLEAAGMRP-EGGPVLVTGATGGVGSVAVRLLSHLGYEVAALTGKADQKAFLEAMGAKEILPRE</Hsp_hseq>
+      <Hsp_midline>+R+PA W +PLP   SL +AM++GTAGFTA L + K+E  GM+P E  P++VTGATGGVGS+AV +LS  GY V A+TGK D  A+LE +GAK + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gb|MSN25479.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Geobacter sp.]</Hit_def>
+  <Hit_accession>MSN25479</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>9.51245e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>77</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRIPSAWAVRLPEGLSLREAMIIGTAGFTAGLSVFKLQQAGVKP-DDGEILVTGATGGVGSIAVSILARAGYKVVAATGKTADEEFLKNLGATEIIPRD</Hsp_hseq>
+      <Hsp_midline>+R+P++W V LPE  SL EAM+IGTAGFTAGL++ K++  G+KP ++  ++VTGATGGVGS+AV+IL++AGY V A TGKT    +L+ LGA  + PRD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>tpg|HCY46767.1|</Hit_id>
+  <Hit_def>oxidoreductase [Flavobacteriales bacterium]</Hit_def>
+  <Hit_accession>HCY46767</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.39</Hsp_bit-score>
+      <Hsp_score>285</Hsp_score>
+      <Hsp_evalue>9.87741e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>149</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>ISVPASWVVPLPAGISLKDSMVMGTAAYTAGLALYKMELSGQTP-EMGEIVVTGATGGVGSMAVAILAKAGYNVVASTGKKDKYFYLLEIGAKKCISRE</Hsp_hseq>
+      <Hsp_midline>I VPASWVVPLP   SL ++MV+GTA +TAGLAL KME+ G  P E   +VVTGATGGVGSMAVAIL+KAGYNV A TGK D   YL  +GAK    R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gb|KPK31136.1|</Hit_id>
+  <Hit_def>quinone oxidoreductase, partial [Betaproteobacteria bacterium SG8_40]</Hit_def>
+  <Hit_accession>KPK31136</Hit_accession>
+  <Hit_len>223</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>113.235</Hsp_bit-score>
+      <Hsp_score>282</Hsp_score>
+      <Hsp_evalue>9.89317e-29</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>60</Hsp_identity>
+      <Hsp_positive>71</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>CRVPADWVVPMPAGLDLHSAMVLGTAGFTAGLAVVRMEHEGLKPANG-PVIVTGATGGVGSVAVDILSAGGYHVVALTGKEDQAGYLEQLGAAEVMLR</Hsp_hseq>
+      <Hsp_midline> RVPA WVVP+P    L  AMV+GTAGFTAGLA+++ME  G+KP    P++VTGATGGVGS+AV ILS  GY+V A+TGK D   YLE LGA  V  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gb|QBK26422.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Ureibacillus thermophilus]</Hit_def>
+  <Hit_accession>QBK26422</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>1.08759e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RIPAEWIVPLPKGLSLKESMIIGTAGFTAALSIYRLEQNGLKP-EQGKVLVTGATGGVGSFAVAILSKLGYDVEASTGKESEHEFLKSLGAKSVISRE</Hsp_hseq>
+      <Hsp_midline>R+PA W+VPLP+  SL E+M+IGTAGFTA L++ ++E  G+KP E+  ++VTGATGGVGS AVAILSK GY+V A TGK   + +L+ LGAKSV  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gb|TVP84822.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Alkalicoccus sp.]</Hit_def>
+  <Hit_accession>TVP84822</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>1.09919e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPAAWVVPLPEGLTLREAMIIGTAGFTAALSVHRLEERGTTP-EDGPVLVTGATGGVGSMAVAMLAKRGYHVTASTGKQSEHEYLKNLGAAEIISRE</Hsp_hseq>
+      <Hsp_midline>RVPA+WVVPLPE  +L EAM+IGTAGFTA L++ ++E  G  P E+ P++VTGATGGVGSMAVA+L+K GY+VTA TGK   + YL+ LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|WP_072282518.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Pelobacter sp. SFB93] &gt;gb|APG26557.1| quinone oxidoreductase [Pelobacter sp. SFB93]</Hit_def>
+  <Hit_accession>WP_072282518</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.546</Hsp_bit-score>
+      <Hsp_score>288</Hsp_score>
+      <Hsp_evalue>1.15093e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>IRVPASWVVPLPSGLTLKESMVLGTAGFTAGLSVSKVDEV-ISP-DEGPVLVTGATGGVGSVAVAILAKLGYEVIAVSGKADAEAYLKGLGAKEVVDRE</Hsp_hseq>
+      <Hsp_midline>IRVPASWVVPLP   +L E+MV+GTAGFTAGL++ K++ + + P +E P++VTGATGGVGS+AVAIL+K GY V AV+GK D  AYL+ LGAK V  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gb|EGK08929.1|</Hit_id>
+  <Hit_def>alcohol dehydrogenase [Desmospora sp. 8437] &gt;emb|SIS99324.1| putative quinone oxidoreductase, YhdH/YhfP family [Kroppenstedtia eburnea]</Hit_def>
+  <Hit_accession>EGK08929</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>1.32556e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPGDWVIPLPEGLTLKEAMVLGTAGFTAAMSIQRMEENGLKP-EKGPVLVAGATGGVGSTAVAMLAKRGYTVAAGTGKADVQDYLRRLGAAEILPRE</Hsp_hseq>
+      <Hsp_midline>RVP  WV+PLPE  +L EAMV+GTAGFTA +++ +ME  G+KP E+ P++V GATGGVGS AVA+L+K GY V A TGK DV  YL  LGA  + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|WP_076525721.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Kroppenstedtia eburnea]</Hit_def>
+  <Hit_accession>WP_076525721</Hit_accession>
+  <Hit_len>340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>115.161</Hsp_bit-score>
+      <Hsp_score>287</Hsp_score>
+      <Hsp_evalue>1.47453e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>115</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPGDWVIPLPEGLTLKEAMVLGTAGFTAAMSIQRMEENGLKP-EKGPVLVAGATGGVGSTAVAMLAKRGYTVAAGTGKADVQDYLRRLGAAEILPRE</Hsp_hseq>
+      <Hsp_midline>RVP  WV+PLPE  +L EAMV+GTAGFTA +++ +ME  G+KP E+ P++V GATGGVGS AVA+L+K GY V A TGK DV  YL  LGA  + PR+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gb|TMH43730.1|</Hit_id>
+  <Hit_def>zinc-binding dehydrogenase, partial [Betaproteobacteria bacterium]</Hit_def>
+  <Hit_accession>TMH43730</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>111.309</Hsp_bit-score>
+      <Hsp_score>277</Hsp_score>
+      <Hsp_evalue>1.93446e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>57</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPMPKGMNLFEAMALGTAGYTAGLAIVRMEVNGLAPAKG-PVVVSGATGGVGSIAIDVLSRLGYRVVALTGKENEAAYLEGLGAKEVMSR</Hsp_hseq>
+      <Hsp_midline>RVPA WVVP+P+  +L EAM +GTAG+TAGLA+++ME+ G+ P +  P+VV+GATGGVGS+A+ +LS+ GY V A+TGK +  AYLE LGAK V  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>ref|WP_107584458.1|</Hit_id>
+  <Hit_def>oxidoreductase [Alkalicoccus saliphilus] &gt;gb|PTL39297.1| oxidoreductase [Alkalicoccus saliphilus]</Hit_def>
+  <Hit_accession>WP_107584458</Hit_accession>
+  <Hit_len>328</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.775</Hsp_bit-score>
+      <Hsp_score>286</Hsp_score>
+      <Hsp_evalue>2.05378e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPAAWVVPLPEGLTLREAMIIGTAGFTAALSVHRLEERGTTP-EDGPVLVTGATGGVGSMAVAMLAKRGYHVTASTGKQSEHYYLKKLGAAEIISRE</Hsp_hseq>
+      <Hsp_midline>RVPA+WVVPLPE  +L EAM+IGTAGFTA L++ ++E  G  P E+ P++VTGATGGVGSMAVA+L+K GY+VTA TGK   + YL+ LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>ref|WP_070121674.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Bacillus marinisedimentorum]</Hit_def>
+  <Hit_accession>WP_070121674</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.775</Hsp_bit-score>
+      <Hsp_score>286</Hsp_score>
+      <Hsp_evalue>2.09739e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPAEWVVPLPEGLSLQEAMAIGTAGFTAALSVHRLEQNGLKP-EDGPVLVTGATGGVGSMAVAMLAKRGYTVEASTGKEEAHQFLKKIGAAEVISRE</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLPE  SL EAM IGTAGFTA L++ ++E  G+KP E+ P++VTGATGGVGSMAVA+L+K GY V A TGK + + +L+ +GA  V  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|WP_139444868.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Arenimonas sp. R29] &gt;gb|TNJ34459.1| acryloyl-CoA reductase [Arenimonas sp. R29]</Hit_def>
+  <Hit_accession>WP_139444868</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.775</Hsp_bit-score>
+      <Hsp_score>286</Hsp_score>
+      <Hsp_evalue>2.17299e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRLPAEWTIPLPAGLDTREAMVLGTAGFTAGLSLLRMEMNGQTP-AMGPVVVTGATGGVGSLAIDILTRAGYEAHAISGKAEHADYLRRLGAREIFPRD</Hsp_hseq>
+      <Hsp_midline>+R+PA W +PLP      EAMV+GTAGFTAGL+LL+MEM G  P    P+VVTGATGGVGS+A+ IL++AGY   A++GK +   YL  LGA+ + PRD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>tpg|HAQ70918.1|</Hit_id>
+  <Hit_def>oxidoreductase [Flavobacteriales bacterium]</Hit_def>
+  <Hit_accession>HAQ70918</Hit_accession>
+  <Hit_len>332</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.775</Hsp_bit-score>
+      <Hsp_score>286</Hsp_score>
+      <Hsp_evalue>2.34762e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>205</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>61</Hsp_identity>
+      <Hsp_positive>72</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPR</Hsp_qseq>
+      <Hsp_hseq>IRVPSGWVVPKPAHLSSKEAMVYGTAGFTAALSLYKMEKMGQTP-EMGPILVTGATGGVGSMAVGILAKAGYEVIASTGKKDADAHLKKLGASRIVDR</Hsp_hseq>
+      <Hsp_midline>IRVP+ WVVP P + S  EAMV GTAGFTA L+L KME +G  P E  P++VTGATGGVGSMAV IL+KAGY V A TGK D +A+L+ LGA  +  R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|WP_036164562.1|</Hit_id>
+  <Hit_def>YhdH/YhfP family quinone oxidoreductase [Lysobacter dokdonensis] &gt;gb|KGQ20343.1| Quinone oxidoreductase, YhdH/YhfP family [Lysobacter dokdonensis DS-58]</Hit_def>
+  <Hit_accession>WP_036164562</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.39</Hsp_bit-score>
+      <Hsp_score>285</Hsp_score>
+      <Hsp_evalue>2.56461e-28</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>IRVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>VRLPAQWTIPLPEGLSLRESMILGTAGFTAALALLRMEDNRQTP-ELGPLAVTGATGGVGSLAVAIFSRAGYDVHAVSGKPDAASYLRDLGASEILGRE</Hsp_hseq>
+      <Hsp_midline>+R+PA W +PLPE  SL E+M++GTAGFTA LALL+ME     P E  P+ VTGATGGVGS+AVAI S+AGY+V AV+GK D  +YL  LGA  +  R+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|WP_170099919.1|</Hit_id>
+  <Hit_def>acryloyl-CoA reductase [Kyrpidia spormannii] &gt;emb|CAB3395484.1| putative oxidoreductase [Kyrpidia spormannii]</Hit_def>
+  <Hit_accession>WP_170099919</Hit_accession>
+  <Hit_len>330</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>114.39</Hsp_bit-score>
+      <Hsp_score>285</Hsp_score>
+      <Hsp_evalue>2.57408e-28</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>107</Hsp_hit-from>
+      <Hsp_hit-to>203</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>59</Hsp_identity>
+      <Hsp_positive>73</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>RVPASWVVPLPENYSLSEAMVIGTAGFTAGLALLKMEMLGMKPHEEYPMVVTGATGGVGSMAVAILSKAGYNVTAVTGKTDVNAYLEFLGAKSVNPRD</Hsp_qseq>
+      <Hsp_hseq>RVPADWVVPLPAGLSVKEAMVLGTAGFTAGLSVYRLERYGLTP-ERGPVLVTGASGGVGSVAVAILTKLGYTVAASTGKAEAEAYLRSIGASEVLSRD</Hsp_hseq>
+      <Hsp_midline>RVPA WVVPLP   S+ EAMV+GTAGFTAGL++ ++E  G+ P E  P++VTGA+GGVGS+AVAIL+K GY V A TGK +  AYL  +GA  V  RD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>285796324</Statistics_db-num>
+      <Statistics_db-len>102865278292</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
