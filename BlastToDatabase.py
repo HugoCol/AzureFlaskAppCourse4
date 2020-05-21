@@ -10,6 +10,8 @@ def getdata():
     hits = dom.findall('BlastOutput_iterations/Iteration/Iteration_hits/Hit')
     print(hits)
     # Voor elke hit
+    count = 1
+    datadic = {}
     for c in hits:
         # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
         Hit_id = c.find('Hit_id').text
@@ -22,9 +24,12 @@ def getdata():
         percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
         queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
         # Print alle data om te zien of het gewerkt heeft
-        print(hit, Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq)
+        datalist = [Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq]
+        datadic[count]=datalist
+        count += 1
+    print(datadic)
 
-    return #datadic
+    return datadic
 
 
 def pushdata(datadic):
@@ -106,8 +111,7 @@ def pushdata(datadic):
     return
 
 def main():
-    #datadic =
-    getdata()
+    datadic = getdata()
     #pushdata(datadic)
 main()
 # Lijst aanmaken met alle values die worden opgehaald vanuit het xml bestand
