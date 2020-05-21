@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-
+{#    {% block head %}{% endblock %}#}
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     {% if title %}
@@ -9,23 +9,20 @@
     {%  else %}
     <title>Add an title to the title variable</title>
     {% endif %}
-    <ul>
+
+    <ul class="menu_bar">
       <li><a class="active" href="/">Home</a></li>
       <li><a href="/">News</a></li>
       <li><a href="/">Contact</a></li>
       <li style="float:right"><a href="/">About</a></li>
     </ul>
-    {% block head %}{% endblock %}
+
+{% block head %}{% endblock %}
+
 
 </head>
 <body>
-{#<ul>#}
-{#  <li><a class="active" href="/">Home</a></li>#}
-{#  <li><a href="/">News</a></li>#}
-{#  <li><a href="/">Contact</a></li>#}
-{#  <li style="float:right"><a href="/">About</a></li>#}
-{#</ul>#}
-    <hr>
+
     {% block content %}{% endblock %}
 </body>
 

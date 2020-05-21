@@ -7,6 +7,7 @@ html {
 head {
     font-size: 50;
     text-align: center;
+    margin-left: 0%;
 }
 
 ul {
@@ -18,7 +19,6 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 
 li {
@@ -44,23 +44,22 @@ li a:hover:not(.active) {
 body {
     height: 100%;
     background-color: antiquewhite;
-    margin:0;
-    padding:0px;
-    margin-top:30px;
     margin-left: 33%;
+
 }
-
-
-
-
+.menu_bar {
+    align-self: center;
+    margin-left: 0px;
+}
 
 footer {
     width: 100%;
-    height: 150px;
+    height: 5%;
     background-color: cornflowerblue;
-    position: fixed;
     left:0;
     bottom: 0;
     text-align: center;
+    margin-bottom: 0px;
+    position: fixed;
     /*color: white;*/
 }
