@@ -15,10 +15,15 @@ def getdata():
     mestdatadic ={}
     datafile = 'data/dataset.txt'
     file = open(datafile)
+    fwcount = 1
+    revcount = 2
+    keycounter = 0
     for line in file:
         mestdata = line.split('\t')
-        mestdatadic[mestdata[1]] = [mestdata[0], mestdata[2]]
-        mestdatadic[mestdata[4]] = [mestdata[3], mestdata[5]]
+        mestdatadic[fwcount] = [mestdata[0], mestdata[1], mestdata[2]]
+        mestdatadic[revcount] = [mestdata[3], mestdata[4], mestdata[5]]
+        fwcount += 2
+        revcount += 2
 
     for c in hits:
         # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
@@ -31,17 +36,29 @@ def getdata():
         evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
         percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
         queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
-        for (key, value) in mestdatadic.items():
-            print(key)
-            print(queryseq)
-            if str(key) == str(queryseq):
-                match = mestdatadic.get(str(queryseq))
-                print(match)
+        header = ""
+        ascicode = ""
+        if hit == str(1):
+            keycounter += 1
+            for (key, value) in mestdatadic.items():
+                if key == keycounter:
+                    nbheader = str(value[0])
+                    hbheader = nbheader.split('@')
+                    header += hbheader[1]
+                    ascicode += str(value[2])
+
+        else:
+            for (key, value) in mestdatadic.items():
+                if key == keycounter:
+                    nbheader = str(value[0])
+                    hbheader += nbheader.split('@')
+                    header += hbheader[1]
+                    ascicode += str(value[2])
+
         # Print alle data om te zien of het gewerkt heeft
-        datalist = [Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq]
-        datadic[count]=datalist
+        datalist = [Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq, header, ascicode]
+        datadic[count] = datalist
         count += 1
-    #print(datadic)
 
     return datadic
 
