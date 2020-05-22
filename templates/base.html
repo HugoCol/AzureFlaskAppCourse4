@@ -10,12 +10,22 @@
     <title>Add an title to the title variable</title>
     {% endif %}
 
+<ul class="menu_bar">
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/">News</a></li>
+  <li><a href="/">Contact</a></li>
+  <li style="float:right"><a href="/">About</a></li>
+</ul>
+
+    {% block head %}{% endblock %}
+
+
 </head>
 <body>
-    <div class="menu_bar"><a href="/">Home</a></div>
-    <hr>
+
     {% block content %}{% endblock %}
 </body>
+
 
 
 
@@ -25,10 +35,6 @@
 
 
 </footer>
-
-
-
-<
 
 
 </html>
