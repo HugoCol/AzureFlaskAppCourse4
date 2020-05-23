@@ -27,7 +27,7 @@ def file_reader(txtbestand):
     # Leest het txt bestand in, replaced de enters en ï»¿. Split op tab.
     for regel in dataset:
         gegevens.append(regel.replace("\n", "").replace("ï»¿", "").split("\t"))
-
+        
     # Verwijderd alle @ aan het begin van de fw/rv headers
     for i in range(len(gegevens)):
         gegevens[i][0] = gegevens[i][0].replace("@", "")
