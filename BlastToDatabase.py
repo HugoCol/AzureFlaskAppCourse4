@@ -1,18 +1,27 @@
+# Ivar van den Akker
+# 18-05-2020 tot 27-05-2020
+# Script dat heel veel data uit 2 bestanden en 1 database haalt deze
+# in een dictionary zet en met de dictionary de database vult
+
 from xml.etree import ElementTree
+import time
+from Bio import Entrez
 
 
 def getdata():
+    """
+    :return:
+    """
     # Bestand openen
-    filename = 'my_blast.xml'
+    filename = 'data/XMLForward1.xml'
     # Door bestand heen gaan
     dom = ElementTree.parse(filename)
     # Alle hits eruit zoeken
     hits = dom.findall('BlastOutput_iterations/Iteration/Iteration_hits/Hit')
-    print(hits)
     # Voor elke hit
     count = 1
     datadic = {}
-    mestdatadic ={}
+    mestdatadic = {}
     datafile = 'data/dataset.txt'
     file = open(datafile)
     fwcount = 1
@@ -24,47 +33,67 @@ def getdata():
         mestdatadic[revcount] = [mestdata[3], mestdata[4], mestdata[5]]
         fwcount += 2
         revcount += 2
-
     for c in hits:
-        # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
-        Hit_id = c.find('Hit_id').text
-        familie = c.find('Hit_def').text
-        acessiecode = c.find('Hit_accession').text
-        print(acessiecode)
-        hit = c.find('Hit_num').text
-        score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
-        tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
-        evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
-        percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
-        queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
-        header = ""
-        ascicode = ""
-        if hit == str(1):
-            keycounter += 1
-            for (key, value) in mestdatadic.items():
-                if key == keycounter:
-                    nbheader = str(value[0])
-                    hbheader = nbheader.split('@')
-                    header += hbheader[1]
-                    ascicode += str(value[2])
+        if count <= 25:
+            # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
+            Hit_id = c.find('Hit_id').text
+            discript = c.find('Hit_def').text
+            organis = discript.split('[')
+            organism = organis[1].split(']')
+            discription = organis[0]
+            organisme = organism[0]
+            acessiecode = c.find('Hit_accession').text
+            print(acessiecode)
+            hit = c.find('Hit_num').text
+            score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
+            tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
+            evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
+            percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
+            queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
+            header = ""
+            ascicode = ""
+            time.sleep(0.4)
+            Entrez.email = "thijschermens@gmail.com"
+            seqio = Entrez.efetch(db="protein", id=acessiecode, retmode="xml")
+            seqio_read = Entrez.read(seqio)
+            seqio.close()
+            lineage = seqio_read[0]["GBSeq_taxonomy"].split(";")
+            if hit == str(1):
+                keycounter += 1
+                for (key, value) in mestdatadic.items():
+                    if key == keycounter:
+                        nbheader = str(value[0])
+                        hbheader = nbheader.split('@')
+                        header += hbheader[1]
+                        ascicode += str(value[2])
 
-        else:
-            for (key, value) in mestdatadic.items():
-                if key == keycounter:
-                    nbheader = str(value[0])
-                    hbheader += nbheader.split('@')
-                    header += hbheader[1]
-                    ascicode += str(value[2])
+            else:
+                for (key, value) in mestdatadic.items():
+                    if key == keycounter:
+                        nbheader = str(value[0])
+                        hbheader += nbheader.split('@')
+                        header += hbheader[1]
+                        ascicode += str(value[2])
 
-        # Print alle data om te zien of het gewerkt heeft
-        datalist = [Hit_id, familie, acessiecode, score, tscore, evalue, percidentity, queryseq, header, ascicode]
-        datadic[count] = datalist
-        count += 1
+            # Print alle data om te zien of het gewerkt heeft
+            datalist = [Hit_id, discription, organisme, acessiecode, score, tscore, evalue,
+                        percidentity, queryseq, header, ascicode, lineage]
+            datadic[count] = datalist
+            count += 1
+    else:
+        pass
+    #print(datadic)
+    print('Data Recieved')
+
 
     return datadic
 
 
 def pushdata(datadic):
+    """
+    :param datadic:
+    :return:
+    """
     # Connectie met database maken
     print("Connecting to database.....")
     # Inlog gegevens voor Azure database (nette database)
@@ -81,60 +110,83 @@ def pushdata(datadic):
     print("Connected")
     # Voor elke regel in de dictionary waar de data in staat
     for i in datadic:
+        countlin = 0
         # Kijk of de plek gevult is met data
-        if datadic[i][] != "":
-            # Vul de lineage tabel met data
-            cursor = conn.cursor()
-            cursor.execute(f"insert into lineage (name, parent_id) "
-                           f"values (datadic[i][]);")
-            conn.commit()
-            print("lineage fill for ",datadic[i][]," completed")
-        # Kijk of de plek gevult is met data
-        if datadic[i][] != "":
+        if datadic[i][11] != "":
+            for j in datadic[i][11]:
+                print(j)
+                if countlin == 0:
+                    cursor = conn.cursor()
+                    cursor.execute(f"insert into lineage (name, parent_id) "
+                                   f"values (datadic[i][11][countlin]);")
+                    conn.commit()
+            else:
+                formercount = countlin - 1
+                # Vul de lineage tabel met data
+                linid = conn.cursor()
+                cursor.execute(f"select id from lineage where name = "
+                               f"datadic[i][11][formercount]")
+                cursor = conn.cursor()
+                cursor.execute(f"insert into lineage (name, parent_id) "
+                               f"values (datadic[i][11][countlin], linid);")
+                conn.commit()
+                countlin += 1
+            print("lineage fill for ", datadic[i][3], " completed")
+            # Kijk of de plek gevult is met data
+        if datadic[i][2] != "":
             # Kijken of de data die in de database gaat er al in staat
             cursorchecko = conn.cursor()
-            cursor.execute(f"select naam_organisme from organisme where naam_organisme = datadic[i][]")
+            cursor.execute(
+                f"select naam_organisme from organisme where naam_organisme = datadic[i][]")
             # Als de variabele leeg blijft data in de database zetten
             if cursorchecko == "":
-                #Het id van linage ophalen om deze in de organisme tabel te zetten
+                # Het id van linage ophalen om deze in de organisme tabel te zetten
                 linidcursor = conn.cursor()
-                cursor.execute(f"select id from lineage where name = datadic[i][]")
+                cursor.execute(
+                    f"select id from lineage where name = datadic[i][11][-1]")
                 cursor = conn.cursor()
-                cursor.execute(f"insert into organisme (naam_organisme lineage_id, eiwit_id) "
-                               f"values (datadic[i][], linidcursor, datadic[i][]);")
+                cursor.execute(
+                    f"insert into organisme (naam_organisme lineage_id, eiwit_id) "
+                    f"values (datadic[i][2], linidcursor, datadic[i][0]);")
                 conn.commit()
-                print("Organisme fill for ",datadic[i][]," completed")
+                print("Organisme fill for ", datadic[i][3], " completed")
+            else:
+                pass
             cursorchecko += ""
         # Kijk of de plek gevult is met data
-        if datadic[i][] != "":
+        if datadic[i][9] != "":
             # Kijken of de data die in de database gaat er al in staat
             cursorchecks = conn.cursor()
-            cursor.execute(f"select header from sequentie where header = i[]")
+            cursor.execute(f"select header from sequentie where header = datadic[i][9]")
             # Als de variabele leeg blijft data in de database zetten
             if cursorchecks == "":
                 cursor = conn.cursor()
                 cursor.execute(f"insert into sequentie (header, sequence, "
-                               f"asci_score, 'read') values (datadic[i][], datadic[i][], datadic[i][], datadic[i][]);")
+                               f"asci_score, read) values (datadic[i][9], datadic[i][8], datadic[i][10], 1);")
                 conn.commit()
-                print("Gegevens fill for ",datadic[i][]," completed")
-                cursorchecks += ""
+                print("Gegevens fill for ", datadic[i][3], " completed")
+            else:
+                pass
+            cursorchecks += ""
         # Kijk of de plek gevult is met data
-        if datadic[i][] != "":
+        if datadic[i][1] != "":
             # Het id van sequentie ophalen om deze in de organisme tabel te zetten
             seqidcursor = conn.cursor()
-            cursor.execute(f"select id from sequentie where header = datadic[i][]")
+            cursor.execute(
+                f"select id from sequentie where header = datadic[i][9]")
             # Het id van organisme ophalen om deze in de organisme tabel te zetten
             orgidcursor = conn.cursor()
-            cursor.execute(f"select id from organisme where naam_organisme = datadic[i][]")
+            cursor.execute(
+                f"select id from organisme where naam_organisme = datadic[i][2]")
             # De eiwit tabel vullen met data
             cursor = conn.cursor()
             cursor.execute(f"insert into eiwit (description, accessiecode, "
                            f"percent_identity, e_value, max_score, total_score,"
                            f"query_cover sequentie_id, Organisme_id) "
-                           f"values (datadic[i][], datadic[i][], datadic[i][], datadic[i][], datadic[i][], datadic[i][],"
+                           f"values (datadic[i][1], datadic[i][3], datadic[i][7], datadic[i][6], datadic[i][4], datadic[i][5],"
                            f"datadic[i][], seqidcursor, orgidcursor);")
             conn.commit()
-            print("Eiwit  fill for ",datadic[i][]," completed")
+            print("Eiwit  fill for ", datadic[i][3], " completed")
     print("Database filled!\nClosing connection....")
     # Connectie met database sluiten
     cursor.close()
@@ -142,9 +194,12 @@ def pushdata(datadic):
     print("Connection closed task compleded.")
     return
 
+
 def main():
     datadic = getdata()
-    #pushdata(datadic)
+    # pushdata(datadic)
+
+
 main()
 # Lijst aanmaken met alle values die worden opgehaald vanuit het xml bestand
 # Data uit deze lijst overbrengen naar de database
