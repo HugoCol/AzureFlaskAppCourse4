@@ -6,6 +6,7 @@
 from xml.etree import ElementTree
 from Bio import Entrez
 import xmltodict
+import time
 
 
 def accessiecode_vinden():
@@ -25,13 +26,24 @@ def accessiecode_vinden():
         accessiecode.append(c.find('Hit_accession').text)
     return accessiecode
 
-def lineage_toevoegen(accessiecodes):
 
+def lineage_toevoegen(accessiecodes):
+    """
+    Functie die een dictionary maakt van alle accessiecodes met de
+    bijbehorende lineage
+    :param accessiecodes: list - accessiecodes
+    :return: dictionary - value = accessiecode, keys = lineage
+    """
+    for i in accessiecodes:
+        time.sleep(0.4)
+        Entrez.email = "thijschermens@gmail.com"
+        seqio = Entrez.efetch(db="protein", id=i, retmode="xml")
+        seqio_read = Entrez.read(seqio)
+        seqio.close()
+        lineage = seqio_read[0]["GBSeq_taxonomy"].split(";")
+        print(lineage)
 
 
 if __name__ == '__main__':
     accessiecodes = accessiecode_vinden()
     lineage_toevoegen(accessiecodes)
-
-
-
