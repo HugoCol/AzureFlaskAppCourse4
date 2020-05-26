@@ -30,6 +30,7 @@ def getdata():
         Hit_id = c.find('Hit_id').text
         familie = c.find('Hit_def').text
         acessiecode = c.find('Hit_accession').text
+        print(acessiecode)
         hit = c.find('Hit_num').text
         score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
         tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
