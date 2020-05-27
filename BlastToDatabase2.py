@@ -120,33 +120,35 @@ def pushdata(datadic):
         if datadic[i][11] != "":
             for j in datadic[i][11]:
                 print(j)
-                lincheck = conn.cursor()
-                string1 = f"select 'name' from lineage where 'name' like '{j}'"
+                lincheck = conn.cursor(buffered=True)
+                string1 = f"select id, 'name', parent_id from lineage where 'name' = '{j}'"
                 lincheck.execute(string1)
                 conn.commit()
+                test = lincheck.fetchall()
                 lincheck.close()
                 print(lincheck)
-                if lincheck == "":
+                print(test)
+                if test == "":
                     if countlin == 0:
                         cursor = conn.cursor()
                         string2 = f"insert into lineage ('name', parent_id) values ('{datadic[i][11][countlin]}')"
                         cursor.execute(string2)
                         conn.commit()
                         cursor.close()
-                else:
-                    formercount = countlin - 1
-                    # Vul de lineage tabel met data
-                    linid = conn.cursor(buffered=True)
-                    string3 = f"select id from lineage where 'name' = '{datadic[i][11][formercount]}'"
-                    linid.execute(string3)
-                    conn.commit()
-                    linid.close()
-                    cursor = conn.cursor()
-                    string4 = f"insert into lineage ('name', parent_id) values ('{datadic[i][11][countlin]}, {linid}')"
-                    cursor.execute(string4)
-                    conn.commit()
-                    cursor.close()
-                    countlin += 1
+                    else:
+                        formercount = countlin - 1
+                        # Vul de lineage tabel met data
+                        linid = conn.cursor(buffered=True)
+                        string3 = f"select id from lineage where 'name' = '{datadic[i][11][formercount]}'"
+                        linid.execute(string3)
+                        conn.commit()
+                        linid.close()
+                        cursor = conn.cursor()
+                        string4 = f"insert into lineage ('name', parent_id) values ('{datadic[i][11][countlin]}', '{linid}')"
+                        cursor.execute(string4)
+                        conn.commit()
+                        cursor.close()
+                        countlin += 1
 
             else:
                 print("Item", j, "bestaat al")
@@ -156,7 +158,7 @@ def pushdata(datadic):
         if datadic[i][2] != "":
             # Kijken of de data die in de database gaat er al in staat
             cursorchecko = conn.cursor(buffered=True)
-            string5 = f"select naam_organisme from organisme where naam_organisme = '{datadic[i][2]}'"
+            string5 = f"select naam_organismenaam from organisme where naam_organismenaam = '{datadic[i][2]}'"
             cursorchecko.execute(string5)
             conn.commit()
             cursorchecko.close()
@@ -171,7 +173,7 @@ def pushdata(datadic):
 
 
                 cursor = conn.cursor()
-                string7 = f"insert into organisme (naam_organisme lineage_id, eiwit_id) values ('{datadic[i][2]}, {linidcursor}, {datadic[i][0]}' )"
+                string7 = f"insert into organisme (naam_organismenaam lineage_id, eiwit_id) values ('{datadic[i][2]}, {linidcursor}, {datadic[i][0]}' )"
                 cursor.execute(string7)
                 conn.commit()
                 cursor.close()
@@ -210,7 +212,7 @@ def pushdata(datadic):
             seqidcursor.close()
             # Het id van organisme ophalen om deze in de organisme tabel te zetten
             orgidcursor = conn.cursor(buffered=True)
-            string11 = f"select id from organisme where naam_organisme = '{datadic[i][2]}'"
+            string11 = f"select id from organisme where naam_organismenaam = '{datadic[i][2]}'"
             orgidcursor.execute(string11)
             conn.commit()
             orgidcursor.close()
