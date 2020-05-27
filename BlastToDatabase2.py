@@ -8,13 +8,15 @@ import time
 from Bio import Entrez
 import os
 
+teller1 = 0
+teller2 = 0
+teller3 = 0
+teller4 = 0
 
-def getdata(datafile):
+def getdata(datafile, filename):
     """
     :return:
     """
-    # Bestand openen
-    filename = 'data/XMLForward1.xml'
     # Door bestand heen gaan
     dom = ElementTree.parse(filename)
     # Alle hits eruit zoeken
@@ -114,6 +116,10 @@ def pushdata(datadic):
     #     db="sql234812", password="iM4*eV6%")
     # print("Connected")
     # Voor elke regel in de dictionary waar de data in staat
+    global teller1
+    global teller2
+    global teller3
+    global teller4
     for i in datadic:
         countlin = 0
         # Kijk of de plek gevult is met data
@@ -121,39 +127,48 @@ def pushdata(datadic):
             for j in datadic[i][11]:
                 print(j)
                 lincheck = conn.cursor(buffered=True)
-                string1 = f"select id, 'name', parent_id from lineage where 'name' = '{j}'"
+                string1 = f"select name from lineage where name = '{j}'"
                 lincheck.execute(string1)
                 conn.commit()
                 test = lincheck.fetchall()
                 lincheck.close()
                 print(lincheck)
                 print(test)
-                if test == "":
+                if test==[]:
                     if countlin == 0:
                         cursor = conn.cursor()
-                        string2 = f"insert into lineage ('name', parent_id) values ('{datadic[i][11][countlin]}')"
+                        string2 = f"insert into lineage (id, name) values ('{teller1}', '{datadic[i][11][countlin]}')"
                         cursor.execute(string2)
                         conn.commit()
                         cursor.close()
+                        countlin += 1
+                        teller1 += 1
                     else:
                         formercount = countlin - 1
+                        print(formercount)
                         # Vul de lineage tabel met data
                         linid = conn.cursor(buffered=True)
-                        string3 = f"select id from lineage where 'name' = '{datadic[i][11][formercount]}'"
+                        string3 = f"select id from lineage where name = '{datadic[i][11][formercount]}'"
                         linid.execute(string3)
                         conn.commit()
+                        liniageid = linid.fetchall()
+                        replacer = str(liniageid[0])
+                        replace1 = replacer.replace('(',"").replace(',', "").replace(')', "")
+                        print(replace1)
                         linid.close()
                         cursor = conn.cursor()
-                        string4 = f"insert into lineage ('name', parent_id) values ('{datadic[i][11][countlin]}', '{linid}')"
+                        string4 = f"insert into lineage (id, name, parent_id) values ('{teller1}', '{datadic[i][11][countlin]}', '{replace1}')"
                         cursor.execute(string4)
                         conn.commit()
                         cursor.close()
                         countlin += 1
+                        teller1 += 1
 
-            else:
-                print("Item", j, "bestaat al")
-                pass
-            print("lineage fill for ", datadic[i][3], " completed")
+                else:
+                    print("Item", j, "bestaat al")
+                    countlin += 1
+                    pass
+            print("lineage fill for ", datadic[i][3], " completed\n\n\n\n\n")
             # Kijk of de plek gevult is met data
         if datadic[i][2] != "":
             # Kijken of de data die in de database gaat er al in staat
@@ -161,27 +176,31 @@ def pushdata(datadic):
             string5 = f"select naam_organismenaam from organisme where naam_organismenaam = '{datadic[i][2]}'"
             cursorchecko.execute(string5)
             conn.commit()
+            organismecheck = cursorchecko.fetchall()
             cursorchecko.close()
             # Als de variabele leeg blijft data in de database zetten
-            if cursorchecko == "":
+            if organismecheck == []:
                 # Het id van linage ophalen om deze in de organisme tabel te zetten
                 linidcursor = conn.cursor(buffered=True)
-                string6 = f"select id from lineage where 'name' = '{datadic[i][11][-1]}'"
+                string6 = f"select id from lineage where name = '{datadic[i][11][-1]}'"
                 linidcursor.execute(string6)
                 conn.commit()
+                orglin = linidcursor.fetchall()
                 linidcursor.close()
-
-
+                replacer1 = str(orglin[0])
+                replace2 = replacer1.replace('(', "").replace(',', "").replace(')', "")
+                print(datadic[i][2])
+                print(datadic[i][0])
                 cursor = conn.cursor()
-                string7 = f"insert into organisme (naam_organismenaam lineage_id, eiwit_id) values ('{datadic[i][2]}, {linidcursor}, {datadic[i][0]}' )"
+                string7 = f"insert into organisme (id, naam_organismenaam, lineage_id, eiwit_id) values ('{teller2}', '{datadic[i][2]}', '{replace2}', '{datadic[i][0]}')"
                 cursor.execute(string7)
                 conn.commit()
                 cursor.close()
                 print("Organisme fill for ", datadic[i][3], " completed")
+                teller2 += 1
             else:
                 print(cursorchecko, "bestaat al")
                 pass
-            cursorchecko += ""
         # Kijk of de plek gevult is met data
         if datadic[i][9] != "":
             # Kijken of de data die in de database gaat er al in staat
@@ -189,19 +208,20 @@ def pushdata(datadic):
             string8 = f"select header from sequentie where header = '{datadic[i][9]}'"
             cursorchecks.execute(string8)
             conn.commit()
+            sequencecheck = cursorchecks.fetchall()
             cursorchecks.close()
             # Als de variabele leeg blijft data in de database zetten
-            if cursorchecks == "":
+            if sequencecheck == []:
                 cursor = conn.cursor()
-                string9 = f"insert into sequentie (header, sequence, asci_score, read) values ('{datadic[i][9]}, {datadic[i][8]}, {datadic[i][10]}, {1}')"
+                string9 = f"insert into sequentie (id, header, sequence, asci_score, read) values ('{teller3}','{datadic[i][9]}', '{datadic[i][8]}', '{datadic[i][10]}', '1')"
                 cursor.execute(string9)
                 conn.commit()
                 cursor.close()
                 print("Gegevens fill for ", datadic[i][3], " completed")
+                teller3 += 1
             else:
                 print(cursorchecks, "bestaat al")
                 pass
-            cursorchecks += ""
         # Kijk of de plek gevult is met data
         if datadic[i][1] != "":
             # Het id van sequentie ophalen om deze in de organisme tabel te zetten
@@ -209,24 +229,31 @@ def pushdata(datadic):
             string10 = f"select id from sequentie where header = '{datadic[i][9]}'"
             seqidcursor.execute(string10)
             conn.commit()
+            seqid = seqidcursor.fetchall()
             seqidcursor.close()
+            replacer2 = str(seqid[0])
+            replace3 = replacer2.replace('(', "").replace(',', "").replace(')', "")
             # Het id van organisme ophalen om deze in de organisme tabel te zetten
             orgidcursor = conn.cursor(buffered=True)
             string11 = f"select id from organisme where naam_organismenaam = '{datadic[i][2]}'"
             orgidcursor.execute(string11)
             conn.commit()
+            orgid = orgidcursor.fetchall()
             orgidcursor.close()
+            replacer3 = str(orgid[0])
+            replace4 = replacer3.replace('(', "").replace(',', "").replace(')', "")
             # De eiwit tabel vullen met data
             cursor = conn.cursor()
-            string12 = f"insert into eiwit (description, accessiecode, " \
+            string12 = f"insert into eiwit (id, description, accessiecode, " \
                        f"percent_identity, e_value, max_score, total_score, " \
                        f"query_cover sequentie_id, Organisme_id) values " \
-                       f"('{datadic[i][1]}, {datadic[i][3]}, {datadic[i][7]}, " \
-                       f"{datadic[i][6]}, {datadic[i][4]}, {datadic[i][5]}, " \
-                       f"{datadic[i][12]}, {seqidcursor}, {orgidcursor}')"
+                       f"('{teller4}', '{datadic[i][1]}', '{datadic[i][3]}', '{datadic[i][7]}, " \
+                       f"{datadic[i][6]}', '{datadic[i][4]}', '{datadic[i][5]}', '" \
+                       f"{datadic[i][12]}', '{replace3}', '{replace4}')"
             cursor.execute(string12)
             conn.commit()
             cursor.close()
+            teller4 += 1
             print("Eiwit  fill for ", datadic[i][3], " completed")
     print("Database filled!\nClosing connection....")
     # Connectie met database sluiten
@@ -237,7 +264,9 @@ def pushdata(datadic):
 
 def main():
     datafile = 'data/dataset.txt'
-    datadic = getdata(datafile)
+
+    filename = 'data/XMLForward1.xml'
+    datadic = getdata(datafile, filename)
     pushdata(datadic)
 
 
