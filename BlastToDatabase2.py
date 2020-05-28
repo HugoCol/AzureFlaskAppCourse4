@@ -189,14 +189,14 @@ def pushdata(datadic):
                 linidcursor.close()
                 replacer1 = str(orglin[0])
                 replace2 = replacer1.replace('(', "").replace(',', "").replace(')', "")
-                print(datadic[i][2])
-                print(datadic[i][0])
+                variabele1 = datadic[i][2]
+                variabele2 = datadic[i][0]
                 cursor = conn.cursor()
-                string7 = f"insert into organisme (id, naam_organismenaam, lineage_id, eiwit_id) values ('{teller2}', '{datadic[i][2]}', '{replace2}', '{datadic[i][0]}')"
+                string7 = f"insert into organisme (id, naam_organismenaam, lineage_id, eiwit_id) values ('{teller2}', '{variabele1}', '{replace2}', '{variabele2}')"
                 cursor.execute(string7)
                 conn.commit()
                 cursor.close()
-                print("Organisme fill for ", datadic[i][3], " completed")
+                print("Organisme fill for ", datadic[i][3], " completed\n\n\n\n\n")
                 teller2 += 1
             else:
                 print(cursorchecko, "bestaat al")
@@ -213,11 +213,12 @@ def pushdata(datadic):
             # Als de variabele leeg blijft data in de database zetten
             if sequencecheck == []:
                 cursor = conn.cursor()
-                string9 = f"insert into sequentie (id, header, sequence, asci_score, read) values ('{teller3}','{datadic[i][9]}', '{datadic[i][8]}', '{datadic[i][10]}', '1')"
+                numer = 1
+                string9 = f"insert into sequentie (id, header, sequence, asci_score, _read_) values ('{teller3}', '{datadic[i][9]}', '{datadic[i][8]}', '{datadic[i][10]}', '{numer}')"
                 cursor.execute(string9)
                 conn.commit()
                 cursor.close()
-                print("Gegevens fill for ", datadic[i][3], " completed")
+                print("Sequentie fill for ", datadic[i][3], " completed\n\n\n\n\n")
                 teller3 += 1
             else:
                 print(cursorchecks, "bestaat al")
@@ -246,9 +247,10 @@ def pushdata(datadic):
             cursor = conn.cursor()
             string12 = f"insert into eiwit (id, description, accessiecode, " \
                        f"percent_identity, e_value, max_score, total_score, " \
-                       f"query_cover sequentie_id, Organisme_id) values " \
-                       f"('{teller4}', '{datadic[i][1]}', '{datadic[i][3]}', '{datadic[i][7]}, " \
-                       f"{datadic[i][6]}', '{datadic[i][4]}', '{datadic[i][5]}', '" \
+                       f"query_cover, sequentie_id, Organisme_id) values " \
+                       f"('{teller4}', '{datadic[i][1]}', '{datadic[i][3]}" \
+                       f"', '{datadic[i][7]}', '{datadic[i][6]}', '" \
+                       f"{datadic[i][4]}', '{datadic[i][5]}', '" \
                        f"{datadic[i][12]}', '{replace3}', '{replace4}')"
             cursor.execute(string12)
             conn.commit()
