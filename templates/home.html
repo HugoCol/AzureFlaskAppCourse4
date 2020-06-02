@@ -11,6 +11,31 @@
     </head>
 
     <body>
+        <h2>Vul hieronder in wat je wilt opzoeken:</h2>
+        <form action="{{ url_for('database') }}" method="post">
+            <input type = "text" name= "zoek" />
+            <input type = "submit" value="Zoek in database" >
+              <p>select where to search:</p>
 
+          <input type="radio" id="organisme" name="selection" value="organisme">
+          <label for="organisme">Organisme</label><br>
+
+          <input type="radio" id="eiwit" name="selection" value="eiwit">
+          <label for="eiwit">Accessiecode</label><br>
+
+          <input type="radio" id="eiwit" name="selection" value="eiwit">
+          <label for="description">Beschrijving</label>
+        </form>
+        <br><hr>
+        <p>{{ resultatentextrange }}</p>
+        {{ resultatentext }}<br>
+        {% for i in range(20) %}
+            {{ resultaten[i] }}<br>
+        {% endfor %}
     </body>
+
+
+<footer>
+    Bio informatica jaar 1, groep 5
+</footer>
 </html>
