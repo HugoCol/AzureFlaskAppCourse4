@@ -24,11 +24,23 @@ db = "iaoqi"
 def database():
     if request.method == "POST":
         resultatenlijst = []
+
+        buttonselect = request.form.get("selection","")
+
+        print(buttonselect)
         zoekopdracht = request.form.get("zoek", "")
+        if buttonselect == 'organisme':
+            column = 'naam_organismenaam'
+
+        elif buttonselect == 'eiwit':
+            column = 'description'
+
+        elif buttonselect == 'accesiecode':
+            column = 'accessiecode'
 
         conn = mysql.connector.connect(host=host,user=user,password=password,db=db)
         cursor = conn.cursor()
-        query = "select * from eiwit where description like \"%" + zoekopdracht \
+        query = "select * from " + buttonselect + " where "+ column + " like \"%" + zoekopdracht \
                 + "%\""
         cursor.execute(query)
 
