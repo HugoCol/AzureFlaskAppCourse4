@@ -30,14 +30,13 @@
           <label for="lineage">Lineage</label><br>
         </form>
         <br><hr>
+        {% if resultaten != '': %}
+            {% for i in range(20) %}
+                <button type="button" class="collapsible">{{ resultaten[i][1] }}</button>
+                <div class="content">
+                    <li>{{ resultaten[i] }}</li></div>
+            {% endfor %}
 
-
-        {% for i in range(20) %}
-            <button type="button" class="collapsible">{{ resultaten[i] }}</button>
-            <div class="content">
-            <p><li>{{ resultaten[i] }}</li></p>
-        {% endfor %}
-        </div>
 
         <script>
         var coll = document.getElementsByClassName("collapsible");
