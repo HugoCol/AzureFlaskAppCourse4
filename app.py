@@ -11,10 +11,10 @@ def index():
     if request.method == "POST":
         seq = request.form.get("sequence", "")
         protein = translate(seq)
-        return render_template('hello_world.html', title='Home',
+        return render_template('home.html', title='Home',
                                proteins=protein)
     else:
-        return render_template('hello_world.html', title='Home',
+        return render_template('home.html', title='Home',
                                proteins='protein', fastafile='fastafile')
 
 
