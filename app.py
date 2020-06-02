@@ -38,6 +38,9 @@ def database():
         elif buttonselect == 'accesiecode':
             column = 'accessiecode'
 
+        elif buttonselect == 'lineage':
+            column = 'name'
+
         conn = mysql.connector.connect(host=host,user=user,password=password,db=db)
         cursor = conn.cursor()
         query = "select * from " + buttonselect + " where "+ column + " like \"%" + zoekopdracht \
