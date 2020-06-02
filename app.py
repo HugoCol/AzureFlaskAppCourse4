@@ -28,7 +28,7 @@ def database():
 
         conn = mysql.connector.connect(host=host,user=user,password=password,db=db)
         cursor = conn.cursor()
-        query = "select description from eiwit where description like \"%" + zoekopdracht \
+        query = "select * from eiwit where description like \"%" + zoekopdracht \
                 + "%\""
         cursor.execute(query)
 
