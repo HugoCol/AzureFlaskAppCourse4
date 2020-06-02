@@ -18,17 +18,5 @@ def index():
                                proteins='protein', fastafile='fastafile')
 
 
-# @app.route('/fastafile',methods=["POST", "GET"])
-# def fastafile():
-#
-#     if request.method == "POST":
-#         fastafile = request.form.get("fastafile", "")
-#         print(fastafile)
-#         fasta_output = fastafile_reader(fastafile)
-#         return render_template('hello_world.html', title='Home',proteins='',fastafile=fasta_output)
-#     else:
-#         return render_template('hello_world.html', title='Home',proteins='',fastafile='fastafile')
-
-
 if __name__ == '__main__':
     app.run()
