@@ -24,14 +24,43 @@
           <label for="eiwit">Accessiecode</label><br>
 
           <input type="radio" id="eiwit" name="selection" value="eiwit">
-          <label for="description">Beschrijving</label>
+          <label for="description">Beschrijving</label><br>
+
+            <input type="radio" id="lineage" name="selection" value="lineage">
+          <label for="lineage">Lineage</label><br>
         </form>
         <br><hr>
-        <p>{{ resultatentextrange }}</p>
-        {{ resultatentext }}<br>
+
+
         {% for i in range(20) %}
-            {{ resultaten[i] }}<br>
+            <button type="button" class="collapsible">{{ resultaten[i] }}</button>
+            <div class="content">
+            <p><li>{{ resultaten[i] }}</li></p>
         {% endfor %}
+        </div>
+
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+{##}
+{#        <p>{{ resultatentextrange }}</p>#}
+{#        {{ resultatentext }}<br>#}
+{#        {% for i in range(20) %}#}
+{#            {{ resultaten[i] }}<br>#}
+{#        {% endfor %}#}
     </body>
 
 
