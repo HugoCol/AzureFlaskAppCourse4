@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from dna_to_protein import translate
-from fastafilereader import fastafile_reader
+
 
 app = Flask(__name__)
 
