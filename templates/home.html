@@ -1,18 +1,16 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="C:\Users\luche\Documents\HAN\Blok_4\Weektaken\Weektaak 3-6\AzureGithub\static\style.css">
+        <TITLE>Home</TITLE>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="info.html">Info</a></li></li>
+                <li> <a href="over_ons.html">Over ons</a></li>
+            </ul>
+    </head>
 
-{% block head %}  {{ super() }} {% endblock %}
+    <body>
 
-
-
-
-{% block content %}
-        <h1>Insert DNA to return Protein sequence</h1>
-
-        <form action="{{ url_for('index') }}" method="post">
-          <p><input type="text" name="sequence"></p>
-          <p><input type="submit"></p>
-        </form>
-
-        <p>{{ proteins }}</p>
-        <p>{{ fastafile }}</p>
-{% endblock %}
+    </body>
+</html>
