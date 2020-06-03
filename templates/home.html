@@ -47,18 +47,23 @@
         {% for i in resultaten %}
             <button type="button" class="collapsible">{{ resultaten[i]['name'] }}</button>
             <div class="content">
-                <li>Name: {{ resultaten[i]['name'] }}</li><br>
-                <li>accessiecode: {{ resultaten[i]['accessiecode'] }}</li><br>
-                <li>IDPercentage: {{ resultaten[i]['IDpercentage'] }}%</li><br>
-                <li>Evalue: {{ resultaten[i]['Evalue'] }}</li><br>
-                <li>max_score: {{ resultaten[i]['max_score'] }}</li><br>
-                <li>totale_score: {{ resultaten[i]['totale_score'] }}</li><br>
-                <li>query_cover: {{ resultaten[i]['query_cover'] }}</li><br>
-                <li>naam_organismenaam: {{ resultaten[i]['naam_organismenaam'] }}</li><br>
-                <li>linnaam: {{ resultaten[i]['linnaam'] }}</li><br>
-                <li>header: {{ resultaten[i]['header'] }}</li><br>
-                <li>sequence: {{ resultaten[i]['sequence'] }}</li><br>
-                <li>asci_score: {{ resultaten[i]['asci_score'] }}</li><br>
+
+
+                <p><b>Name: </b>{{ resultaten[i]['name'] }}</p><br>
+                <p><b>accessiecode: </b>{{ resultaten[i]['accessiecode'] }}</p><br>
+                <p><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p><br>
+                <p><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p><br>
+                <p><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p><br>
+                <p><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p><br>
+                <p><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p><br>
+                <p><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p><br>
+                <p><b>linnaam: </b>{{ resultaten[i]['linnaam'] }}</p><br>
+                <p><b>header: </b>{{ resultaten[i]['header'] }}</p><br>
+                <div class="sequence">
+                <p><b>sequence: </b>{{ resultaten[i]['sequence'] }}</p><br>
+                </div>
+                <p><b>asci_score: </b>{{ resultaten[i]['asci_score'] }}</p><br>
+
 
             </div>
         {% endfor %}
