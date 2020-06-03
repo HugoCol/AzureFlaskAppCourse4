@@ -40,8 +40,8 @@ def zoeken(filter, search):
                            f"lineage.name as linnaam from organisme join lineage on "
                            f"organisme.lineage_id=lineage.id) as orjoin on "
                            f"eiwit.Organisme_id=orjoin.id join sequentie s on "
-                           f"eiwit.sequentie_id = s.id where description ='"
-                           f"{search}'order by eiwit.id ASC limit 500;")
+                           f"eiwit.sequentie_id = s.id where instr(description"
+                           f", '{search}') order by eiwit.id ASC limit 500;")
             for i in cursor:
                 msg.update({i[0]: {"name": i[1],
                                    "accessiecode": i[2],
@@ -60,8 +60,8 @@ def zoeken(filter, search):
                            f"lineage.name as linnaam from organisme join lineage on "
                            f"organisme.lineage_id=lineage.id) as orjoin on "
                            f"eiwit.Organisme_id=orjoin.id join sequentie s on "
-                           f"eiwit.sequentie_id = s.id where {filter}='"
-                           f"{search}'order by eiwit.id ASC limit 500;")
+                           f"eiwit.sequentie_id = s.id where instr({filter}"
+                           f", '{search}')order by eiwit.id ASC limit 500;")
             for i in cursor:
                 msg.update({i[0]: {"name": i[1],
                                    "accessiecode": i[2],
