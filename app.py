@@ -19,7 +19,10 @@ def database():
         zoekopdracht = request.form.get("zoek", "")
         print(zoekopdracht)
 
-        resultatenlijst = zoeken(buttonselect,zoekopdracht)
+        sorton = request.form.get("filterop", "")
+        HLLH = request.form.get("richting", "")
+
+        resultatenlijst = zoeken(buttonselect, zoekopdracht, sorton, HLLH)
 
 
         rangeresultatentext = "Alleen de eerste 20 resultaten worden " \
