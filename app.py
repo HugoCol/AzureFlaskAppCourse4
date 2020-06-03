@@ -19,10 +19,10 @@ def database():
 
         buttonselect = request.form.get("selection","")
 
-        print(type(buttonselect))
+        print(buttonselect)
 
         zoekopdracht = request.form.get("zoek", "")
-        print(type(zoekopdracht))
+        print(zoekopdracht)
 
         resultatenlijst = zoeken(buttonselect,zoekopdracht)
         # if buttonselect == 'organisme':

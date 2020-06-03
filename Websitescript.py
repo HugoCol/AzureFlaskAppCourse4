@@ -60,7 +60,7 @@ def zoeken(filter, search):
                            f"lineage.name as linnaam from organisme join lineage on "
                            f"organisme.lineage_id=lineage.id) as orjoin on "
                            f"eiwit.Organisme_id=orjoin.id join sequentie s on "
-                           f"eiwit.sequentie_id = s.id where '{filter}'='"
+                           f"eiwit.sequentie_id = s.id where {filter}='"
                            f"{search}'order by eiwit.id ASC limit 500;")
             for i in cursor:
                 msg.update({i[0]: {"name": i[1],
