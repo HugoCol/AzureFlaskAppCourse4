@@ -9,7 +9,7 @@ def zoeken(filter, search):
                          "azure.com",
                     user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
                     db="iaoqi", password="638942")
-    if search = "":
+    if search == "":
         cursor = conn.cursor()
         cursor.execute(f"select eiwit.id, description, accessiecode, "
                        f"percent_identity, e_value, max_score, total_score, "
@@ -22,13 +22,15 @@ def zoeken(filter, search):
                        f"eiwit.sequentie_id = s.id order by eiwit.id ASC "
                        f"limit 500;")
         for i in cursor:
-            msg[f"{i[0]}"] = values[f"{i[1]} {i[2]} {i[3]} {i[4]} {i[5]}" \
-                                    f" {i[6]} {i[7]} {i[8]} {i[9]}" \
-                                    f" {i[10]} {i[11]}"]
+            msg.update({i[0] :{"name":i[1],
+                      "accessiecode":i[2],
+                      "IDpercentage":i[3],
+                      "Evalue":i[4]}})
+
         cursor.close()
         conn.close()
     else:
-        if filter = '':
+        if filter == '':
             cursor = conn.cursor()
             cursor.execute(f"select eiwit.id, description, accessiecode, "
                            f"percent_identity, e_value, max_score, total_score, "
@@ -41,9 +43,10 @@ def zoeken(filter, search):
                            f"eiwit.sequentie_id = s.id where description ='"
                            f"{search}'order by eiwit.id ASC limit 500;")
             for i in cursor:
-                msg[f"{i[0]}"] = values[f"{i[1]} {i[2]} {i[3]} {i[4]} {i[5]}" \
-                                        f" {i[6]} {i[7]} {i[8]} {i[9]} " \
-                                        f"{i[10]} {i[11]}"]
+                msg.update({i[0]: {"name": i[1],
+                                   "accessiecode": i[2],
+                                   "IDpercentage": i[3],
+                                   "Evalue": i[4]}})
             cursor.close()
             conn.close()
 
@@ -60,10 +63,11 @@ def zoeken(filter, search):
                            f"eiwit.sequentie_id = s.id where '{filter}'='"
                            f"{search}'order by eiwit.id ASC limit 500;")
             for i in cursor:
-                msg[f"{i[0]}"] = values[f"{i[1]} {i[2]} {i[3]} {i[4]} {i[5]}" \
-                                        f" {i[6]} {i[7]} {i[8]} {i[9]} " \
-                                        f"{i[10]} {i[11]}"]
+                msg.update({i[0]: {"name": i[1],
+                                   "accessiecode": i[2],
+                                   "IDpercentage": i[3],
+                                   "Evalue": i[4]}})
             cursor.close()
             conn.close()
-
+        print(msg)
     return msg

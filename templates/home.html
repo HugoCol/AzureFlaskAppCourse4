@@ -15,7 +15,7 @@
         <form action="{{ url_for('database') }}" method="post">
             <input type = "text" name= "zoek" />
             <input type = "submit" value="Zoek in database" >
-              <p>select where to search:</p>
+              <p>filters:</p>
 
           <input type="radio" id="organisme" name="selection" value="organisme">
           <label for="organisme">Organisme</label><br>
@@ -29,14 +29,19 @@
             <input type="radio" id="lineage" name="selection" value="lineage">
           <label for="lineage">Lineage</label><br>
         </form>
-        <br><hr>
-        {% if resultaten != '': %}
-            {% for i in range(20) %}
-                <button type="button" class="collapsible">{{ resultaten[i][1] }}</button>
-                <div class="content">
-                    <li>{{ resultaten[i] }}</li></div>
-            {% endfor %}
 
+        <br><hr>
+
+        {% for i in resultaten %}
+            <button type="button" class="collapsible">{{ resultaten[i]['name'] }}</button>
+            <div class="content">
+                <li>Name: {{ resultaten[i]['name'] }}</li><br>
+                <li>accessiecode: {{ resultaten[i]['accessiecode'] }}</li><br>
+                <li>IDPercentage: {{ resultaten[i]['IDpercentage'] }}%</li><br>
+                <li>Evalue: {{ resultaten[i]['Evalue'] }}</li><br>
+            </div>
+        {% endfor %}
+    </body>
 
         <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -54,13 +59,7 @@
           });
         }
         </script>
-{##}
-{#        <p>{{ resultatentextrange }}</p>#}
-{#        {{ resultatentext }}<br>#}
-{#        {% for i in range(20) %}#}
-{#            {{ resultaten[i] }}<br>#}
-{#        {% endfor %}#}
-    </body>
+
 
 
 <footer>
