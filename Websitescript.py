@@ -66,7 +66,11 @@ def zoeken(filter, search):
                 msg.update({i[0]: {"name": i[1],
                                    "accessiecode": i[2],
                                    "IDpercentage": i[3],
-                                   "Evalue": i[4]}})
+                                   "Evalue": i[4]
+
+
+
+                                   }})
             cursor.close()
             conn.close()
         print(msg)
