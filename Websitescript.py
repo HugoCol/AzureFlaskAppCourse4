@@ -55,7 +55,16 @@ def zoeken(filter, search):
                 msg.update({i[0]: {"name": i[1],
                                    "accessiecode": i[2],
                                    "IDpercentage": i[3],
-                                   "Evalue": i[4]}})
+                                   "Evalue": i[4],
+                                   'max_score': i[5],
+                                   'totale_score': i[6],
+                                   'query_cover': i[7],
+                                   'naam_organismenaam': i[8],
+                                   'linnaam': i[9],
+                                   'header': i[10],
+                                   'sequence': i[11],
+                                   'asci_score': i[12]
+                                   }})
             cursor.close()
             conn.close()
 
@@ -75,10 +84,15 @@ def zoeken(filter, search):
                 msg.update({i[0]: {"name": i[1],
                                    "accessiecode": i[2],
                                    "IDpercentage": i[3],
-                                   "Evalue": i[4]
-
-
-
+                                   "Evalue": i[4],
+                                   'max_score': i[5],
+                                   'totale_score': i[6],
+                                   'query_cover': i[7],
+                                   'naam_organismenaam': i[8],
+                                   'linnaam': i[9],
+                                   'header': i[10],
+                                   'sequence': i[11],
+                                   'asci_score': i[12]
                                    }})
             cursor.close()
             conn.close()
