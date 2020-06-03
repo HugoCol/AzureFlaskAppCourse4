@@ -9,13 +9,13 @@
                 <li> <a href="over_ons.html">Over ons</a></li>
             </ul>
     </head>
-
+<!-- geef meer informatie weer op de site over wat je kan vinden --!>
     <body>
-        <h2>Vul hieronder in wat je wilt opzoeken:</h2>
+        <h2>zoekterm:</h2>
         <form action="{{ url_for('database') }}" method="post">
             <input type = "text" name= "zoek" />
             <input type = "submit" value="Zoek in database" >
-              <p>filters:</p>
+              <p>filter op:</p>
 
           <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
           <label for="naam_organismenaam@">Organisme</label><br>
