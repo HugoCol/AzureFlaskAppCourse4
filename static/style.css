@@ -39,7 +39,19 @@ footer {
     position: fixed;
     color: white;
 }
-
+table {
+    align-content: left;
+    text-align: left;
+    place-self: center;
+}
+table tr {
+    border: grey;
+    border-style: solid;
+}
+table th {
+    border: grey;
+    border-style: solid;
+}
 .collapsible {
   background-color: #777;
   color: white;
@@ -68,3 +80,4 @@ footer {
     font-size:11px;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
 }
+
