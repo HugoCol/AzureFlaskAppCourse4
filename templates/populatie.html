@@ -18,30 +18,17 @@
 </head>
 <body>
         <br><hr>
-
-        {% for i in resultaten %}
-            <button type="button" class="collapsible">{{ resultaten[i]['name'] }}</button>
-            <div class="content">
-
-
-                <p><b>Name: </b>{{ resultaten[i]['name'] }}</p><br>
-                <p><b>accessiecode: </b>{{ resultaten[i]['accessiecode'] }}</p><br>
-                <p><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p><br>
-                <p><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p><br>
-                <p><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p><br>
-                <p><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p><br>
-                <p><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p><br>
-                <p><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p><br>
-                <p><b>linnaam: </b>{{ resultaten[i]['linnaam'] }}</p><br>
-                <p><b>header: </b>{{ resultaten[i]['header'] }}</p><br>
-                <div class="sequence">
-                <p><b>sequence: </b>{{ resultaten[i]['sequence'] }}</p><br>
-                </div>
-                <p><b>asci_score: </b>{{ resultaten[i]['asci_score'] }}</p><br>
-
-
-            </div>
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Count</th>
+        </tr>
+        {% for key in tabledata %}
+        <tr>
+            <th>{{ key }}</th>
+            <th>{{ tabledata[key] }}</th>
+        </tr>
         {% endfor %}
-    </body>
+        </table>
 </body>
 </html>

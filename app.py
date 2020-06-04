@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from Websitescript import zoeken
+from Websitescript import zoeken,databasecounter
 
 
 app = Flask(__name__)
@@ -40,10 +40,11 @@ def database():
                                resultaten='',
                                resultatentext='',
                                resultatentextrange='')
-@app.route('/populatie', methods=["POST", "GET"])
-def populatie():
 
-    return render_template(populatie.html)
+@app.route('/populatie.html', methods=["POST", "GET"])
+def populatie():
+    tabledata = databasecounter()
+    return render_template('populatie.html', tabledata=tabledata)
 
 
 if __name__ == '__main__':
