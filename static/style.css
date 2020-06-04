@@ -37,6 +37,10 @@ li a {
      horiz-align: center;
  }
 
+body{
+     overflow-x: hidden;
+ }
+
 footer {
     width: 100%;
     height: 5%;
