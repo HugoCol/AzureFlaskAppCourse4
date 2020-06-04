@@ -31,12 +31,10 @@ li a {
  }
 
  label {
-     margin: 5px%;
+     margin: 5px;
      border: 1px solid black;
      vertical-align: middle;
      horiz-align: center;
-
-
  }
 
 footer {
@@ -72,6 +70,7 @@ table th {
   text-align: left;
   outline: none;
   font-size: 15px;
+    position: relative;
 }
 
 .active, .collapsible:hover {
@@ -82,13 +81,15 @@ table th {
     list-style: none;
     padding: 0px;
     max-height: 0;
-    /*overflow: hidden;*/
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
     float: left;
+    width: 100%;
+    margin-left: 25%;
+
 }
 .sequence {
-    font-size:14px;
+    font-size: 14px;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
     border: 1px solid black;
     float: left;
@@ -97,4 +98,14 @@ table th {
     display: table-cell;
     width: 20%;
     word-wrap: break-word;
+}
+p.bordering {
+    border: 1px solid black;
+    width: 41%;
+    padding: 5px;
+    margin: 5px;
+
+}
+p.padding {
+    margin-left: 10%;
 }

@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/protein', methods=["POST", "GET"])
+@app.route('/home.html', methods=["POST", "GET"])
 def database():
     if request.method == "POST":
         resultatenlijst = []
@@ -46,6 +46,17 @@ def populatie():
     tabledata = databasecounter()
     return render_template('populatie.html', tabledata=tabledata)
 
+@app.route('/info.html')
+def info():
+    return render_template('info.html')
+
+@app.route('/over_ons.html')
+def over_ons():
+    return render_template('over_ons.html')
+
+@app.route('/blast.html')
+def blast():
+    return render_template('blast.html')
 
 if __name__ == '__main__':
     app.run()
