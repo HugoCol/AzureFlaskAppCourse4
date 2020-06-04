@@ -15,34 +15,30 @@
         <form action="{{ url_for('database') }}" method="post">
             <input type = "text" name= "zoek" />
             <input type = "submit" value="Zoek in database" >
-              <p>filter op:</p>
+            <p>Zoek in: Filter op: Van:</p>
 
             <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam@">dingetje</label>
-
-          <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam">Organisme</label><br>
-
-
-            <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam@">dingetje</label>
-
-          <input type="radio" id="eiwit" name="selection" value="eiwit">
-          <label for="eiwit">Accessiecode</label><br>
-
-            <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam@">dingetje</label>
-
-          <input type="radio" id="eiwit" name="selection" value="eiwit">
-          <label for="description">Beschrijving</label><br>
-
-            <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam@">dingetje</label>
-
+          <label for="naam_organismenaam">Organisme</label>
+            <input type="radio" id="filterop" name="filterop" value="percent_identity">
+          <label for="percent_identity">Precentage Identity</label>
+            <input type="radio" id="richting" name="richting" value="ASC">
+          <label for="ASC">Laag naar Hoog</label>
+            <br>
+            <input type="radio" id="eiwit" name="selection" value="accessiecode">
+          <label for="accessiecode">Accessiecode</label>
+            <input type="radio" id="filterop" name="filterop" value="query_cover">
+          <label for="query_cover">query_cover</label>
+            <input type="radio" id="richting" name="richting" value="DESC">
+          <label for="DESC">Hoog naar Laag</label>
+            <br>
+            <input type="radio" id="eiwit" name="selection" value="eiwit">
+          <label for="description">Beschrijving</label>
+            <input type="radio" id="filterop" name="filterop" value="e_value">
+          <label for="e_value">E_value</label>
+            <br>
             <input type="radio" id="lineage" name="selection" value="lineage">
-          <label for="lineage">Lineage</label><br>
-
-
+          <label for="lineage">Lineage</label>
+            <br>
 
         </form>
 
