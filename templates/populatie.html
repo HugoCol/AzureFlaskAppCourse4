@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <head>
+        <link rel="stylesheet" type="text/css" href="static\style.css">
+        <TITLE>Home</TITLE>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="info.html">Info</a></li></li>
+                <li> <a href="over_ons.html">Over ons</a></li>
+                <li> <a href="populatie.html">Microbio population</a></li>
+            </ul>
+    </head>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <br><hr>
+
+        {% for i in resultaten %}
+            <button type="button" class="collapsible">{{ resultaten[i]['name'] }}</button>
+            <div class="content">
+
+
+                <p><b>Name: </b>{{ resultaten[i]['name'] }}</p><br>
+                <p><b>accessiecode: </b>{{ resultaten[i]['accessiecode'] }}</p><br>
+                <p><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p><br>
+                <p><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p><br>
+                <p><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p><br>
+                <p><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p><br>
+                <p><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p><br>
+                <p><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p><br>
+                <p><b>linnaam: </b>{{ resultaten[i]['linnaam'] }}</p><br>
+                <p><b>header: </b>{{ resultaten[i]['header'] }}</p><br>
+                <div class="sequence">
+                <p><b>sequence: </b>{{ resultaten[i]['sequence'] }}</p><br>
+                </div>
+                <p><b>asci_score: </b>{{ resultaten[i]['asci_score'] }}</p><br>
+
+
+            </div>
+        {% endfor %}
+    </body>
+</body>
+</html>

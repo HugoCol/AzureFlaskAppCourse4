@@ -40,6 +40,10 @@ def database():
                                resultaten='',
                                resultatentext='',
                                resultatentextrange='')
+@app.route('/populatie', methods=["POST", "GET"])
+def populatie():
+
+    return render_template(populatie.html)
 
 
 if __name__ == '__main__':

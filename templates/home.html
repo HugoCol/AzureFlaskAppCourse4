@@ -7,16 +7,23 @@
                 <li><a class="active" href="home.html">Home</a></li>
                 <li><a href="info.html">Info</a></li></li>
                 <li> <a href="over_ons.html">Over ons</a></li>
+                <li> <a href="populatie.html">Microbio population</a></li>
             </ul>
     </head>
-<!-- geef meer informatie weer op de site over wat je kan vinden --!>
+<!-- geef meer informatie weer op de site over wat je kan vinden
+zorg dat de functionaliteit duidelijker is
+zet de informatie overzichtelijker neer
+geef naast de naam ook E-value en ID percentage weer
+verbind een mysql query die aantal organismen weergeeft aan een andere pagina op de site
+laat het antwoord op de onderzoeksvraag iets duidelijker zijn op de website
+
+--!>
     <body>
         <h2>zoekterm:</h2>
         <form action="{{ url_for('database') }}" method="post">
             <input type = "text" name= "zoek" />
             <input type = "submit" value="Zoek in database" >
             <p>Zoek in: Filter op: Van:</p>
-
             <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
           <label for="naam_organismenaam">Organisme</label>
             <input type="radio" id="filterop" name="filterop" value="percent_identity">
