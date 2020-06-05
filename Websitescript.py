@@ -84,3 +84,23 @@ def zoeken(filter, search, sorton, HLLH):
             cursor.close()
             conn.close()
     return msg
+
+
+def databasecounter():
+
+    orgcounter = {}
+    conn = mysql.connector.connect(
+                    host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
+                         "azure.com",
+                    user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
+                    db="iaoqi", password="638942")
+    cursor = conn.cursor()
+    cursor.execute(f" select tussentabel.naam_organismenaam, COUNT(*) as Aantal "
+                    f" from (select eiwit.id, naam_organismenaam from eiwit join organisme o "
+                   f"on eiwit.Organisme_id = o.id) as tussentabel "
+                    f"group by tussentabel.naam_organismenaam "
+                   f"order by Aantal DESC limit 10; ")
+    for i in cursor:
+        orgcounter.update({i[0]: i[1]})
+
+    return orgcounter

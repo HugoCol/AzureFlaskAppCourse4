@@ -1,73 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="static\style.css">
         <TITLE>Home</TITLE>
             <ul>
                 <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="info.html">Info</a></li></li>
+                <li><a href="info.html">Info</a></li>
                 <li> <a href="over_ons.html">Over ons</a></li>
+                <li> <a href="populatie.html">Microbio population</a></li>
+                <li> <a href="blast.html">Blast</a></li>
             </ul>
     </head>
-<!-- geef meer informatie weer op de site over wat je kan vinden --!>
-    <body>
+<!-- geef meer informatie weer op de site over wat je kan vinden
+zorg dat de functionaliteit duidelijker is
+zet de informatie overzichtelijker neer
+geef naast de naam ook E-value en ID percentage weer gedaan
+verbind een mysql query die aantal organismen weergeeft aan een andere pagina op de site gedaan
+laat het antwoord op de onderzoeksvraag iets duidelijker zijn op de website -->
+
+
+<body>
+{#<h2>zoekterm:</h2>#}
+
+<div class="row">
+            <div class="column-25">space
+        </div>
+
+    <div class="column-25">
         <h2>zoekterm:</h2>
-        <form action="{{ url_for('database') }}" method="post">
-            <input type = "text" name= "zoek" />
-            <input type = "submit" value="Zoek in database" >
-            <p>Zoek in: Filter op: Van:</p>
+<form action="{{ url_for('database') }}" method="post">
+    <input type = "text" name= "zoek" />
+    <input type = "submit" value="Zoek in database" >
+    <p>Zoek in: Filter op: Van:</p>
 
-            <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-          <label for="naam_organismenaam">Organisme</label>
-            <input type="radio" id="filterop" name="filterop" value="percent_identity">
-          <label for="percent_identity">Precentage Identity</label>
-            <input type="radio" id="richting" name="richting" value="ASC">
-          <label for="ASC">Laag naar Hoog</label>
-            <br>
-            <input type="radio" id="eiwit" name="selection" value="accessiecode">
-          <label for="accessiecode">Accessiecode</label>
-            <input type="radio" id="filterop" name="filterop" value="query_cover">
-          <label for="query_cover">query_cover</label>
-            <input type="radio" id="richting" name="richting" value="DESC">
-          <label for="DESC">Hoog naar Laag</label>
-            <br>
-            <input type="radio" id="eiwit" name="selection" value="eiwit">
-          <label for="description">Beschrijving</label>
-            <input type="radio" id="filterop" name="filterop" value="e_value">
-          <label for="e_value">E_value</label>
-            <br>
-            <input type="radio" id="lineage" name="selection" value="linnaam">
-          <label for="linnaam">Lineage</label>
-            <br>
+    <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
+  <label for="naam_organismenaam">Organisme</label>
+    <input type="radio" id="filterop" name="filterop" value="percent_identity">
+  <label for="percent_identity">Precentage Identity</label>
+    <input type="radio" id="richting" name="richting" value="ASC">
+  <label for="ASC">Laag naar Hoog</label>
 
-        </form>
+    <br>
+    <input type="radio" id="eiwit" name="selection" value="accessiecode">
+  <label for="accessiecode">Accessiecode</label>
+    <input type="radio" id="filterop" name="filterop" value="query_cover">
+  <label for="query_cover">query_cover</label>
+    <input type="radio" id="richting" name="richting" value="DESC">
+  <label for="DESC">Hoog naar Laag</label>
 
-        <br><hr>
+    <br>
+    <input type="radio" id="eiwit" name="selection" value="eiwit">
+  <label for="description">Beschrijving</label>
+    <input type="radio" id="filterop" name="filterop" value="e_value">
+  <label for="e_value">E_value</label>
+    <br>
+    <input type="radio" id="lineage" name="selection" value="lineage">
+  <label for="lineage">Lineage</label>
+    <br>
+</form>
+    </div>
 
-        {% for i in resultaten %}
-            <button type="button" class="collapsible">{{ resultaten[i]['name'] }}</button>
-            <div class="content">
+    <div class="column-25">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+        <div class="column-25">space
+        </div>
+    </div>
+</div>
+
+    <br>
+    <hr style="clear: both">
 
 
-                <p><b>Name: </b>{{ resultaten[i]['name'] }}</p><br>
-                <p><b>accessiecode: </b>{{ resultaten[i]['accessiecode'] }}</p><br>
-                <p><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p><br>
-                <p><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p><br>
-                <p><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p><br>
-                <p><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p><br>
-                <p><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p><br>
-                <p><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p><br>
-                <p><b>linnaam: </b>{{ resultaten[i]['linnaam'] }}</p><br>
-                <p><b>header: </b>{{ resultaten[i]['header'] }}</p><br>
-                <div class="sequence">
-                <p><b>sequence: </b>{{ resultaten[i]['sequence'] }}</p><br>
+    {% for i in resultaten %}
+        <button type="button" class="collapsible">
+            <div class="row-10">
+                <div class="column-33">
+            <b>Name:   </b>{{ resultaten[i]['naam_organismenaam'] }}
                 </div>
-                <p><b>asci_score: </b>{{ resultaten[i]['asci_score'] }}</p><br>
-
-
+                <div class="column-33">
+            <b>E-value: </b>{{ resultaten[i]['Evalue'] }}
+                </div>
+                <div class="column-33">
+            <b>Querycover: </b>{{ resultaten[i]['query_cover'] }}
+                </div>
             </div>
-        {% endfor %}
-    </body>
+        </button>
+
+        <div class="content">
+
+            <p class="bordering"><b>Name: </b>{{ resultaten[i]['name'] }}</p>
+            <p class="bordering"><b>accessiecode: </b><a href="https://www.ncbi.nlm.nih.gov/protein/{{ resultaten[i]['accessiecode'] }}"
+                                       target="_top" >{{ resultaten[i]['accessiecode'] }}</a></p>
+
+            <p class="bordering"><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p>
+
+            <p class="bordering"><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p>
+
+            <p class="bordering"><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p>
+
+            <p class="bordering"><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p>
+
+            <p class="bordering"><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p>
+
+            <p class="bordering"><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p>
+
+            <p class="bordering"><b>linnaam: </b><a href="https://www.wikipedia.org/wiki/{{ resultaten[i]['linnaam'] }} " target="_top" >{{ resultaten[i]['linnaam'] }}</a></p>
+
+            <p class="bordering"><b>header: </b>{{ resultaten[i]['header'] }}</p>
+
+
+            <div class="sequence">
+                <b>sequence: <br></b>{{ resultaten[i]['sequence'] }}
+            </div>
+            <div class="sequence">
+            <b>asci_score: <br></b>{{ resultaten[i]['asci_score'] }}
+            </div>
+
+        </div>
+    {% endfor %}
+</body>
 
         <script>
         var coll = document.getElementsByClassName("collapsible");
