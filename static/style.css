@@ -7,6 +7,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: black;
+    color: white;
 }
 li {
     float: left;
@@ -28,6 +29,18 @@ li a {
      background-color: #4d4d4d;
      color: white;
  }
+
+ label {
+     margin: 5px;
+     border: 1px solid black;
+     vertical-align: middle;
+     horiz-align: center;
+ }
+
+body{
+     overflow-x: hidden;
+ }
+
 footer {
     width: 100%;
     height: 5%;
@@ -39,32 +52,113 @@ footer {
     position: fixed;
     color: white;
 }
-
+table {
+    align-content: left;
+    text-align: left;
+    place-self: center;
+}
+table tr {
+    border: grey;
+    border-style: solid;
+}
+table th {
+    border: grey;
+    border-style: solid;
+}
 .collapsible {
   background-color: #777;
   color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
+
+
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 .content {
     list-style: none;
-    padding: 0 18px;
+    padding: 0px;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: white;
+    float: left;
+    width: 100%;
+    margin-left: 25%;
+
 }
 .sequence {
-    font-size:11px;
+    font-size: 14px;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    border: 1px solid black;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    display: table-cell;
+    width: 20%;
+    word-wrap: break-word;
+}
+p.bordering {
+    border: 1px solid black;
+    width: 41%;
+    padding: 5px;
+    margin: 5px;
+
+
+}
+p.padding {
+    margin-left: 10%;
+}
+
+.row {
+    width: 100%;
+    height: 40%;
+}
+.row-10{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.column-33 {
+    width: 33%;
+    float: left;
+}
+.column-50 {
+    width: 50%;
+    float: left;
+}
+.column-25 {
+    width: 25%;
+    float: left;
+}
+hr {
+    clear: both;
+}
+br {
+    clear: both;
+}
+
+
+.parallax {
+  /* The image used */
+    background: transparent;
+  background-image: url("images/Background.png");
+    padding: 100px;
+
+  /* Full height */
+  height: 200px;
+    width: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
