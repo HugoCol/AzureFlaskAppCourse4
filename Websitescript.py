@@ -102,5 +102,5 @@ def databasecounter():
                    f"order by Aantal DESC limit 10; ")
     for i in cursor:
         orgcounter.update({i[0]: i[1]})
-        print(i)
+
     return orgcounter
