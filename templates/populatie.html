@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <head>
-        <link rel="stylesheet" type="text/css" href="static\style.css">
-        <TITLE>Home</TITLE>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="info.html">Info</a></li></li>
-                <li> <a href="over_ons.html">Over ons</a></li>
-                <li> <a class="active" href="populatie.html">Microbio population</a></li>
-                <li> <a href="blast.html">Blast</a></li>
-            </ul>
+    <head>
+
+            <link rel="stylesheet" type="text/css" href="static\style.css">
+            <TITLE>Home</TITLE>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li></li>
+                    <li> <a href="over_ons.html">Over ons</a></li>
+                    <li> <a class="active" href="populatie.html">Microbio population</a></li>
+                    <li> <a href="blast.html">Blast</a></li>
+                </ul>
+
+
+
+        <meta charset="UTF-8">
+        <title>Title</title>
     </head>
+    <body>
+            <br><hr><br>
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>Count</th>
+            </tr>
+            {% for key in tabledata %}
+            <tr>
+                <th><a href="https://www.wikipedia.org/wiki/{{ key }} " target="_top" >{{ key }}</a></th>
+                <th>{{ tabledata[key] }}</th>
+            </tr>
+            {% endfor %}
+            </table>
+    </body>
 
-
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-        <br><hr>
-        <table>
-        <tr>
-            <th>Name</th>
-            <th>Count</th>
-        </tr>
-        {% for key in tabledata %}
-        <tr>
-            <th><a href="https://www.wikipedia.org/wiki/{{ key }} " target="_top" >{{ key }}</a></th>
-            <th>{{ tabledata[key] }}</th>
-        </tr>
-        {% endfor %}
-        </table>
-</body>
+    <footer>
+        Bio informatica jaar 1, groep 5
+    </footer>
 </html>
