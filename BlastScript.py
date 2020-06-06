@@ -47,12 +47,12 @@ def blast(gegevens):
 
     # Leeg txt file dat positie van gegevenslijst opslaat in geval van crash.
     scriptpos = open("ScriptPositie.txt", "w+")
-    out_handle = open('my_blast.xml','a')
-    second_handle = open('BlastResultaten.xml',"a")
+    out_handle = open('my_blast.xml', 'a')
+    second_handle = open('BlastResultaten.xml', "a")
 
     # Haalt de sequentie uit de gegevens lijst en blast deze tegen de NCBI
     # database. Hierna worden de resultaten toegevoegd aan een XML bestand.
-    for i in range(50,len(gegevens)):
+    for i in range(len(gegevens)):
         # Blast forward sequentie (positie [i][1] in gegevens lijst)
         fwseq = gegevens[i][1]
         print("Start Blast...")
