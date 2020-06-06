@@ -101,7 +101,7 @@ def blast():
             fwcount += 2
             revcount += 2
         for c in hits:
-            if count <= 5:
+            if count <= 50:
                 # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
                 Hit_id = c.find('Hit_id').text
                 discript = c.find('Hit_def').text
