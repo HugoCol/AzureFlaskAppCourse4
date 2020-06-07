@@ -55,7 +55,7 @@ def zoeken(filter, search, sorton, HLLH):
                        f"on organisme.lineage_id=lineage.id) as orjoin on "
                        f"eiwit.Organisme_id=orjoin.id join sequentie s on "
                        f"eiwit.sequentie_id = s.id order by {sortonvariabele}"
-                       f" {HLLHvariabele} limit 500;")
+                       f" {HLLHvariabele};")
         # Voeg al de variabele toe aan een dictionary
         for i in cursor:
             msg.update({i[0] :{"name":i[1],
