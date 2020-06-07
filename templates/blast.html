@@ -1,102 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
 
-            <link rel="stylesheet" type="text/css" href="static\style.css">
-            <TITLE>Blast</TITLE>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li> <a href="over_ons.html">Over ons</a></li>
-                    <li> <a href="populatie.html">Microbio population</a></li>
-                    <li> <a class="active" href="blast.html">Blast</a></li>
-                </ul>
+    <link rel="stylesheet" type="text/css"
+          href="static\style.css">
+    <TITLE>Blast</TITLE>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="over_ons.html">Over ons</a></li>
+        <li><a href="populatie.html">Microbio population</a></li>
+        <li><a class="active" href="blast.html">Blast</a></li>
+    </ul>
 
-    </head>
-    <body>
-    <br><hr>
-        <h2>Vul hieronder een sequentie in om het te blasten:</h2>
-        <form action="{{ url_for('blast') }}" method="post">
-            <input type = "text" name= "sequentie" />
-            <input type = "submit" value="Begin met blasten" >
-        </form>
-        <br>
-        {{ geenrestxt }}
-        <hr>
-        {{ sequentietxt }}<br>
-        {{ sequentie }}
-        <br><br>
+</head>
+<body>
+<br>
+<hr>
+<h2>Vul hieronder een sequentie in om het te blasten:</h2>
+<form action="{{ url_for('blast') }}" method="post">
+    <input type="text" name="sequentie"/>
+    <input type="submit" value="Begin met blasten">
+</form>
+<br>
+{{ geenrestxt }}
+<hr>
+{{ sequentietxt }}<br>
+{{ sequentie }}
+<br><br>
 
-    {% for i in datalijst %}
-        <button type="button" class="collapsible">
-            <div class="row-10">
-                <div class="column-33">
-            <b>Name:   </b>{{ i[1] }}
-                </div>
-                <div class="column-33">
-            <b>E-value: </b>{{ i[6] }}
-                </div>
-                <div class="column-33">
-            <b>Querycover: </b>{{ i[-1] }}
-                </div>
+{% for i in datalijst %}
+    <button type="button" class="collapsible">
+        <div class="row-10">
+            <div class="column-33">
+                <b>Name: </b>{{ i[1] }}
             </div>
-        </button>
-
-        <div class="content">
-
-            <p class="bordering"><b>Name: </b>{{ i[1] }}</p>
-            <p class="bordering"><b>Accessiecode: </b><a href="https://www.ncbi.nlm.nih.gov/protein/{{ i[3] }}"
-                                       target="_top" >{{ i[3] }}</a></p>
-
-            <p class="bordering"><b>Percent identity: </b>{{ i[7] }}%</p>
-
-            <p class="bordering"><b>E-value: </b>{{ i[6] }}</p>
-
-            <p class="bordering"><b>Max score: </b>{{ i[4] }}</p>
-
-            <p class="bordering"><b>Totale score: </b>{{ i[5] }}</p>
-
-            <p class="bordering"><b>Query coverage: </b>{{ i[-1] }}</p>
-
-            <p class="bordering"><b>Naam organisme: </b>{{ i[2] }}</p>
-
-            <p class="bordering"><b>Liniage: </b><a href="https://www.wikipedia.org/wiki/{{ i[11][-1] }} " target="_top" >{{ i[11][-1] }}</a></p>
-
-            <p class="bordering"><b>Header: </b>{{ i[9] }}</p>
-
-
-            <div class="sequence">
-                <b>Sequentie: <br></b>{{ i[8] }}
+            <div class="column-33">
+                <b>E-value: </b>{{ i[6] }}
             </div>
-            <div class="sequence">
-            <b>Ascii score: <br></b>{{ i[10] }}
+            <div class="column-33">
+                <b>Querycover: </b>{{ i[-1] }}
             </div>
-
         </div>
-    {% endfor %}
-    {{ geenres }}
+    </button>
 
-    </body>
+    <div class="content">
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+        <p class="bordering"><b>Name: </b>{{ i[1] }}</p>
+        <p class="bordering"><b>Accessiecode: </b><a
+                href="https://www.ncbi.nlm.nih.gov/protein/{{ i[3] }}"
+                target="_top">{{ i[3] }}</a></p>
 
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
+        <p class="bordering"><b>Percent identity: </b>{{ i[7] }}%</p>
+
+        <p class="bordering"><b>E-value: </b>{{ i[6] }}</p>
+
+        <p class="bordering"><b>Max score: </b>{{ i[4] }}</p>
+
+        <p class="bordering"><b>Totale score: </b>{{ i[5] }}</p>
+
+        <p class="bordering"><b>Query coverage: </b>{{ i[-1] }}</p>
+
+        <p class="bordering"><b>Naam organisme: </b>{{ i[2] }}</p>
+
+        <p class="bordering"><b>Liniage: </b><a
+                href="https://www.wikipedia.org/wiki/{{ i[11][-1] }} "
+                target="_top">{{ i[11][-1] }}</a></p>
+
+        <p class="bordering"><b>Header: </b>{{ i[9] }}</p>
+
+
+        <div class="sequence">
+            <b>Sequentie: <br></b>{{ i[8] }}
+        </div>
+        <div class="sequence">
+            <b>Ascii score: <br></b>{{ i[10] }}
+        </div>
+
+    </div>
+{% endfor %}
+{{ geenres }}
+
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-              content.style.maxHeight = content.scrollHeight + "px";
+                content.style.maxHeight = content.scrollHeight + "px";
             }
-          });
-        }
-    </script>
+        });
+    }
+</script>
 
-    <footer>
-        Bio informatica jaar 1, groep 5
-    </footer>
+<footer>
+    Bio informatica jaar 1, groep 5
+</footer>
 </html>

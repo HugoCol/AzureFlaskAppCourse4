@@ -5,7 +5,6 @@ from xml.etree import ElementTree
 import time
 from Bio import Entrez
 
-
 app = Flask(__name__)
 
 
@@ -25,11 +24,13 @@ def database():
         sorton = request.form.get("filterop", "")
         HLLH = request.form.get("richting", "")
 
-        resultatenlijst = zoeken(buttonselect, zoekopdracht, sorton, HLLH)
+        resultatenlijst = zoeken(buttonselect, zoekopdracht, sorton,
+                                 HLLH)
 
         rangeresultatentext = "Alleen de eerste 20 resultaten worden " \
                               "weergegeven. Dit kan worden aangepast " \
-                              "onderaan de body in de range bij de for loop."
+                              "onderaan de body in de range " \
+                              "bij de for loop."
 
         return render_template("home.html",
                                resultaten=resultatenlijst,
@@ -108,19 +109,24 @@ def blast():
             keycounter = 0
             for line in file:
                 mestdata = line.split('\t')
-                mestdatadic[fwcount] = [mestdata[0], mestdata[1], mestdata[2]]
-                mestdatadic[revcount] = [mestdata[3], mestdata[4], mestdata[5]]
+                mestdatadic[fwcount] = [mestdata[0], mestdata[1],
+                                        mestdata[2]]
+                mestdatadic[revcount] = [mestdata[3], mestdata[4],
+                                         mestdata[5]]
                 fwcount += 2
                 revcount += 2
             for c in hits:
                 if count <= 50:
-                    # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
+                    # Haal de data uit de hit en zet deze in een zelf
+                    # beschrijvende variabele
                     Hit_id = c.find('Hit_id').text
                     discript = c.find('Hit_def').text
                     totaallengte = c.find('Hit_len').text
-                    querybegin = c.find('Hit_hsps/Hsp/Hsp_query-from').text
+                    querybegin = c.find(
+                        'Hit_hsps/Hsp/Hsp_query-from').text
                     queryeind = c.find('Hit_hsps/Hsp/Hsp_query-to').text
-                    querycoverage = (int(queryeind) - int(querybegin)) / int(
+                    querycoverage = (int(queryeind) - int(
+                        querybegin)) / int(
                         totaallengte)
                     organis = discript.split('[')
                     organism = organis[1].split(']')
@@ -132,7 +138,8 @@ def blast():
                     score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
                     tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
                     evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
-                    percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
+                    percidentity = \
+                        c.find('Hit_hsps/Hsp/Hsp_identity').text
                     queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
                     header = ""
                     ascicode = ""
@@ -161,8 +168,9 @@ def blast():
                                 ascicode += str(value[2])
 
                     # Print alle data om te zien of het gewerkt heeft
-                    datalist = [Hit_id, description, organisme, acessiecode, score,
-                                tscore, evalue, percidentity, queryseq, header,
+                    datalist = [Hit_id, description, organisme,
+                                acessiecode, score, tscore, evalue,
+                                percidentity, queryseq, header,
                                 ascicode, lineage, querycoverage]
                     datadic[count] = datalist
                     count += 1
@@ -179,8 +187,8 @@ def blast():
             if datalijst == []:
                 geenresultaten = "Er zijn geen resultaten gevonden"
 
-            # Return webpagina met de gegevens als iets is ingevuld in de
-            # textbox.
+            # Return webpagina met de gegevens als iets is ingevuld in
+            # de textbox.
             return render_template("blast.html",
                                    sequentie=sequentie,
                                    sequentietxt=sequentietxt,

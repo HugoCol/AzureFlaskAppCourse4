@@ -1,7 +1,7 @@
 # Thijs Ermens
 # 25-05-2020 tot ...
-# Script dat accessiecodes uit een xml bestand haalt en hiermee vervolgens
-# de lineage geeft
+# Script dat accessiecodes uit een xml bestand haalt en
+# hiermee vervolgens de lineage geeft
 
 from xml.etree import ElementTree
 from Bio import Entrez
@@ -11,14 +11,15 @@ import time
 
 def accessiecode_vinden():
     """
-    Functie die accessiecode uit een xml bestand haalt en vertaalt naar een
-    lijst
+    Functie die accessiecode uit een xml bestand haalt en vertaalt naar
+    een lijst
     :return: list - accessiecodes
     """
     # Bestand openen
     filename = 'data/XMLForward1.xml'
     dom = ElementTree.parse(filename)
-    hits = dom.findall('BlastOutput_iterations/Iteration/Iteration_hits/Hit')
+    hits = dom.findall(
+        'BlastOutput_iterations/Iteration/Iteration_hits/Hit')
 
     # Het vinden van de accessiecodes en deze toevoegen aan een lijst
     accessiecode = []

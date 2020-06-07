@@ -46,19 +46,23 @@ CREATE TABLE sequentie (
 
 -- foreign keys
 -- Reference: Eiwit_Organisme (table: Eiwit)
-ALTER TABLE Eiwit ADD CONSTRAINT Eiwit_Organisme FOREIGN KEY Eiwit_Organisme (Organisme_id)
+ALTER TABLE Eiwit ADD CONSTRAINT Eiwit_Organisme
+FOREIGN KEY Eiwit_Organisme (Organisme_id)
     REFERENCES Organisme (id);
 
 -- Reference: Lineage_Lineage (table: Lineage)
-ALTER TABLE Lineage ADD CONSTRAINT Lineage_Lineage FOREIGN KEY Lineage_Lineage (parent_id)
+ALTER TABLE Lineage ADD CONSTRAINT Lineage_Lineage
+FOREIGN KEY Lineage_Lineage (parent_id)
     REFERENCES Lineage (id);
 
 -- Reference: Organisme_lineage (table: Organisme)
-ALTER TABLE Organisme ADD CONSTRAINT Organisme_lineage FOREIGN KEY Organisme_lineage (lineage_id)
+ALTER TABLE Organisme ADD CONSTRAINT Organisme_lineage
+FOREIGN KEY Organisme_lineage (lineage_id)
     REFERENCES Lineage (id);
 
 -- Reference: eiwit_sequentie (table: Eiwit)
-ALTER TABLE Eiwit ADD CONSTRAINT eiwit_sequentie FOREIGN KEY eiwit_sequentie (sequentie_id)
+ALTER TABLE Eiwit ADD CONSTRAINT eiwit_sequentie
+FOREIGN KEY eiwit_sequentie (sequentie_id)
     REFERENCES sequentie (id);
 
 -- End of file.

@@ -1,16 +1,19 @@
 html {
     background-color: #ffffff;
 }
+
 /*hyperlink info pagina*/
-a.infolink{
-	text-decoration:underline;
-	color:black;
+a.infolink {
+    text-decoration: underline;
+    color: black;
 }
-a.infolink:hover{
-	color:blue;
+
+a.infolink:hover {
+    color: blue;
 }
-a.infolink:active{
-	color:green;
+
+a.infolink:active {
+    color: green;
 }
 
 /*menubalk styling*/
@@ -22,6 +25,7 @@ ul {
     background-color: black;
     color: white;
 }
+
 li {
     float: left;
 
@@ -34,31 +38,34 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
- li a.active {
-     background-color: #404040;
-     color: white;
- }
- li a:hover:not(.active) {
-     background-color: #4d4d4d;
-     color: white;
- }
+
+li a.active {
+    background-color: #404040;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #4d4d4d;
+    color: white;
+}
 
 
-body{
-     overflow-x: hidden;
- }
+body {
+    overflow-x: hidden;
+}
 
 footer {
     width: 100%;
     height: 5%;
     background-color: black;
-    left:0;
+    left: 0;
     bottom: 0;
     text-align: center;
     margin-bottom: 0px;
     position: fixed;
     color: white;
 }
+
 /*resultatenpagina tabel*/
 table {
     align-content: left;
@@ -75,21 +82,23 @@ table th {
     border: grey;
     border-style: solid;
 }
+
 /*resultaten hoofdpagina*/
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 
 .active, .collapsible:hover {
     background-color: #555;
 }
+
 /*extra informatie collapse*/
 .content {
     list-style: none;
@@ -102,10 +111,12 @@ table th {
     margin-left: 25%;
 
 }
+
 /*aparte styling voor sequentie en ASCII score*/
 .sequence {
     font-size: 14px;
-    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    font-family: 'Ubuntu', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
     border: 1px solid black;
     float: left;
     margin: 5px;
@@ -114,14 +125,16 @@ table th {
     width: 20%;
     word-wrap: break-word;
 }
+
 p.bordering {
     border: 1px solid black;
     width: 41%;
     padding: 5px;
     margin: 5px;
 
-/*plaatsings classes*/
+    /*plaatsings classes*/
 }
+
 p.padding {
     margin-left: 10%;
 }
@@ -130,7 +143,8 @@ p.padding {
     width: 100%;
     height: 40%;
 }
-.row-10{
+
+.row-10 {
     width: 100%;
     margin-left: 10%;
     margin-right: 10%;
@@ -141,18 +155,22 @@ p.padding {
     width: 33%;
     float: left;
 }
+
 .column-50 {
     width: 50%;
     float: left;
 }
+
 .column-25 {
     width: 25%;
-float: center;
+    float: center;
 }
+
 /*hr en br uit andere elementen wegdrukken*/
 hr {
     clear: both;
 }
+
 br {
     clear: both;
 }

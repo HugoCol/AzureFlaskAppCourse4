@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
 
-            <link rel="stylesheet" type="text/css" href="static\style.css">
-            <TITLE>Populatie</TITLE>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="info.html">Info</a></li></li>
-                    <li> <a href="over_ons.html">Over ons</a></li>
-                    <li> <a class="active" href="populatie.html">Microbio population</a></li>
-                    <li> <a href="blast.html">Blast</a></li>
-                </ul>
+    <link rel="stylesheet" type="text/css" href="static\style.css">
+    <TITLE>Populatie</TITLE>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        </li>
+        <li><a href="over_ons.html">Over ons</a></li>
+        <li><a class="active" href="populatie.html">Microbio
+            population</a></li>
+        <li><a href="blast.html">Blast</a></li>
+    </ul>
 
 
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
 
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-
-    <br><hr><br>
+<br>
+<hr>
+<br>
 <div class="content">
-            <table>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Count</th>
+        </tr>
+        {% for key in tabledata %}
             <tr>
-                <th>Name</th>
-                <th>Count</th>
-            </tr>
-            {% for key in tabledata %}
-            <tr>
-                <th><a class="infolink" href="https://www.wikipedia.org/wiki/{{ key }} " target="_top" >{{ key }}</a></th>
+                <th><a class="infolink"
+                       href="https://www.wikipedia.org/wiki/{{ key }} "
+                       target="_top">{{ key }}</a></th>
                 <th>{{ tabledata[key] }}</th>
             </tr>
-            {% endfor %}
-            </table>
+        {% endfor %}
+    </table>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+    </p>
 </div>
-    </body>
+</body>
 
-    <footer>
-        Bio informatica jaar 1, groep 5
-    </footer>
+<footer>
+    Bio informatica jaar 1, groep 5
+</footer>
 </html>
