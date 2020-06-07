@@ -69,110 +69,127 @@ def blast():
         # Txt voor sequentie weer te geven op website
         sequentietxt = "De volgende sequentie is ingevoerd: "
 
-        # Blast de protein sequentie tegen de blastx database.
-        result_handle = NCBIWWW.qblast("blastx", "nr", sequentie,
-                                       hitlist_size=1)
+        # Telt het aantal A, T, C, G in de sequentie.
+        a_count = sequentie.count("A")
+        t_count = sequentie.count("T")
+        c_count = sequentie.count("C")
+        g_count = sequentie.count("G")
 
-        # Schrijft de output van BLAST weg in XML bestand.
-        with open("XMLBlastWebsite.xml", "w") as out_handle:
-            out_handle.write(result_handle.read())
+        # Berekend lengte van de sequentie.
+        lengte_seq = len(sequentie)
 
-        XMLFile = "XMLBlastWebsite.xml"
-        datafile = 'dataset.txt'
+        # Kijkt of de ingevoerde sequentie DNA is.
+        if lengte_seq == a_count + t_count + c_count + g_count and \
+                sequentie != "":
 
-        # Door bestand heen gaan
-        dom = ElementTree.parse(XMLFile)
-        # Alle hits eruit zoeken
-        hits = dom.findall(
-            'BlastOutput_iterations/Iteration/Iteration_hits/Hit')
-        # Voor elke hit
-        count = 1
-        datadic = {}
-        mestdatadic = {}
-        file = open(datafile)
-        fwcount = 1
-        revcount = 2
-        keycounter = 0
-        for line in file:
-            mestdata = line.split('\t')
-            mestdatadic[fwcount] = [mestdata[0], mestdata[1], mestdata[2]]
-            mestdatadic[revcount] = [mestdata[3], mestdata[4], mestdata[5]]
-            fwcount += 2
-            revcount += 2
-        for c in hits:
-            if count <= 50:
-                # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
-                Hit_id = c.find('Hit_id').text
-                discript = c.find('Hit_def').text
-                totaallengte = c.find('Hit_len').text
-                querybegin = c.find('Hit_hsps/Hsp/Hsp_query-from').text
-                queryeind = c.find('Hit_hsps/Hsp/Hsp_query-to').text
-                querycoverage = (int(queryeind) - int(querybegin)) / int(
-                    totaallengte)
-                organis = discript.split('[')
-                organism = organis[1].split(']')
-                description = organis[0]
-                organisme = organism[0]
-                acessiecode = c.find('Hit_accession').text
-                print(acessiecode)
-                hit = c.find('Hit_num').text
-                score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
-                tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
-                evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
-                percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
-                queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
-                header = ""
-                ascicode = ""
-                time.sleep(0.4)
-                Entrez.email = "thijschermens@gmail.com"
-                seqio = Entrez.efetch(db="protein", id=acessiecode,
-                                      retmode="xml")
-                seqio_read = Entrez.read(seqio)
-                seqio.close()
-                lineage = seqio_read[0]["GBSeq_taxonomy"].split(";")
-                if hit == str(1):
-                    keycounter += 1
-                    for (key, value) in mestdatadic.items():
-                        if key == keycounter:
-                            nbheader = str(value[0])
-                            hbheader = nbheader.split('@')
-                            header += hbheader[1]
-                            ascicode += str(value[2])
+            # Blast de protein sequentie tegen de blastx database.
+            result_handle = NCBIWWW.qblast("blastx", "nr", sequentie,
+                                           hitlist_size=1)
 
-                else:
-                    for (key, value) in mestdatadic.items():
-                        if key == keycounter:
-                            nbheader = str(value[0])
-                            hbheader += nbheader.split('@')
-                            header += hbheader[1]
-                            ascicode += str(value[2])
+            # Schrijft de output van BLAST weg in XML bestand.
+            with open("XMLBlastWebsite.xml", "w") as out_handle:
+                out_handle.write(result_handle.read())
 
-                # Print alle data om te zien of het gewerkt heeft
-                datalist = [Hit_id, description, organisme, acessiecode, score,
-                            tscore, evalue, percidentity, queryseq, header,
-                            ascicode, lineage, querycoverage]
-                datadic[count] = datalist
-                count += 1
+            XMLFile = "XMLBlastWebsite.xml"
+            datafile = 'dataset.txt'
+
+            # Door bestand heen gaan
+            dom = ElementTree.parse(XMLFile)
+            # Alle hits eruit zoeken
+            hits = dom.findall(
+                'BlastOutput_iterations/Iteration/Iteration_hits/Hit')
+            # Voor elke hit
+            count = 1
+            datadic = {}
+            mestdatadic = {}
+            file = open(datafile)
+            fwcount = 1
+            revcount = 2
+            keycounter = 0
+            for line in file:
+                mestdata = line.split('\t')
+                mestdatadic[fwcount] = [mestdata[0], mestdata[1], mestdata[2]]
+                mestdatadic[revcount] = [mestdata[3], mestdata[4], mestdata[5]]
+                fwcount += 2
+                revcount += 2
+            for c in hits:
+                if count <= 50:
+                    # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
+                    Hit_id = c.find('Hit_id').text
+                    discript = c.find('Hit_def').text
+                    totaallengte = c.find('Hit_len').text
+                    querybegin = c.find('Hit_hsps/Hsp/Hsp_query-from').text
+                    queryeind = c.find('Hit_hsps/Hsp/Hsp_query-to').text
+                    querycoverage = (int(queryeind) - int(querybegin)) / int(
+                        totaallengte)
+                    organis = discript.split('[')
+                    organism = organis[1].split(']')
+                    description = organis[0]
+                    organisme = organism[0]
+                    acessiecode = c.find('Hit_accession').text
+                    print(acessiecode)
+                    hit = c.find('Hit_num').text
+                    score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
+                    tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
+                    evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
+                    percidentity = c.find('Hit_hsps/Hsp/Hsp_identity').text
+                    queryseq = c.find('Hit_hsps/Hsp/Hsp_qseq').text
+                    header = ""
+                    ascicode = ""
+                    time.sleep(0.4)
+                    Entrez.email = "thijschermens@gmail.com"
+                    seqio = Entrez.efetch(db="protein", id=acessiecode,
+                                          retmode="xml")
+                    seqio_read = Entrez.read(seqio)
+                    seqio.close()
+                    lineage = seqio_read[0]["GBSeq_taxonomy"].split(";")
+                    if hit == str(1):
+                        keycounter += 1
+                        for (key, value) in mestdatadic.items():
+                            if key == keycounter:
+                                nbheader = str(value[0])
+                                hbheader = nbheader.split('@')
+                                header += hbheader[1]
+                                ascicode += str(value[2])
+
+                    else:
+                        for (key, value) in mestdatadic.items():
+                            if key == keycounter:
+                                nbheader = str(value[0])
+                                hbheader += nbheader.split('@')
+                                header += hbheader[1]
+                                ascicode += str(value[2])
+
+                    # Print alle data om te zien of het gewerkt heeft
+                    datalist = [Hit_id, description, organisme, acessiecode, score,
+                                tscore, evalue, percidentity, queryseq, header,
+                                ascicode, lineage, querycoverage]
+                    datadic[count] = datalist
+                    count += 1
+            else:
+                pass
+            datalijst = []
+            # [1]=name [3]=accessiecode [7]=percentidentity [6]=e-value
+            # [4]=max-score [5]=totale_score [-1]=query-cov [2]=org_naam
+            # [11][-1]=linnaam [9]=header [8]=sequence [10]=ascii
+            for i in datadic:
+                datalijst.append(datadic[i])
+
+            # Als er geen hits zijn gevonden met blasten:
+            if datalijst == []:
+                geenresultaten = "Er zijn geen resultaten gevonden"
+
+            # Return webpagina met de gegevens als iets is ingevuld in de
+            # textbox.
+            return render_template("blast.html",
+                                   sequentie=sequentie,
+                                   sequentietxt=sequentietxt,
+                                   datalijst=datalijst,
+                                   geenres=geenresultaten)
         else:
-            pass
-        datalijst = []
-        # [1]=name [3]=accessiecode [7]=percentidentity [6]=e-value
-        # [4]=max-score [5]=totale_score [-1]=query-cov [2]=org_naam
-        # [11][-1]=linnaam [9]=header [8]=sequence [10]=ascii
-        for i in datadic:
-            datalijst.append(datadic[i])
-
-        # Als er geen hits zijn gevonden met blasten:
-        if datalijst == []:
-            geenresultaten = "Er zijn geen resultaten gevonden"
-
-        # Return webpagina met de gegevens als iets is ingevuld in de
-        # textbox.
-        return render_template("blast.html",
-                               sequentie=sequentie,
-                               sequentietxt=sequentietxt,
-                               datalijst=datalijst,
-                               geenres=geenresultaten)
+            return render_template("blast.html",
+                                   sequentietxt="Incorrecte sequentie "
+                                                "ingevoerd.")
     else:
         # Return de lege webpagina zonder dat iets is ingevuld in de
         # textbox.
