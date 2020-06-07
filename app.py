@@ -62,7 +62,7 @@ def over_ons():
 @app.route('/blast.html', methods=["POST", "GET"])
 def blast():
     if request.method == "POST":
-
+        geenresultaten = ""
         # Gegevens uit textbox halen en dit in hoofdletters zetten.
         sequentie = request.form.get("sequentie", "").upper()
 
@@ -162,9 +162,20 @@ def blast():
         for i in datadic:
             datalijst.append(datadic[i])
 
-        return render_template("blast.html", sequentie=sequentie,
-                               sequentietxt=sequentietxt, datalijst=datalijst)
+        # Als er geen hits zijn gevonden met blasten:
+        if datalijst == []:
+            geenresultaten = "Er zijn geen resultaten gevonden"
+
+        # Return webpagina met de gegevens als iets is ingevuld in de
+        # textbox.
+        return render_template("blast.html",
+                               sequentie=sequentie,
+                               sequentietxt=sequentietxt,
+                               datalijst=datalijst,
+                               geenres=geenresultaten)
     else:
+        # Return de lege webpagina zonder dat iets is ingevuld in de
+        # textbox.
         return render_template("blast.html")
 
 

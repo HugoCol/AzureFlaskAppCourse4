@@ -32,7 +32,6 @@ li a {
 
  label {
      margin: 5px;
-     border: 1px solid black;
      vertical-align: middle;
      horiz-align: center;
  }
@@ -52,15 +51,18 @@ footer {
     position: fixed;
     color: white;
 }
+
 table {
     align-content: left;
     text-align: left;
     place-self: center;
 }
+
 table tr {
     border: grey;
     border-style: solid;
 }
+
 table th {
     border: grey;
     border-style: solid;
