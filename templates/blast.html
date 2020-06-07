@@ -18,12 +18,10 @@
         <h2>Vul hieronder een sequentie in om het te blasten:</h2>
         <form action="{{ url_for('blast') }}" method="post">
             <input type = "text" name= "sequentie" />
-            <input type = "submit" value="Check" >
+            <input type = "submit" value="Begin met blasten" >
         </form>
-        <p>
-            Als er geen resultaat uit de blast is gekomen, zal dit ook niet op
-            de website komen te staan.
-        </p>
+        <br>
+        {{ geenrestxt }}
         <hr>
         {{ sequentietxt }}<br>
         {{ sequentie }}
@@ -76,7 +74,7 @@
 
         </div>
     {% endfor %}
-
+    {{ geenres }}
 
     </body>
 

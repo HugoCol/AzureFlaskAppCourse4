@@ -26,7 +26,7 @@ laat het antwoord op de onderzoeksvraag iets duidelijker zijn op de website -->
 
 
 <body>
-<br><hr><br>
+<br><hr>
 
 
 {#<h2>zoekterm:</h2>#}
@@ -37,55 +37,95 @@ laat het antwoord op de onderzoeksvraag iets duidelijker zijn op de website -->
 
 
 
-<div class="row">
-            <div class="column-25">space
-        </div>
 
-    <div class="column-25">
         <h2>Zoekterm:</h2>
 <form action="{{ url_for('database') }}" method="post">
     <input type = "text" name= "zoek" />
     <input type = "submit" value="Zoek in database" >
-    <p>Zoek in: Filter op: Van:</p>
+            <br><br>
 
-    <input type="radio" id="organisme1" name="selection" value="naam_organismenaam">
-  <label for="naam_organismenaam">Organisme</label>
-    <input type="radio" id="filterop" name="filterop" value="percent_identity">
-  <label for="percent_identity">Precentage Identity</label>
-    <input type="radio" id="richting" name="richting" value="ASC">
-  <label for="ASC">Laag naar Hoog</label>
+    <table>
+        <tr> <!-- Horizontale rij 1 -->
+            <td>
+                Zoek in:
+            </td>
 
-    <br>
-    <input type="radio" id="eiwit" name="selection" value="accessiecode">
-  <label for="accessiecode">Accessiecode</label>
-    <input type="radio" id="filterop" name="filterop" value="query_cover">
-  <label for="query_cover">query_cover</label>
-    <input type="radio" id="richting" name="richting" value="DESC">
-  <label for="DESC">Hoog naar Laag</label>
+            <td>
+                Filter op:
+            </td>
 
-    <br>
-    <input type="radio" id="eiwit" name="selection" value="eiwit">
-  <label for="description">Beschrijving</label>
-    <input type="radio" id="filterop" name="filterop" value="e_value">
-  <label for="e_value">E_value</label>
-    <br>
-    <input type="radio" id="lineage" name="selection" value="linnaam">
-  <label for="linnaam">Lineage</label>
-    <br>
+            <td>
+                Van:
+            </td>
+        </tr>
+
+        <tr> <!-- Horizontale rij 2 -->
+            <td>
+                <input type="radio" id="organisme1" name="selection" value=
+                    "naam_organismenaam"><label for="naam_organismenaam">
+                Organisme</label>
+            </td>
+
+            <td>
+                <input type="radio" id="filterop" name="filterop" value=
+                    "percent_identity"><label for="percent_identity">
+                Percentage Identity</label>
+            </td>
+
+            <td>
+                <input type="radio" id="richting" name="richting" value=
+                        "ASC"><label for="ASC">Laag naar Hoog</label>
+            </td>
+        </tr>
+
+
+        <tr> <!-- Horizontale rij 3 -->
+            <td>
+                <input type="radio" id="eiwit" name="selection" value=
+                        "accessiecode"><label for="accessiecode">
+                        Accessiecode</label>
+            </td>
+
+            <td>
+                <input type="radio" id="filterop" name="filterop" value=
+                        "query_cover"><label for="query_cover">
+                        query_cover</label>
+            </td>
+
+            <td>
+                <input type="radio" id="richting" name="richting" value=
+                        "DESC"><label for="DESC">Hoog naar Laag</label>
+            </td>
+        </tr>
+
+        <tr> <!-- Horizontale rij 4 -->
+            <td>
+                <input type="radio" id="eiwit" name="selection" value=
+                        "eiwit"><label for="description">Beschrijving</label>
+            </td>
+
+            <td>
+                <input type="radio" id="filterop" name="filterop" value=
+                        "e_value"><label for="e_value">E_value</label>
+            </td>
+        </tr>
+
+        <tr> <!-- Horizontale rij 5 -->
+            <td>
+                <input type="radio" id="lineage" name="selection" value=
+                        "linnaam"><label for="linnaam">Lineage</label>
+            </td>
+        </tr>
+    </table>
 </form>
-    </div>
 
-    <div class="column-25">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<!--
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+-->
 
-    </div>
-        <div class="column-25">space
-        </div>
-    </div>
-</div>
 
     <br>
     <hr style="clear: both">
