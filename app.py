@@ -6,7 +6,6 @@ import time
 from Bio import Entrez
 
 
-
 app = Flask(__name__)
 
 

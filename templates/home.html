@@ -109,31 +109,31 @@ laat het antwoord op de onderzoeksvraag iets duidelijker zijn op de website -->
         <div class="content">
 
             <p class="bordering"><b>Name: </b>{{ resultaten[i]['name'] }}</p>
-            <p class="bordering"><b>accessiecode: </b><a href="https://www.ncbi.nlm.nih.gov/protein/{{ resultaten[i]['accessiecode'] }}"
+            <p class="bordering"><b>Accessiecode: </b><a href="https://www.ncbi.nlm.nih.gov/protein/{{ resultaten[i]['accessiecode'] }}"
                                        target="_top" >{{ resultaten[i]['accessiecode'] }}</a></p>
 
-            <p class="bordering"><b>IDPercentage: </b>{{ resultaten[i]['IDpercentage'] }}%</p>
+            <p class="bordering"><b>Percentage ID: </b>{{ resultaten[i]['IDpercentage'] }}%</p>
 
-            <p class="bordering"><b>Evalue: </b>{{ resultaten[i]['Evalue'] }}</p>
+            <p class="bordering"><b>E-value: </b>{{ resultaten[i]['Evalue'] }}</p>
 
-            <p class="bordering"><b>max_score: </b>{{ resultaten[i]['max_score'] }}</p>
+            <p class="bordering"><b>Max score: </b>{{ resultaten[i]['max_score'] }}</p>
 
-            <p class="bordering"><b>totale_score: </b>{{ resultaten[i]['totale_score'] }}</p>
+            <p class="bordering"><b>Totale score: </b>{{ resultaten[i]['totale_score'] }}</p>
 
-            <p class="bordering"><b>query_cover: </b>{{ resultaten[i]['query_cover'] }}</p>
+            <p class="bordering"><b>Query coverage: </b>{{ resultaten[i]['query_cover'] }}</p>
 
-            <p class="bordering"><b>naam_organismenaam: </b>{{ resultaten[i]['naam_organismenaam'] }}</p>
+            <p class="bordering"><b>Naam organisme: </b>{{ resultaten[i]['naam_organismenaam'] }}</p>
 
-            <p class="bordering"><b>linnaam: </b><a href="https://www.wikipedia.org/wiki/{{ resultaten[i]['linnaam'] }} " target="_top" >{{ resultaten[i]['linnaam'] }}</a></p>
+            <p class="bordering"><b>Liniage: </b><a href="https://www.wikipedia.org/wiki/{{ resultaten[i]['linnaam'] }} " target="_top" >{{ resultaten[i]['linnaam'] }}</a></p>
 
-            <p class="bordering"><b>header: </b>{{ resultaten[i]['header'] }}</p>
+            <p class="bordering"><b>Header: </b>{{ resultaten[i]['header'] }}</p>
 
 
             <div class="sequence">
-                <b>sequence: <br></b>{{ resultaten[i]['sequence'] }}
+                <b>Sequentie: <br></b>{{ resultaten[i]['sequence'] }}
             </div>
             <div class="sequence">
-            <b>ascii_score: <br></b>{{ resultaten[i]['asci_score'] }}
+            <b>Ascii score: <br></b>{{ resultaten[i]['asci_score'] }}
             </div>
 
         </div>
