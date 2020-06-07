@@ -1,3 +1,4 @@
+# ophalen van alle modules
 from flask import Flask, render_template, request
 from Websitescript import zoeken, databasecounter
 from Bio.Blast import NCBIWWW, NCBIXML
@@ -5,21 +6,30 @@ from xml.etree import ElementTree
 import time
 from Bio import Entrez
 
+# app aanroepen
 app = Flask(__name__)
 
 
+# home page
 @app.route('/')
 @app.route('/home.html', methods=["POST", "GET"])
 def database():
+    """
+    Hier wordt de homepage gerenderd. verschillende inputs door de
+    gebuiker worden opgehaald als variabelen; input tekst,
+    waar in te zoeken en sorteren. Data uit de database wordt
+    teruggegeven
+    :return:
+    input: gebruikersinput van de website
+    output: data vanuit de database in tabellen en regels.
+    """
+
     if request.method == "POST":
         resultatenlijst = []
 
         buttonselect = request.form.get("selection", "")
 
-        print(buttonselect)
-
         zoekopdracht = request.form.get("zoek", "")
-        print(zoekopdracht)
 
         sorton = request.form.get("filterop", "")
         HLLH = request.form.get("richting", "")
@@ -31,7 +41,7 @@ def database():
                               "weergegeven. Dit kan worden aangepast " \
                               "onderaan de body in de range " \
                               "bij de for loop."
-
+        # render the template
         return render_template("home.html",
                                resultaten=resultatenlijst,
                                resultatentext=
@@ -44,24 +54,54 @@ def database():
                                resultatentextrange='')
 
 
+# resultaten pagina
 @app.route('/populatie.html', methods=["POST", "GET"])
 def populatie():
+    """
+    pagina met onderzoeksresultaten, de opgehaalde data is de tien
+    meest voorkomende organismen in de database
+    :return:
+    resultatenpagina met tien meest voorkomende organismen
+    """
+    # haalt query op met top tien meest voorkomende organismen
     tabledata = databasecounter()
+    # render de template met de table data
     return render_template('populatie.html', tabledata=tabledata)
 
 
+# informatie over de applicatie en het project/
 @app.route('/info.html')
 def info():
+    """
+    :return:
+    render de info.html template met informatie over de applicatie
+    """
     return render_template('info.html')
 
 
+# over ons pagina
 @app.route('/over_ons.html')
 def over_ons():
+    """
+    :return:
+    render de over_ons.html template met informatie over de
+    onderzoeksgroep
+    """
     return render_template('over_ons.html')
 
 
+# blast pagina
 @app.route('/blast.html', methods=["POST", "GET"])
 def blast():
+    """
+    deze functie rendert de blast.html template
+    op de pagina kan de gebruiker een sequentie invoeren, deze wordt
+    geblast en toegevoegd aan de bestaande database
+    als de sequentie meer dan DNA-code is wordt het process gestopt
+
+    input: DNA-sequentie
+    output: Blast resultaat en toevoeging in de database
+    """
     if request.method == "POST":
         geenresultaten = ""
         # Gegevens uit textbox halen en dit in hoofdletters zetten.
@@ -204,5 +244,6 @@ def blast():
         return render_template("blast.html")
 
 
+# roep de app aan
 if __name__ == '__main__':
     app.run()
