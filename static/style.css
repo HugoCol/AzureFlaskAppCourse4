@@ -1,6 +1,16 @@
 html {
     background-color: #ffffff;
 }
+a.infolink{
+	text-decoration:underline;
+	color:black;
+}
+a.infolink:hover{
+	color:red;
+}
+a.infolink:active{
+	color:green;
+}
 ul {
     list-style-type: none;
     margin: 0;
