@@ -1,3 +1,4 @@
+# import modules
 import mysql.connector
 
 
@@ -99,7 +100,7 @@ def zoeken(filter, search, sorton, HLLH):
                        f"instr({filtervariabele}, '{search}') order "
                        f"by {sortonvariabele} {HLLHvariabele} "
                        f"limit 500;")
-        # Voeg al de variabele toe aan een dictionary
+        # Voeg al de variabele toe aan een nested-dictionary
         for i in cursor:
             msg.update({i[0]: {"name": i[1],
                                "accessiecode": i[2],
@@ -117,6 +118,7 @@ def zoeken(filter, search, sorton, HLLH):
         # Sluit de connectie
         cursor.close()
         conn.close()
+        # return een nested dictionary
     return msg
 
 

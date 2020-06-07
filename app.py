@@ -1,3 +1,6 @@
+# Om de applicatie te runnen moet dit script gestart worden.
+# Op deze pagina komen alle andere scripts samen tot een webapplicatie
+
 # ophalen van alle modules
 from flask import Flask, render_template, request
 from Websitescript import zoeken, databasecounter
