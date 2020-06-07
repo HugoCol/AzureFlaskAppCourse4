@@ -6,7 +6,7 @@ a.infolink{
 	color:black;
 }
 a.infolink:hover{
-	color:red;
+	color:blue;
 }
 a.infolink:active{
 	color:green;
