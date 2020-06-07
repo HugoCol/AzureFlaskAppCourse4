@@ -1,6 +1,7 @@
 html {
     background-color: #ffffff;
 }
+/*hyperlink info pagina*/
 a.infolink{
 	text-decoration:underline;
 	color:black;
@@ -11,6 +12,8 @@ a.infolink:hover{
 a.infolink:active{
 	color:green;
 }
+
+/*menubalk styling*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,11 +43,6 @@ li a {
      color: white;
  }
 
- label {
-     margin: 5px;
-     vertical-align: middle;
-     horiz-align: center;
- }
 
 body{
      overflow-x: hidden;
@@ -61,7 +59,7 @@ footer {
     position: fixed;
     color: white;
 }
-
+/*resultatenpagina tabel*/
 table {
     align-content: left;
     text-align: left;
@@ -77,7 +75,7 @@ table th {
     border: grey;
     border-style: solid;
 }
-
+/*resultaten hoofdpagina*/
 .collapsible {
   background-color: #777;
   color: white;
@@ -92,7 +90,7 @@ table th {
 .active, .collapsible:hover {
     background-color: #555;
 }
-
+/*extra informatie collapse*/
 .content {
     list-style: none;
     padding: 0px;
@@ -104,6 +102,7 @@ table th {
     margin-left: 25%;
 
 }
+/*aparte styling voor sequentie en ASCII score*/
 .sequence {
     font-size: 14px;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
@@ -121,7 +120,7 @@ p.bordering {
     padding: 5px;
     margin: 5px;
 
-
+/*plaatsings classes*/
 }
 p.padding {
     margin-left: 10%;
@@ -137,6 +136,7 @@ p.padding {
     margin-right: 10%;
 
 }
+
 .column-33 {
     width: 33%;
     float: left;
@@ -147,8 +147,9 @@ p.padding {
 }
 .column-25 {
     width: 25%;
-    float: left;
+float: center;
 }
+/*hr en br uit andere elementen wegdrukken*/
 hr {
     clear: both;
 }
@@ -156,20 +157,3 @@ br {
     clear: both;
 }
 
-
-.parallax {
-  /* The image used */
-    background: transparent;
-  background-image: url("images/Background.png");
-    padding: 100px;
-
-  /* Full height */
-  height: 200px;
-    width: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
