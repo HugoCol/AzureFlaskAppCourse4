@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from Websitescript import zoeken, databasecounter
-from Bio.Blast import NCBIWWW, NCBIXML
+from Bio.Blast import NCBIWWW
 from xml.etree import ElementTree
 import time
 from Bio import Entrez
@@ -14,14 +14,9 @@ app = Flask(__name__)
 @app.route('/home.html', methods=["POST", "GET"])
 def database():
     if request.method == "POST":
-        resultatenlijst = []
-
         buttonselect = request.form.get("selection", "")
 
-        print(buttonselect)
-
         zoekopdracht = request.form.get("zoek", "")
-        print(zoekopdracht)
 
         sorton = request.form.get("filterop", "")
         HLLH = request.form.get("richting", "")
@@ -82,14 +77,13 @@ def blast():
         # Kijkt of de ingevoerde sequentie DNA is.
         if lengte_seq == a_count + t_count + c_count + g_count and \
                 sequentie != "":
-            ''' # Blast de protein sequentie tegen de blastx database.
+            # Blast de protein sequentie tegen de blastx database.
             result_handle = NCBIWWW.qblast("blastx", "nr", sequentie,
                                            hitlist_size=25)
 
             # Schrijft de output van BLAST weg in XML bestand.
             with open("XMLBlastWebsite.xml", "w") as out_handle:
                 out_handle.write(result_handle.read())
-            '''
 
             XMLFile = "XMLBlastWebsite.xml"
             datafile = 'dataset.txt'
@@ -113,8 +107,9 @@ def blast():
                 fwcount += 2
                 revcount += 2
             for c in hits:
-                if count <= 1:
-                    # Haal de data uit de hit en zet deze in een zelfbeschrijvende variabele
+                if count <= 5:
+                    # Haal de data uit de hit en zet deze in een
+                    # zelfbeschrijvende variabele
                     Hit_id = c.find('Hit_id').text
                     discript = c.find('Hit_def').text
                     totaallengte = c.find('Hit_len').text
@@ -127,7 +122,6 @@ def blast():
                     description = organis[0]
                     organisme = organism[0]
                     acessiecode = c.find('Hit_accession').text
-                    print(acessiecode)
                     score = c.find('Hit_hsps/Hsp/Hsp_bit-score').text
                     tscore = c.find('Hit_hsps/Hsp/Hsp_score').text
                     evalue = c.find('Hit_hsps/Hsp/Hsp_evalue').text
@@ -143,11 +137,10 @@ def blast():
                     seqio.close()
                     lineage = seqio_read[0]["GBSeq_taxonomy"].split(";")
 
-                    # Print alle data om te zien of het gewerkt heeft
                     datalist = [Hit_id, description, organisme, acessiecode,
-                                score,
-                                tscore, evalue, percidentity, queryseq, header,
-                                ascicode, lineage, querycoverage]
+                                score, tscore, evalue, percidentity,
+                                queryseq, header, ascicode, lineage,
+                                querycoverage]
                     datadic[count] = datalist
                     count += 1
             else:
@@ -164,40 +157,74 @@ def blast():
             if datalijst == []:
                 geenresultaten = "Er zijn geen resultaten gevonden"
 
-            print("Connecting to database.....")
-
-            teller1 = 0
-            teller2 = 0
-            teller3 = 0
-            teller4 = 0
-            read = 3
-
             conn = mysql.connector.connect(
                 host="hannl-hlo-bioinformatica-mysqlsrv.mysql.database."
                      "azure.com",
                 user="iaoqi@hannl-hlo-bioinformatica-mysqlsrv",
                 db="iaoqi", password="638942")
 
+            teller1cursor = conn.cursor() # lineage id
+            teller1string = "select id from lineage order by id desc limit 1;"
+            teller1cursor.execute(teller1string)
+            teller1fetch = teller1cursor.fetchall()
+            teller1string = str(teller1fetch[0]).replace("(", "").replace\
+                (",", "").replace(")", "")
+            teller1 = int(teller1string) + 1
+            teller1cursor.close()
+
+            teller2cursor = conn.cursor() # organisme id
+            teller2string = "select id from organisme order by id desc " \
+                            "limit 1;"
+            teller2cursor.execute(teller2string)
+            teller2fetch = teller2cursor.fetchall()
+            teller2string = str(teller2fetch[0]).replace("(", "").\
+                replace(",", "").replace(")", "")
+            teller2 = int(teller2string) + 1
+            teller2cursor.close()
+
+            teller3cursor = conn.cursor() # sequentie id
+            teller3string = "select id from sequentie order by id desc " \
+                            "limit 1;"
+            teller3cursor.execute(teller3string)
+            teller3fetch = teller3cursor.fetchall()
+            teller3string = str(teller3fetch[0]).replace("(", "").\
+                replace(",", "").replace(")", "")
+            teller3 = int(teller3string) + 1
+            teller3cursor.close()
+
+            teller4cursor = conn.cursor() # eiwit id
+            teller4string = "select id from eiwit order by id desc limit 1;"
+            teller4cursor.execute(teller4string)
+            teller4fetch = teller4cursor.fetchall()
+            teller4string = str(teller4fetch[0]).replace("(", "").\
+                replace(",", "").replace(")", "")
+            teller4 = int(teller4string) + 1
+            teller4cursor.close()
+
+            read = 3
+
             for i in datadic:
                 countlin = 0
                 # Kijk of de plek gevult is met data
                 if datadic[i][11] != "":
                     for j in datadic[i][11]:
-                        print(j)
                         lincheck = conn.cursor(buffered=True)
-                        string1 = f"select name from lineage where name = '{j}'"
+                        string1 = f"select name from lineage where name = " \
+                                  f"'{j}'"
                         lincheck.execute(string1)
                         conn.commit()
                         test = lincheck.fetchall()
                         lincheck.close()
-                        # Als test leeg is: (Dus er is niets gevonden in de database)
+                        # Als test leeg is: (Dus er is niets gevonden in
+                        # de database)
                         if test == []:
-                            # countlin 0 is (dus het is de eerste lineage in de rij
+                            # countlin 0 is (dus het is de eerste
+                            # lineage in de rij
                             if countlin == 0:
                                 cursor = conn.cursor()
                                 # Zet lineage in de database
-                                string2 = f"insert into lineage (id, name) values " \
-                                          f"('{teller1}', " \
+                                string2 = f"insert into lineage (id, name) " \
+                                          f"values ('{teller1}', " \
                                           f"'{datadic[i][11][countlin]}')"
                                 cursor.execute(string2)
                                 conn.commit()
@@ -210,17 +237,19 @@ def blast():
                                 # Vul de lineage tabel met data
                                 linid = conn.cursor(buffered=True)
                                 # Haal het parent id op
-                                string3 = f"select id from lineage where name " \
-                                          f"= '{datadic[i][11][formercount]}'"
+                                string3 = f"select id from lineage where " \
+                                          f"name = " \
+                                          f"'{datadic[i][11][formercount]}'"
                                 linid.execute(string3)
                                 conn.commit()
                                 liniageid = linid.fetchall()
                                 replacer = str(liniageid[0])
-                                replace1 = replacer.replace('(', "").replace \
-                                    (',', "").replace(')', "")
+                                replace1 = replacer.replace('(', "").\
+                                    replace(',', "").replace(')', "")
                                 linid.close()
                                 cursor = conn.cursor()
-                                # Zet lineage in de database met parent key
+                                # Zet lineage in de database met parent
+                                # key
                                 string4 = f"insert into lineage (id, name, " \
                                           f"parent_id) values ('{teller1}', " \
                                           f"'{datadic[i][11][countlin]}', " \
@@ -232,23 +261,21 @@ def blast():
                                 teller1 += 1
                         # Als test wel gevult is
                         else:
-                            # Print dat het item al bestaat
-                            print("Item", j, "bestaat al")
                             countlin += 1
                             pass
-                    print("lineage fill for ", datadic[i][3],
-                          " completed\n\n\n\n\n")
                     # Kijk of de plek gevult is met data
                 if datadic[i][2] != "":
-                    # Kijken of de data die in de database gaat er al in staat
+                    # Kijken of de data die in de database gaat er al in
+                    # staat
                     cursorchecko = conn.cursor(buffered=True)
-                    string5 = f"select naam_organismenaam from organisme where " \
-                              f"naam_organismenaam = '{datadic[i][2]}'"
+                    string5 = f"select naam_organismenaam from organisme " \
+                              f"where naam_organismenaam = '{datadic[i][2]}'"
                     cursorchecko.execute(string5)
                     conn.commit()
                     organismecheck = cursorchecko.fetchall()
                     cursorchecko.close()
-                    # Als de variabele leeg blijft data in de database zetten
+                    # Als de variabele leeg blijft data in de database
+                    # zetten
                     if organismecheck == []:
                         # Het id van linage ophalen om deze in de
                         # organisme tabel te zetten
@@ -257,72 +284,62 @@ def blast():
                                   f"= '{datadic[i][11][-1]}'"
                         linidcursor.execute(string6)
                         conn.commit()
-                        # Het id prepareren zodat het alleen een cijfer is
-                        # ipv een lijst met cursor hits
+                        # Het id prepareren zodat het alleen een cijfer
+                        # is ipv een lijst met cursor hits
                         orglin = linidcursor.fetchall()
                         linidcursor.close()
                         replacer1 = str(orglin[0])
-                        replace2 = replacer1.replace('(', "").replace(',',
-                                                                      "").replace(
-                            ')', "")
+                        replace2 = replacer1.replace('(', "").replace\
+                            (',', "").replace(')', "")
                         variabele1 = datadic[i][2]
                         # Vul de tabel organisme
                         cursor = conn.cursor()
-                        string7 = f"insert into organisme (id, naam_organismenaam, " \
-                                  f"lineage_id) values ('{teller2}', '{variabele1}'" \
-                                  f", '{replace2}')"
+                        string7 = f"insert into organisme (id, " \
+                                  f"naam_organismenaam, lineage_id) values " \
+                                  f"('{teller2}', '{variabele1}', " \
+                                  f"'{replace2}')"
                         cursor.execute(string7)
                         conn.commit()
                         cursor.close()
-                        # Print dat de data in de database staat
-                        print("Organisme fill for ", datadic[i][3],
-                              " completed\n\n\n\n\n")
                         teller2 += 1
-                        # Print als het organisme al in de database staat
                     else:
-                        print(cursorchecko, "bestaat al")
                         pass
                 # Kijk of de plek gevult is met data
                 if datadic[i][9] != "":
-                    # Kijken of de data die in de database gaat er al in staat
+                    # Kijken of de data die in de database gaat er al in
+                    # staat
                     cursorchecks = conn.cursor(buffered=True)
-                    string8 = f"select header from sequentie where header " \
-                              f"= '{datadic[i][9]}'"
+                    string8 = f"select sequence from sequentie where " \
+                              f"sequence = '{datadic[i][8]}'"
                     cursorchecks.execute(string8)
-                    print(datadic[i][9])
                     conn.commit()
                     sequencecheck = cursorchecks.fetchall()
                     cursorchecks.close()
-                    print(sequencecheck)
-                    # Als de variabele leeg blijft data in de database zetten
+                    # Als de variabele leeg blijft data in de database
+                    # zetten
                     if sequencecheck == []:
                         cursor = conn.cursor()
                         # Zet de sequentie in de database
-                        string9 = f"insert into sequentie (id, header, sequence, " \
-                                  f"asci_score, _read_) values ('{teller3}', " \
-                                  f"'{datadic[i][9]}', '{datadic[i][8]}', " \
-                                  f"'{datadic[i][10]}', '{read}')"
+                        string9 = f"insert into sequentie (id, header, " \
+                                  f"sequence, asci_score, _read_) values " \
+                                  f"('{teller3}', '{datadic[i][9]}', " \
+                                  f"'{datadic[i][8]}', '{datadic[i][10]}', " \
+                                  f"'{read}')"
                         cursor.execute(string9)
                         conn.commit()
                         cursor.close()
-                        print("Sequentie fill for ", datadic[i][3],
-                              " completed\n\n\n\n\n")
                         teller3 += 1
-                        # Print item bestaat al als het in de database staat
                     else:
-                        print(cursorchecks, "bestaat al")
                         pass
                 # Kijk of de plek gevult is met data
                 if datadic[i][1] != "":
                     # Kijk of het eiwit al in de database staat
                     eiwitcheck = conn.cursor(buffered=True)
-                    string13 = f"select accessiecode from eiwit where accessiecode " \
-                               f"= '{datadic[i][3]}'"
+                    string13 = f"select accessiecode from eiwit where " \
+                               f"accessiecode = '{datadic[i][3]}'"
                     eiwitcheck.execute(string13)
-                    print(datadic[i][9])
                     conn.commit()
                     eiwitchecks = eiwitcheck.fetchall()
-                    print("-------\n\n", eiwitchecks, "\n\n--------")
                     eiwitcheck.close()
                     # Als het eiwit niet in de database staat
                     if eiwitchecks == []:
@@ -336,9 +353,8 @@ def blast():
                         seqid = seqidcursor.fetchall()
                         seqidcursor.close()
                         replacer2 = str(seqid[0])
-                        replace3 = replacer2.replace('(', "").replace(',',
-                                                                      "").replace(
-                            ')', "")
+                        replace3 = replacer2.replace('(', "").\
+                            replace(',', "").replace(')', "")
                         # Het id van organisme ophalen om deze in de
                         # eiwit tabel te zetten
                         orgidcursor = conn.cursor(buffered=True)
@@ -349,36 +365,30 @@ def blast():
                         orgid = orgidcursor.fetchall()
                         orgidcursor.close()
                         replacer3 = str(orgid[0])
-                        replace4 = replacer3.replace('(', "").replace(',',
-                                                                      "").replace(
-                            ')', "")
+                        replace4 = replacer3.replace('(', "").\
+                            replace(',', "").replace(')', "")
                         # De eiwit tabel vullen met data
                         cursor = conn.cursor()
                         string12 = f"insert into eiwit (id, description, " \
-                                   f"accessiecode, percent_identity, e_value, " \
-                                   f"max_score, total_score, query_cover, " \
-                                   f"sequentie_id, Organisme_id) values ('{teller4}'" \
-                                   f", '{datadic[i][1]}', '{datadic[i][3]}', " \
+                                   f"accessiecode, percent_identity, " \
+                                   f"e_value, max_score, total_score, " \
+                                   f"query_cover, sequentie_id, " \
+                                   f"Organisme_id) values ('{teller4}', " \
+                                   f"'{datadic[i][1]}', '{datadic[i][3]}', " \
                                    f"'{datadic[i][7]}', '{datadic[i][6]}', " \
                                    f"'{datadic[i][4]}', '{datadic[i][5]}', " \
-                                   f"'{datadic[i][12]}', '{replace3}', '{replace4}')"
+                                   f"'{datadic[i][12]}', '{replace3}', " \
+                                   f"'{replace4}')"
                         cursor.execute(string12)
                         conn.commit()
                         cursor.close()
                         teller4 += 1
-                        # Print al het vullen van de hit in de database
-                        # is gelukt
-                        print("Eiwit  fill for ", datadic[i][3], " completed")
-                    # Print als het eiwit al bestaat
                     else:
-                        print("Eiwit ", datadic[i][3], "bestaat al")
-            print("Database filled!\nClosing connection....")
-            # Connectie met database sluiten
+                        pass
             conn.close()
-            print("Connection closed task completed.")
 
-            # Return webpagina met de gegevens als iets is ingevuld in de
-            # textbox.
+            # Return webpagina met de gegevens als iets is ingevuld in
+            # de textbox.
             return render_template("blast.html",
                                    sequentie=sequentie,
                                    sequentietxt=sequentietxt,
