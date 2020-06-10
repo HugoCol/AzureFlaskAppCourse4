@@ -190,3 +190,15 @@ br {
     width: 41%;
     word-wrap: break-word;
 }
+.sequence3 {
+    font-size: 14px;
+    font-family: 'Ubuntu', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    border: 0px solid black;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    display: table-cell;
+    width: 80%;
+    word-wrap: break-word;
+}

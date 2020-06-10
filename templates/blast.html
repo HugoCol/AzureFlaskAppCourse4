@@ -28,8 +28,11 @@
 {{ geenrestxt }}
 <hr>
 {{ sequentietxt }}<br>
-{{ sequentie }}
-<br><br>
+{% if sequentie != "" %}
+        <div class="sequence3">
+            {{ sequentie }}
+        </div><br><br>
+{% endif %}
 
 {% for i in datalijst %}
     <button type="button" class="collapsible">
