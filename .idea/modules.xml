@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AzureFlaskAppCourse4.iml" filepath="$PROJECT_DIR$/.idea/AzureFlaskAppCourse4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Informatica_Praktijk/.idea/Informatica_Praktijk.iml" filepath="$PROJECT_DIR$/../../../Informatica_Praktijk/.idea/Informatica_Praktijk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Nieuwe map.iml" filepath="$PROJECT_DIR$/.idea/Nieuwe map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../biopython/.idea/biopython.iml" filepath="$PROJECT_DIR$/../../../biopython/.idea/biopython.iml" />
     </modules>
   </component>
 </project>
